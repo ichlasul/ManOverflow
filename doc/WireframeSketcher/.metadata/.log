@@ -3164,3 +3164,33 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.wireframesketcher.ui 1 0 2014-04-14 18:52:13.060
 !MESSAGE WireframeSketcher v4.2.4 (trial)
+!SESSION 2014-04-28 10:19:56.444 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\xampp\htdocs\ManOverflow\doc\WireframeSketcher
+
+!ENTRY org.eclipse.ui 4 4 2014-04-28 10:20:03.653
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2014-04-28 10:20:03.669
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY com.wireframesketcher.ui 1 0 2014-04-28 10:20:05.676
+!MESSAGE WireframeSketcher v4.2.5 (trial)
+!SESSION 2014-03-31 11:51:18.754 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\xampp\htdocs\ManOverflow\doc\WireframeSketcher
+
+!ENTRY org.eclipse.ui 4 4 2014-03-31 11:51:26.614
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.findAndInstallUpdates", command "org.eclipse.ui.update.findAndInstallUpdates" not defined
+
+!ENTRY org.eclipse.ui 4 4 2014-03-31 11:51:26.645
+!MESSAGE Unable to create menu item "org.eclipse.ui.update.manageConfiguration", command "org.eclipse.ui.update.manageConfiguration" not defined
+
+!ENTRY com.wireframesketcher.ui 1 0 2014-03-31 11:51:28.380
+!MESSAGE WireframeSketcher v4.2.5 (trial)
