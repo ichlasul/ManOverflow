@@ -2,6 +2,9 @@
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
   <widgets xsi:type="model:Master" id="1" x="88" y="70" measuredWidth="944" measuredHeight="656" dimmed="true">
     <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
+    <overrides>
+      <widgets ref="2" text="Browser&#xA;http://manoverflow.vsilicon.com/pengetahuan/cari/arduino"/>
+    </overrides>
   </widgets>
   <widgets xsi:type="model:Master" id="2" x="168" y="126" measuredWidth="784" measuredHeight="50">
     <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
@@ -27,7 +30,7 @@
   <widgets xsi:type="model:Master" id="16" x="258" y="224" width="431" measuredWidth="431" measuredHeight="53">
     <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Text%20Input%20Large"/>
     <overrides>
-      <widgets ref="3" width="431" text="Masukkan Kata Kunci Pencarian"/>
+      <widgets ref="3" width="431" text="Arduino"/>
     </overrides>
   </widgets>
   <widgets xsi:type="model:Master" id="17" x="712" y="227" measuredWidth="142" measuredHeight="47">
@@ -42,7 +45,7 @@
     <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Content.screen#Alert%20Danger"/>
     <overrides>
       <widgets ref="29" width="596"/>
-      <widgets ref="30" width="565" text="*Posting pengetahuan FPGA tidak ditemukan!* Ganti kata kunci pencarian"/>
+      <widgets ref="30" width="565" text="*Posting pengetahuan Arduino tidak ditemukan!* Ganti kata kunci pencarian"/>
       <widgets ref="31" x="572"/>
     </overrides>
   </widgets>

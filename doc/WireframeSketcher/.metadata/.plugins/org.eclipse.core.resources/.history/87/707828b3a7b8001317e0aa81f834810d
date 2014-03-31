@@ -2,9 +2,6 @@
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
   <widgets xsi:type="model:Master" id="1" x="88" y="70" measuredWidth="944" measuredHeight="656" dimmed="true">
     <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
-    <overrides>
-      <widgets ref="2" text="Browser&#xA;http://manoverflow.vsilicon.com/pengetahuan/cari/FPGA"/>
-    </overrides>
   </widgets>
   <widgets xsi:type="model:Master" id="2" x="168" y="126" measuredWidth="784" measuredHeight="50">
     <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
@@ -99,6 +96,44 @@
     </overrides>
   </widgets>
   <widgets xsi:type="model:Text" id="33" x="575" y="331" width="263" height="150" text="Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui....." measuredWidth="263" measuredHeight="150" lineHeight="1.4">
+    <font size="14px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="34" x="88" y="124" measuredWidth="940" measuredHeight="600">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Content.screen#Modal%20Background"/>
+    <overrides>
+      <widgets ref="109" width="940" height="600"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="36" x="406" y="284" width="307" height="308" measuredWidth="307" measuredHeight="308"/>
+  <widgets xsi:type="model:Master" id="37" x="430" y="302" measuredWidth="207" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Typography.screen#h3.%20Heading"/>
+    <overrides>
+      <widgets ref="7" text="Yakin menghapus?"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="38" x="430" y="351" height="57" measuredWidth="266" measuredHeight="57">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Typography.screen#h4.%20Heading"/>
+    <overrides>
+      <widgets ref="9" width="266" text="Cara Instalasi FPGA di Windows">
+        <font size="15px" bold="true"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="40" x="430" y="548" measuredWidth="160" measuredHeight="34">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Buttons.screen#Button%20Danger"/>
+    <overrides>
+      <widgets ref="43" text="Hapus Karyawan">
+        <font size="19px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="41" x="600" y="548" measuredWidth="54" measuredHeight="34">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Buttons.screen#Button%20Success"/>
+    <overrides>
+      <widgets ref="37" text="Batal"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Text" id="42" x="430" y="381" width="252" height="155" text="Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui....." measuredWidth="252" measuredHeight="155" lineHeight="1.4">
     <font size="14px"/>
   </widgets>
   <hRuler/>

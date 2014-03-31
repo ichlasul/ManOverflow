@@ -2,9 +2,6 @@
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
   <widgets xsi:type="model:Master" id="1" x="88" y="70" measuredWidth="944" measuredHeight="656" dimmed="true">
     <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
-    <overrides>
-      <widgets ref="2" text="Browser&#xA;http://manoverflow.vsilicon.com/pengetahuan/lihat/4124"/>
-    </overrides>
   </widgets>
   <widgets xsi:type="model:Master" id="2" x="168" y="126" measuredWidth="784" measuredHeight="50">
     <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
