@@ -8,7 +8,7 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form">
+      <form class="form-signin jumbotron col-md-4 col-md-offset-4" role="form">
         <h2 class="form-signin-heading text-center">Selamat Datang</h2>
         <input type="email" class="form-control" placeholder="NIP" required autofocus>
         <input type="password" class="form-control" placeholder="Password" required>

@@ -16,6 +16,10 @@
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
+
+      <div class="col-md-8 col-md-offset-2 jumbotron">
+        asdsads
+      </div>
     </div> <!-- /container -->
     <?php $this->load->view('templates/footer'); ?>
   </body>
