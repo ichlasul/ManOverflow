@@ -6,7 +6,8 @@
   <meta name="author" content="">
   <link rel="shortcut icon" href="<?php echo base_url('bootstrap/ico/favicon.ico'); ?>">
 
-  <title>Selamat Datang</title>
+  <?php if (!isset($title)) $title="ManOverflow" ?>
+  <title><?php echo $title; ?></title>
 
   <!-- Bootstrap core CSS --> 
   <link href="<?php echo base_url('bootstrap/css/bootstrap.min.css'); ?>"  rel="stylesheet">
