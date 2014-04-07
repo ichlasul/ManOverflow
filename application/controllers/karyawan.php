@@ -7,6 +7,6 @@
 		}
 
 		function cari($keyword = "") {
-			echo "string";
+			$this->load->view("karyawan/daftarkaryawan_view");
 		}
 	}
