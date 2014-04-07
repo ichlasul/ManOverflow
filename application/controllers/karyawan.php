@@ -22,4 +22,10 @@
 		function add($value = "") {
 			$this->load->view('addemployee_view');
 		}
+
+		function create() {			
+			$this->load->model('Karyawan_Model');
+			$this->Karyawan_Model->addKaryawanData();
+			$this->load->view('successfully_added');
+		}
 	}
