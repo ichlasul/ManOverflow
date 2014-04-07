@@ -23,9 +23,22 @@
 			$this->load->view('addemployee_view');
 		}
 
-		function create() {			
-			$this->load->model('Karyawan_Model');
+		function create() {						
 			$this->Karyawan_Model->addKaryawanData();
-			$this->load->view('successfully_added');
+
+			$data = array(
+				'data' => array(
+					'nama' => $_POST['nama'],
+					'alamat' => $_POST['alamat'],
+					'tempatlahir' => $_POST['tempatlahir'],
+					'tanggallahir' => $_POST['tanggallahir'],
+					'divisi' => $_POST['divisi'],
+					'jabatan' => $_POST['jabatan'],
+					'tanggalditerima' => $_POST['tanggalditerima'],
+					'filefoto' => $_POST['filefoto']
+				)
+			);
+
+			$this->load->view('successfully_added', $data);
 		}
 	}
