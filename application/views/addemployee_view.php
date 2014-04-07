@@ -10,7 +10,7 @@
 <title>Tambah Karyawan</title>
 
 <?php include 'include_css.php'; ?>
-<link href="../bootstrap/assets/signin.css" rel="stylesheet">
+<link href="bootstrap/assets/signin.css" rel="stylesheet">
 
 </head>
  
