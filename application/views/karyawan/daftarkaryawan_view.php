@@ -15,6 +15,15 @@
           </div>
           <button type="submit" class="btn btn-primary btn-lg col-md-3">Cari</button>
         </form>
+
+        <?php 
+
+        if (is_null($result)) {
+          echo "NULL";
+        } else{
+          echo "ADA";
+          }
+          ?>;
       </div>
     </div> <!-- /container -->
     <?php $this->load->view('templates/footer'); ?>
