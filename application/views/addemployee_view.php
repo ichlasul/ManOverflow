@@ -6,63 +6,65 @@
   <body>
     <?php $this->load->view('templates/header'); ?>
     
-    <h2 class="form-signin-heading text-center">Selamat Datang</h2>
-    <form class="form-horizontal" role="form">
-      <div class="form-group">
-        <label for="namaKaryawan3" class="col-sm-2 control-label">Nama Karyawan</label>
-        <div class="col-sm-8">
-          <input type="email" class="form-control" id="inputEmail3">
-        </div>
+    <div class="container">
+      <div class="jumbotron">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="namaKaryawan3" class="col-md-2 control-label">Nama Karyawan</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="nama-karyawan">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="alamat3" class="col-md-2 control-label">Alamat</label>
+            <div class="col-md-9">
+              <textarea class="form-control" rows="3" id="alamat"> </textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="namaKaryawan3" class="col-md-2 control-label">Tempat Lahir</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="tempat-lahir">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="namaKaryawan3" class="col-md-2 control-label">Tanggal Lahir</label>
+            <div class="col-md-9">
+              <input type="date" class="form-control" id="tanggal-lahir">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="namaKaryawan3" class="col-md-2 control-label">Divisi</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="divisi">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="namaKaryawan3" class="col-md-2 control-label">Jabatan</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="jabatan">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="namaKaryawan3" class="col-md-2 control-label">Tanggal Diterima</label>
+            <div class="col-md-9">
+              <input type="date" class="form-control" id="tanggal-diterima">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="namaKaryawan3" class="col-md-2 control-label">File Input</label>
+            <div class="col-md-9">
+              <input type="file" id="file-foto">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-2 col-md-9">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="alamat3" class="col-sm-2 control-label">Alamat</label>
-        <div class="col-sm-8">
-          <textarea class="form-control" rows="3"> </textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="namaKaryawan3" class="col-sm-2 control-label">Tempat Lahir</label>
-        <div class="col-sm-8">
-          <input type="email" class="form-control" id="inputEmail3">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="namaKaryawan3" class="col-sm-2 control-label">Tanggal Lahir (DD/MM/YY)</label>
-        <div class="col-sm-8">
-          <input type="email" class="form-control" id="inputEmail3">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="namaKaryawan3" class="col-sm-2 control-label">Divisi</label>
-        <div class="col-sm-8">
-          <input type="email" class="form-control" id="inputEmail3">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="namaKaryawan3" class="col-sm-2 control-label">Jabatan</label>
-        <div class="col-sm-8">
-          <input type="email" class="form-control" id="inputEmail3">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="namaKaryawan3" class="col-sm-2 control-label">Tanggal Diterima (DD/MM/YY)</label>
-        <div class="col-sm-8">
-          <input type="email" class="form-control" id="inputEmail3">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="namaKaryawan3" class="col-sm-2 control-label">File Input</label>
-        <div class="col-sm-8">
-          <input type="file" id="exampleInputFile">
-          <p class="help-block">Put the photo here.</p>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-default">Submit</button>
-        </div>
-      </div>
-    </form>
+    </div>
 
     <?php $this->load->view('templates/footer'); ?>
   </body>

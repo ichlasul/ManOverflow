@@ -2,7 +2,7 @@
 
 	class Karyawan extends CI_Controller{
 
-		function index(){
+		function index() {
 			cari();
 		}
 
@@ -10,5 +10,9 @@
 
 			$data['title'] = "Cari Karyawan " . $keyword;
 			$this->load->view("karyawan/daftarkaryawan_view", $data);
+		}
+
+		function add($value = "") {
+			$this->load->view('addemployee_view');
 		}
 	}
