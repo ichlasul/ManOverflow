@@ -15,7 +15,7 @@
 		function searchByName($keyword = "") {
 			if ($keyword == "") return $this->getAll();
 
-			$this->db->where('nama', $keyword);
+			$this->db->where('Nama', $keyword);
 			$q = $this->db->get('karyawan');
 			return ($q -> num_rows() > 0) ? $q->result() : NULL;
 		}

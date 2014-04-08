@@ -8,23 +8,32 @@
 
     <div class="container">
       <div class="col-md-8 col-md-offset-2 jumbotron">
-        <form class="form" role="form">
-          <div class="form-group col-md-9">
-            <label class="sr-only" for="keyword">Kata Kunci Pencarian</label>
-            <input type="text" class=" form-control input-lg" id="keyword" placeholder="Masukkan Kata Kunci Pencarian">
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg col-md-3">Cari</button>
-        </form>
+        <div class="row">
+          <form class="form" role="form">
+            <div class="form-group col-md-9">
+              <label class="sr-only" for="keyword">Kata Kunci Pencarian</label>
+              <input type="text" class=" form-control input-lg" id="keyword" placeholder="Masukkan Kata Kunci Pencarian">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg col-md-3">Cari</button>
+          </form>
+        </div>
 
-        <?php 
+        <div class="row">
+          <div id="result">
+            <?php if (is_null($result)) { ?>
+              <div class="alert alert-danger">
+                Oh tidak, karyawan tidak ditemukan!
+              </div>
+            <?php } else {
+                      foreach($result as $row){
+                        echo $row->Nama;
 
-        if (is_null($result)) {
-          echo "NULL";
-        } else{
-          echo "ADA";
-          }
-          ?>;
-      </div>
+
+              }
+                  } ?>
+          <div>
+        <div> <!-- row -->
+      </div>  <!-- jumbotron -->
     </div> <!-- /container -->
     <?php $this->load->view('templates/footer'); ?>
   </body>
