@@ -41,4 +41,8 @@
 
 			$this->load->view('successfully_added', $data);
 		}
+
+		function failLogin(){
+			$this->load->view('failelogin');
+		}
 	}

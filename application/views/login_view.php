@@ -8,10 +8,10 @@
 
     <div class="container">
 
-      <form class="form-signin jumbotron col-md-4 col-md-offset-4" role="form">
+      <form class="form-signin col-md-4 col-md-offset-4" role="form" action="login/validate_credentials" method="post">
         <h2 class="form-signin-heading text-center">Selamat Datang</h2>
-        <input type="email" class="form-control" placeholder="NIP" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
+        <input name = "NIP" type="text" class="form-control" placeholder="NIP" required autofocus>
+        <input name = "Password" type="password" class="form-control" placeholder="Password" required>
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>

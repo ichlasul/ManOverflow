@@ -19,6 +19,8 @@
         <li><a href="#">Track Record</a></li>
         <li><a href="#">Penjadwalan</a></li>
         <li><a href="#">Basis Pengetahuan</a></li>
+        <li><a href="home/logout">Logout</a></li>
+
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">

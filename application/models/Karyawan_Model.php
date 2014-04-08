@@ -6,6 +6,17 @@
 	        parent::__construct();
 	    }
 
+	    function validate(){
+	    	$this -> db -> where('NIP', $this->input->post('NIP'));
+			$this -> db -> where('password', $this->input->post('Password'));
+			$query = $this -> db -> get('karyawan');
+
+			if($query -> num_rows == 1){
+				return true;
+			}
+
+	    }
+
 		function getAll() {
 			$q = $this->db->get('karyawan');
 			return ($q -> num_rows() > 0) ? $q->result() : NULL;
