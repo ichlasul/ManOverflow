@@ -4,7 +4,7 @@
   <?php $this->load->view('templates/head'); ?>
 
   <body>
-    <?php $this->load->view('templates/header'); ?>
+    <?php $this->load->view('templates/head_login'); ?>
 
     <div class="container">
 
