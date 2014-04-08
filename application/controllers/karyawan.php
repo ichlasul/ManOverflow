@@ -19,6 +19,10 @@
 			$this->load->view("karyawan/daftarkaryawan_view", $data);
 		}
 
+		function search($value = "") {
+			redirect('/karyawan/cari/'. $this->input->post('keyword'), 'location');
+		}
+
 		function add($value = "") {
 			$this->load->view('addemployee_view');
 		}

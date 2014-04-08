@@ -3,7 +3,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/jquery-2.1.0.min.js"></script>
 <!-- Fallback kalau CDN gagal atau localhost -->
 <script>window.jQuery || document.write('<script src="<?php echo base_url('bootstrap/js/jquery-2.1.0.min.js\'); ?>">\x3C/script>')</script>
