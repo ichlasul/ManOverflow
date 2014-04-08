@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo site_url(); ?>">Versatile</a>
+      <a class="navbar-brand" href="<?php echo site_url(); ?>home">Versatile</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,7 +19,7 @@
         <li><a href="#">Track Record</a></li>
         <li><a href="#">Penjadwalan</a></li>
         <li><a href="#">Basis Pengetahuan</a></li>
-        <li><a href="home/logout">Logout</a></li>
+        <li><a href="<?php echo site_url(); ?>home/logout">Logout</a></li>
 
       </ul>
       <form class="navbar-form navbar-left" role="search">
