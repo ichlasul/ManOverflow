@@ -10,6 +10,12 @@
       <div class="jumbotron">        
         <form class="form-horizontal" role="form" action="<?php echo base_url();?>karyawan/create" method="post">
           <div class="form-group">            
+            <label for="namaKaryawan3" class="col-md-2 control-label">Password</label>
+            <div class="col-md-9">
+              <input type="password" class="form-control" id="password" name="password">
+            </div>
+          </div>
+          <div class="form-group">            
             <label for="namaKaryawan3" class="col-md-2 control-label">Nama Karyawan</label>
             <div class="col-md-9">
               <input type="text" class="form-control" id="nama" name="nama">
