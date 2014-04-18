@@ -75,12 +75,12 @@
 	                redirect('home');
 	            }
 	            else {
-	                $this->data['error'] = 'We could not log you in';
+	                $this->data['error'] = 'Kombinasi NIP atau Password salah';
 	            }
 	        }
 	        
 	        // Set subview & Load layout
-	        $this->load->view('login_view');
+	        $this->load->view('login_view', $this->data);
 		}
 
 		function validate_credentials(){
