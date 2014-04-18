@@ -58,4 +58,27 @@
 		function failLogin(){
 			$this->load->view('failelogin');
 		}
+
+		function login() {
+			// redirect if already logged in
+	        if ($this->ion_auth->logged_in()) {
+	            redirect('home');
+	        }
+	        
+	        // Validate the form
+	        $this->form_validation->set_rules($this->user_model->validation);
+	        if ($this->form_validation->run() == true) {
+	            
+	            // Try to log in
+	            if ($this->ion_auth->login($this->input->post('email'), $this->input->post('password')) == TRUE) {
+	                redirect('questions/listing');
+	            }
+	            else {
+	                $this->data['error'] = 'We could not log you in';
+	            }
+	        }
+	        
+	        // Set subview & Load layout
+	        $this->load_view('users/login');
+		}
 	}

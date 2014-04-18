@@ -4,6 +4,7 @@
   <?php $this->load->view('templates/head'); ?>
 
   <body>
+
     <?php $this->load->view('templates/head_login'); ?>
 
     <div class="container">
@@ -11,10 +12,10 @@
         <div class="panel panel-default">
 
           <div class="panel-heading">
-            <h2 >Selamat Datang</h2>
+            <h3>Selamat Datang</h3>
           </div>
 
-          <div class="panel-body ">
+          <div class="panel-body">
             <form class="form-signin" role="form" action="login/validate_credentials" method="post">
               <input name = "NIP" type="text" class="form-control" placeholder="NIP" required autofocus>
               <input name = "Password" type="password" class="form-control" placeholder="Password" required>
