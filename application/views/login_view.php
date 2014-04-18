@@ -5,7 +5,7 @@
 
   <body>
 
-    <?php $this->load->view('templates/head_login'); ?>
+    <?php $this->load->view('templates/header'); ?>
 
     <div class="container">
       <div class=" col-md-4 col-md-offset-4">
