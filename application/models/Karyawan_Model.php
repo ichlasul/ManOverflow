@@ -1,6 +1,18 @@
 <?php 
 	class Karyawan_model extends MY_Model {
 
+		public $_table = 'Karyawan';
+
+		public $validation = array(
+	        array(
+	            'field' => 'NIP', 
+	            'label' => 'NIP', 
+	            'rules' => 'required|trim'), 
+	        array(
+	            'field' => 'Password', 
+	            'label' => 'Password', 
+	            'rules' => 'required|trim'));
+
 		function __construct() {
 	        // Call the Model constructor
 	        parent::__construct();

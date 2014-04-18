@@ -1,7 +1,7 @@
 <?php
 
-echo validation_errors() ? '<div class="errors">' . validation_errors() . '</div>' : '';
-echo !empty($error) ? '<div class="errors">' . $error . '</div>' : '';
+echo validation_errors() ? '<div class="alert alert-danger">' . validation_errors() . '</div>' : '';
+echo !empty($error) ? '<div class="alert alert-danger">' . $error . '</div>' : '';
 echo form_open('', array('class' => 'form-signin'));
 echo form_input(array(
                     'name'        => 'NIP',

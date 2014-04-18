@@ -67,12 +67,12 @@
 	        }
 	        
 	        // Validate the form
-	        $this->form_validation->set_rules($this->user_model->validation);
+	        $this->form_validation->set_rules($this->Karyawan_model->validation);
 	        if ($this->form_validation->run() == true) {
 	            
 	            // Try to log in
-	            if ($this->ion_auth->login($this->input->post('email'), $this->input->post('password')) == TRUE) {
-	                redirect('questions/listing');
+	            if ($this->ion_auth->login($this->input->post('NIP'), $this->input->post('Password')) === TRUE) {
+	                redirect('home');
 	            }
 	            else {
 	                $this->data['error'] = 'We could not log you in';
