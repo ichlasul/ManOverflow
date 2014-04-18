@@ -30,6 +30,8 @@
 		function create() {						
 			$this->Karyawan_Model->addKaryawanData();
 
+			$this->ion_auth->register($_POST['nama'], $_POST['password'], $_POST['nama']);
+
 			$data = array(
 				'data' => array(
 					'nama' => $_POST['nama'],
