@@ -19,6 +19,9 @@
                 );
 
                 //$this->session->set_userdata($data);
+                $this->ion_auth->login($this->input->post('NIP'),
+                                       $this->input->post('password'),
+                                       TRUE);
                 redirect('home');
             }
             else{
