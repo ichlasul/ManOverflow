@@ -8,7 +8,7 @@
     <?php $this->load->view('templates/header'); ?>
 
     <div class="container">
-      <div class=" col-md-4 col-md-offset-4">
+      <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-default">
 
           <div class="panel-heading">
@@ -16,14 +16,7 @@
           </div>
 
           <div class="panel-body">
-            <form class="form-signin" role="form" action="login/validate_credentials" method="post">
-              <input name = "NIP" type="text" class="form-control" placeholder="NIP" required autofocus>
-              <input name = "Password" type="password" class="form-control" placeholder="Password" required>
-              <label class="checkbox">
-                <input type="checkbox" name="remember-me" value="TRUE"> Ingat Saya
-              </label>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
-            </form>
+              <?php $this->load->view('forms/login'); ?>
           </div>
         </div>
 

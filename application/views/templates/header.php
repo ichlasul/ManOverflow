@@ -14,6 +14,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <?php
+      	//Periksa sedang login atau tidak
+      	//Ubah navbar sesuai user
       	if ($this->ion_auth->logged_in() === TRUE) {
       		if ($this->ion_auth->is_admin() === TRUE) {
       			$this->load->view('templates/navbar-admin');
