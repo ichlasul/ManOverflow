@@ -26,5 +26,9 @@
             }
         }
 
+        function logout() {
+            $this->ion_auth->logout();
+        }
+
 	}
 ?>
