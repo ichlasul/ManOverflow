@@ -7,18 +7,29 @@
     <?php $this->load->view('templates/head_login'); ?>
 
     <div class="container">
+      <div class=" col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
 
-      <form class="form-signin col-md-4 col-md-offset-4" role="form" action="login/validate_credentials" method="post">
-        <h2 class="form-signin-heading text-center">Selamat Datang</h2>
-        <input name = "NIP" type="text" class="form-control" placeholder="NIP" required autofocus>
-        <input name = "Password" type="password" class="form-control" placeholder="Password" required>
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
+          <div class="panel-heading">
+            <h2 >Selamat Datang</h2>
+          </div>
 
+          <div class="panel-body ">
+            <form class="form-signin" role="form" action="login/validate_credentials" method="post">
+              <input name = "NIP" type="text" class="form-control" placeholder="NIP" required autofocus>
+              <input name = "Password" type="password" class="form-control" placeholder="Password" required>
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Ingat Saya
+              </label>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
     </div> <!-- /container -->
+    
     <?php $this->load->view('templates/footer'); ?>
+  
   </body>
 </html>
