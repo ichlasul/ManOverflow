@@ -112,5 +112,7 @@ $autoload['language'] = array();
 $autoload['model'] = array('Karyawan_Model');
 
 
+$autoload['sparks'] = array('ion_auth/2.5.0');
+
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

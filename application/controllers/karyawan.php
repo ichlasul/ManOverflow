@@ -1,6 +1,6 @@
 <?php
 
-	class Karyawan extends CI_Controller{
+	class Karyawan extends MY_Controller{
 
 		function __construct() {
 	        parent::__construct();
