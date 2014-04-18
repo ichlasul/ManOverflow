@@ -20,7 +20,7 @@
               <input name = "NIP" type="text" class="form-control" placeholder="NIP" required autofocus>
               <input name = "Password" type="password" class="form-control" placeholder="Password" required>
               <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Ingat Saya
+                <input type="checkbox" name="remember-me" value="TRUE"> Ingat Saya
               </label>
               <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
             </form>
