@@ -79,7 +79,7 @@
 	            }
 	        }
 	        
-	        // Set subview & Load layout
+	        // Load view
 	        $this->load->view('login_view', $this->data);
 		}
 
