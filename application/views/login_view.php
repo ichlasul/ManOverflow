@@ -16,7 +16,7 @@
           </div>
 
           <div class="panel-body">
-              <?php $this->load->view('forms/login'); ?>
+              <?php $this->load->view('forms/login_form'); ?>
           </div>
         </div>
 

@@ -50,9 +50,10 @@
 
 		function logout()
     	{
-        //$this->session->unset_userdata('logged_in');
-        //session_destroy();
-        redirect('login');    
+	        //$this->session->unset_userdata('logged_in');
+	        //session_destroy();
+	        $this->ion_auth->logout();
+	        redirect('karyawan/login');    
     	}
 
 		function failLogin(){
@@ -79,6 +80,28 @@
 	        }
 	        
 	        // Set subview & Load layout
-	        $this->load_view('users/login');
+	        $this->load->view('login_view');
 		}
+
+		function validate_credentials(){
+            $this->load->model('Karyawan_Model');
+            $query = $this->Karyawan_Model->validate();
+
+            if($query)
+            {
+                $data = array(
+                    'NIP' => $this->input->post('NIP'),
+                    'is_logged_in' => true
+                );
+
+                //$this->session->set_userdata($data);
+                $this->ion_auth->login($this->input->post('NIP'),
+                                       $this->input->post('password'),
+                                       TRUE);
+                redirect('home');
+            }
+            else{
+                redirect('login');
+            }
+        }
 	}

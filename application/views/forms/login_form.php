@@ -30,4 +30,3 @@ echo form_submit(array(
                     'value'       => 'Log In',
                     'type'        => 'submit'));
 echo form_close();
-?>
