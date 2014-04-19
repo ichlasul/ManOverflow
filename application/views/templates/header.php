@@ -18,9 +18,9 @@
       	//Ubah navbar sesuai user
       	if ($this->ion_auth->logged_in() === TRUE) {
       		if ($this->ion_auth->is_admin() === TRUE) {
-      			$this->load->view('templates/navbar-admin');
+      			$this->load->view('templates/navbar_admin');
       		} else {
-      			$this->load->view('templates/navbar-member');
+      			$this->load->view('templates/navbar_member');
       		}
       	}
       ?>
