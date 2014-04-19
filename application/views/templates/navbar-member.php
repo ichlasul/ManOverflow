@@ -1,4 +1,4 @@
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav navbar-right">
   <li><a href="<?php echo site_url('karyawan/profil'); ?>">Profil</a></li>
   <li><a href="#">Track Record</a></li>
   <li><a href="#">Penjadwalan</a></li>
