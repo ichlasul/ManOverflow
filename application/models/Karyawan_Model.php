@@ -56,8 +56,8 @@
 			$data['tanggalditerima'] = $_POST['tanggalditerima'];
 			$data['filefoto'] = $_POST['filefoto'];
 			
-			$this->db->query("INSERT INTO `karyawan` (`password`,`Nama`, `Alamat`, `Tempat Lahir`, `Tanggal Lahir`, `Divisi`, `Jabatan`, `Tanggal Diterima`, `Foto`)
-				VALUES ('$data[password]','$data[nama]','$data[alamat]','$data[tempatlahir]', '$data[tanggallahir]', '$data[divisi]', '$data[jabatan]', '$data[tanggalditerima]', '$data[filefoto]');");
+			$this->db->query("INSERT INTO `karyawan` (`Nama`, `Alamat`, `Tempat Lahir`, `Tanggal Lahir`, `Divisi`, `Jabatan`, `Tanggal Diterima`, `Foto`)
+				VALUES ('$data[nama]','$data[alamat]','$data[tempatlahir]', '$data[tanggallahir]', '$data[divisi]', '$data[jabatan]', '$data[tanggalditerima]', '$data[filefoto]');");
 		
 		}
 

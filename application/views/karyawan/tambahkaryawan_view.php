@@ -20,7 +20,7 @@
               <div class="form-group">            
                 <label for="nip" class="col-md-3 control-label">NIP</label>
                 <div class="col-md-8">
-                  <input type="password" class="form-control" id="nip" name="nip" disabled>
+                  <input type="text" class="form-control" id="nip" name="nip" disabled>
                 </div>
               </div>
               <div class="form-group">            

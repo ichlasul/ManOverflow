@@ -52,7 +52,7 @@ class Karyawan extends MY_Controller {
 
 	public function tambah($param = '')
 	{
-		$this->load->view('tambahkaryawan_view');
+		$this->load->view('karyawan/tambahkaryawan_view');
 	}
 
 	public function create($param = '')
@@ -74,7 +74,7 @@ class Karyawan extends MY_Controller {
 			)
 		);
 
-		$this->load->view('successfully_added', $data);
+		$this->load->view('karyawan/detailkaryawan_view', $data);
 	}
 
 
