@@ -16,7 +16,7 @@
           </div>
 
           <div class="panel-body">
-            <form class="form-horizontal" role="form" action="<?php echo base_url();?>karyawan/create" method="post">
+            <form class="form-horizontal" role="form" method="post">
               <div class="form-group">            
                 <label for="nip" class="col-md-3 control-label">NIP</label>
                 <div class="col-md-8">

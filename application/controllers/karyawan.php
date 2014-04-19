@@ -27,8 +27,8 @@ class Karyawan extends MY_Controller {
         }
         
         // Validate the form
-        $this->form_validation->set_rules($this->Karyawan_model->validation);
-        if ($this->form_validation->run() == true) {
+        $this->form_validation->set_rules($this->Karyawan_model->login_rules);
+        if ($this->form_validation->run() == TRUE) {
             
             // Try to log in
             if ($this->ion_auth->login($this->input->post('NIP'), $this->input->post('Password')) === TRUE) {
