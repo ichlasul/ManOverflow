@@ -1,42 +1,50 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Karyawan extends MY_Controller{
+class Karyawan extends MY_Controller {
 
-	function __construct() {
+	public function __construct()
+	{
         parent::__construct();
         $this->load->model('Karyawan_model');
     }
 
-	function index() {
-		if ($this->ion_auth->is_admin() === TRUE) {
-			$this->cari();
-		} else {
-			$this->profil();
+	public function index($param = '')
+	{
+		if ($this->ion_auth->is_admin() === TRUE)
+		{
+			redirect('karyawan/cari');
+		} else
+		{
+			redirect('karyawan/profil');
 		}
 	}
 
-	function cari($keyword = "") {
+	public function cari($param = '')
+	{
 
-		$data['title'] = "Cari Karyawan " . $keyword;
-		$data['result'] = $this->Karyawan_model->searchByName($keyword);
+		$this->$data['title'] = 'Cari Karyawan ' . $param;
+		$this->$data['result'] = $this->Karyawan_model->searchByName($param);
 
-		$this->load->view("karyawan/daftarkaryawan_view", $data);
+		$this->load->view("karyawan/daftarkaryawan_view", $this->$data);
 	}
 
-	function search($value = "") {
-		redirect('/karyawan/cari/'. $this->input->post('keyword'), 'location');
+	public function search($param = '')
+	{
+		redirect('/karyawan/cari/'. $this->input->post('keyword'));
 	}
 
-	function profil($value='')
+	public function profil($param = '')
 	{
 		# code...
 	}
 
-	function add($value = "") {
+	public function add($param = '')
+	{
 		$this->load->view('addemployee_view');
 	}
 
-	function create() {						
+	public function create($param = '')
+	{						
 		$this->Karyawan_Model->addKaryawanData();
 
 		$this->ion_auth->register($_POST['nama'], $_POST['password'], $_POST['nama']);
@@ -57,13 +65,14 @@ class Karyawan extends MY_Controller{
 		$this->load->view('successfully_added', $data);
 	}
 
-	function logout()
+	public function logout($param = '')
 	{
         $this->ion_auth->logout();
         redirect('karyawan/login');    
 	}
 
-	function login() {
+	public function login($param = '')
+	{
 		// redirect if already logged in
         if ($this->ion_auth->logged_in()) {
             redirect('karyawan');
@@ -83,10 +92,12 @@ class Karyawan extends MY_Controller{
         }
         
         // Load view
+        $this->data['title'] = 'Log In';
         $this->load->view('login_view', $this->data);
 	}
 
-	function validate_credentials(){
+	public function validate_credentials($param = '')
+	{
         $this->load->model('Karyawan_Model');
         $query = $this->Karyawan_Model->validate();
 
