@@ -2,7 +2,8 @@
 
 class Karyawan_model extends MY_Model {
 
-	// protected $_table = 'Karyawan';
+	protected $_table = 'Karyawan';
+	protected $primary_key = 'NIP';
 
     public $login_rules = array(
 					        array(
@@ -16,10 +17,6 @@ class Karyawan_model extends MY_Model {
 
     public $register_rules = array(
 						        array(
-						            'field' => 'nip', 
-						            'label' => 'NIP', 
-						            'rules' => 'required|trim'),
-						        array(
 						            'field' => 'password', 
 						            'label' => 'Password', 
 				            		'rules' => 'required|trim'),
@@ -30,7 +27,7 @@ class Karyawan_model extends MY_Model {
 						        array(
 						            'field' => 'alamat', 
 						            'label' => 'Alamat', 
-						            'rules' => 'required|trim'),
+						            'rules' => 'required'),
 						        array(
 						            'field' => 'tempatlahir', 
 						            'label' => 'Tempat Lahir', 
@@ -77,10 +74,9 @@ class Karyawan_model extends MY_Model {
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}		
 
-	function addKaryawanData()
+	function addKaryawanData($nip)
 	{
 		$data = array();
-		$data['password'] = $_POST['password'];
 		$data['nama'] = $_POST['nama'];
 		$data['alamat'] = $_POST['alamat'];
 		$data['tempatlahir'] = $_POST['tempatlahir'];
@@ -90,7 +86,7 @@ class Karyawan_model extends MY_Model {
 		$data['tanggalditerima'] = $_POST['tanggalditerima'];
 		$data['filefoto'] = $_POST['filefoto'];
 		
-		$this->db->query("INSERT INTO `karyawan` (`Nama`, `Alamat`, `Tempat Lahir`, `Tanggal Lahir`, `Divisi`, `Jabatan`, `Tanggal Diterima`, `Foto`)
-			VALUES ('$data[nama]','$data[alamat]','$data[tempatlahir]', '$data[tanggallahir]', '$data[divisi]', '$data[jabatan]', '$data[tanggalditerima]', '$data[filefoto]');");
+		$this->db->query("INSERT INTO `karyawan` (`NIP`, `Nama`, `Alamat`, `Tempat Lahir`, `Tanggal Lahir`, `Divisi`, `Jabatan`, `Tanggal Diterima`, `Foto`)
+			VALUES ('$nip', '$data[nama]','$data[alamat]','$data[tempatlahir]', '$data[tanggallahir]', '$data[divisi]', '$data[jabatan]', '$data[tanggalditerima]', '$data[filefoto]');");
 	}
 }

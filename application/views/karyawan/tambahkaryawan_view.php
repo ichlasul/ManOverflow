@@ -16,14 +16,15 @@
           </div>
 
           <div class="panel-body">
-          
+
+            <?php echo validation_errors() ? '<div class="alert alert-danger">' . validation_errors() . '</div>' : ''; ?>
             <?php echo !empty($error) ? '<div class="alert alert-danger">' . $error . '</div>' : ''; ?>
 
             <form class="form-horizontal" role="form" method="post">
               <div class="form-group">            
                 <label for="nip" class="col-md-3 control-label">NIP</label>
                 <div class="col-md-8">
-                  <input type="text" class="form-control" id="nip" name="nip" value="13511075" disabled  required>
+                  <input type="text" class="form-control" id="nip" name="nip" value="<?php echo $nip; ?>" disabled  required>
                 </div>
               </div>
               <div class="form-group">            
@@ -47,25 +48,25 @@
               <div class="form-group">            
                 <label for="nama" class="col-md-3 control-label">Nama</label>
                 <div class="col-md-8">
-                  <input type="text" class="form-control" id="nama" name="nama" required>
+                  <input type="text" class="form-control" id="nama" name="nama" value="<?php echo set_value('nama'); ?>" required>
                 </div>
               </div>
               <div class="form-group">            
-                <label for="alamat3" class="col-md-3 control-label">Alamat</label>
+                <label for="alamat" class="col-md-3 control-label">Alamat</label>
                 <div class="col-md-8">
-                  <textarea class="form-control" rows="3" id="alamat" name="alamat" required> </textarea>
+                  <textarea class="form-control" rows="3" id="alamat" name="alamat" value="<?php echo set_value('alamat'); ?>" required> </textarea>
                 </div>
               </div>
               <div class="form-group">
                 <label for="tempatlahir" class="col-md-3 control-label">Tempat Lahir</label>
                 <div class="col-md-8">
-                  <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" required>
+                  <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" value="<?php echo set_value('tempatlahir'); ?>" required>
                 </div>
               </div>
               <div class="form-group">
                 <label for="tanggallahir" class="col-md-3 control-label">Tanggal Lahir</label>
                 <div class="col-md-8">
-                  <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" required>
+                  <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" value="<?php echo set_value('tanggallahir'); ?>" required>
                 </div>
               </div>
               <div class="form-group">
@@ -100,7 +101,7 @@
               <div class="form-group">
                 <label for="tanggalditerima" class="col-md-3 control-label">Tanggal Diterima</label>
                 <div class="col-md-8">
-                  <input type="date" class="form-control" id="tanggalditerima" name="tanggalditerima" required>
+                  <input type="date" class="form-control" id="tanggalditerima" name="tanggalditerima" value="<?php echo set_value('tanggalditerima'); ?>" required>
                 </div>
               </div>
               <div class="form-group">

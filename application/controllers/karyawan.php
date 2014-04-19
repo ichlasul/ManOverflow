@@ -55,52 +55,36 @@ class Karyawan extends MY_Controller {
 
 	public function tambah($param = '')
 	{
+		//hitung nip
+		$nip = 13511000 + $this->Karyawan_model->count_all();
+    	$nip = $nip . '';
+
+    	//validasi form
         $this->form_validation->set_rules($this->Karyawan_model->register_rules);
         if ($this->form_validation->run() === TRUE)
         {
-        	$username = $this->input->post('nip');
+        	//coba register
         	$password = $this->input->post('password');
-        	$email = $username . '@vsilicon.com';
+        	$email = $nip . '@vsilicon.com';
         	$groups = $this->input->post('admin') ? array('1') : array();
-            $result = $this->ion_auth->register($username, $password, $email, array(), $groups);
-            							
+            $result = $this->ion_auth->register($nip, $password, $email, array(), $groups);
+ 
             if ($result === FALSE)
             {
             	$this->data['error'] = 'Registrasi Gagal';
             }
             else
             {
-            	
+            	$this->Karyawan_model->addKaryawanData($nip);
+            	redirect('karyawan/profil/'.$result);
             }
         }
         
         // Load view
         $this->data['title'] = 'Tambah Karyawan';
-        $this->load->view('karyawan/tambahkaryawan_view');
+        $this->data['nip'] = $nip;
+        $this->load->view('karyawan/tambahkaryawan_view', $this->data);
 	}
-
-	public function create($param = '')
-	{						
-		$this->Karyawan_Model->addKaryawanData();
-
-		$this->ion_auth->register($_POST['nama'], $_POST['password'], $_POST['nama']);
-
-		$data = array(
-			'data' => array(
-				'nama' => $_POST['nama'],
-				'alamat' => $_POST['alamat'],
-				'tempatlahir' => $_POST['tempatlahir'],
-				'tanggallahir' => $_POST['tanggallahir'],
-				'divisi' => $_POST['divisi'],
-				'jabatan' => $_POST['jabatan'],
-				'tanggalditerima' => $_POST['tanggalditerima'],
-				'filefoto' => $_POST['filefoto']
-			)
-		);
-
-		$this->load->view('karyawan/detailkaryawan_view', $data);
-	}
-
 
 	public function cari($param = '')
 	{
@@ -116,7 +100,7 @@ class Karyawan extends MY_Controller {
 
 	public function profil($param = '')
 	{
-		# code...
+		$this->load->view('karyawan/detailkaryawan_view', $this->data);
 	}
 
 	public function validate_credentials($param = '')
