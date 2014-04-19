@@ -15,7 +15,7 @@
             <h3>Tambah Karyawan</h3>
           </div>
 
-            <div class="panel-body">
+          <div class="panel-body">
             <form class="form-horizontal" role="form" action="<?php echo base_url();?>karyawan/create" method="post">
               <div class="form-group">            
                 <label for="nip" class="col-md-3 control-label">NIP</label>
@@ -40,7 +40,6 @@
                   </div>
                 </div>
               </div>
-              
               <hr>
               <div class="form-group">            
                 <label for="nama" class="col-md-3 control-label">Nama</label>
@@ -102,7 +101,7 @@
                 </div>
               </div>
               <div class="form-group">
-              <div class="col-md-offset-3 col-md-8">
+                <div class="col-md-offset-3 col-md-8">
                   <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                 </div>
               </div>

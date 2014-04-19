@@ -19,26 +19,40 @@ class Karyawan extends MY_Controller {
 		}
 	}
 
-	public function cari($param = '')
+	public function login($param = '')
 	{
-		$this->data['title'] = 'Cari Karyawan ' . $param;
-		$this->data['result'] = $this->Karyawan_model->searchByName($param);
-		$this->load->view("karyawan/daftarkaryawan_view", $this->data);
+		// redirect if already logged in
+        if ($this->ion_auth->logged_in()) {
+            redirect('karyawan');
+        }
+        
+        // Validate the form
+        $this->form_validation->set_rules($this->Karyawan_model->validation);
+        if ($this->form_validation->run() == true) {
+            
+            // Try to log in
+            if ($this->ion_auth->login($this->input->post('NIP'), $this->input->post('Password')) === TRUE) {
+                redirect('karyawan');
+            }
+            else {
+                $this->data['error'] = 'Kombinasi NIP atau Password salah';
+            }
+        }
+        
+        // Load view
+        $this->data['title'] = 'Log In';
+        $this->load->view('login_view', $this->data);
 	}
 
-	public function search($param = '')
+	public function logout($param = '')
 	{
-		redirect('/karyawan/cari/'. $this->input->post('keyword'));
-	}
-
-	public function profil($param = '')
-	{
-		# code...
+        $this->ion_auth->logout();
+        redirect('karyawan/login');    
 	}
 
 	public function tambah($param = '')
 	{
-		$this->load->view('addemployee_view');
+		$this->load->view('tambahkaryawan_view');
 	}
 
 	public function create($param = '')
@@ -63,35 +77,22 @@ class Karyawan extends MY_Controller {
 		$this->load->view('successfully_added', $data);
 	}
 
-	public function logout($param = '')
+
+	public function cari($param = '')
 	{
-        $this->ion_auth->logout();
-        redirect('karyawan/login');    
+		$this->data['title'] = 'Cari Karyawan ' . $param;
+		$this->data['result'] = $this->Karyawan_model->searchByName($param);
+		$this->load->view("karyawan/daftarkaryawan_view", $this->data);
 	}
 
-	public function login($param = '')
+	public function search($param = '')
 	{
-		// redirect if already logged in
-        if ($this->ion_auth->logged_in()) {
-            redirect('karyawan');
-        }
-        
-        // Validate the form
-        $this->form_validation->set_rules($this->Karyawan_model->validation);
-        if ($this->form_validation->run() == true) {
-            
-            // Try to log in
-            if ($this->ion_auth->login($this->input->post('NIP'), $this->input->post('Password')) === TRUE) {
-                redirect('karyawan');
-            }
-            else {
-                $this->data['error'] = 'Kombinasi NIP atau Password salah';
-            }
-        }
-        
-        // Load view
-        $this->data['title'] = 'Log In';
-        $this->load->view('login_view', $this->data);
+		redirect('/karyawan/cari/'. $this->input->post('keyword'));
+	}
+
+	public function profil($param = '')
+	{
+		# code...
 	}
 
 	public function validate_credentials($param = '')
