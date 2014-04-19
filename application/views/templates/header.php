@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo site_url('home'); ?>">Versatile</a>
+      <a class="navbar-brand" href="<?php echo site_url('karyawan'); ?>">Versatile</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
