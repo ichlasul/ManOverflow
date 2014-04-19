@@ -16,6 +16,9 @@
           </div>
 
           <div class="panel-body">
+          
+            <?php echo !empty($error) ? '<div class="alert alert-danger">' . $error . '</div>' : ''; ?>
+
             <form class="form-horizontal" role="form" method="post">
               <div class="form-group">            
                 <label for="nip" class="col-md-3 control-label">NIP</label>

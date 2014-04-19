@@ -28,13 +28,16 @@ class Karyawan extends MY_Controller {
         
         // Validate the form
         $this->form_validation->set_rules($this->Karyawan_model->login_rules);
-        if ($this->form_validation->run() == TRUE) {
+        if ($this->form_validation->run() === TRUE)
+        {
             
             // Try to log in
-            if ($this->ion_auth->login($this->input->post('NIP'), $this->input->post('Password')) === TRUE) {
+            if ($this->ion_auth->login($this->input->post('NIP'), $this->input->post('Password')) === TRUE)
+            {
                 redirect('karyawan');
             }
-            else {
+            else
+            {
                 $this->data['error'] = 'Kombinasi NIP atau Password salah';
             }
         }
@@ -47,12 +50,33 @@ class Karyawan extends MY_Controller {
 	public function logout($param = '')
 	{
         $this->ion_auth->logout();
-        redirect('karyawan/login');    
+        redirect('karyawan/login');   
 	}
 
 	public function tambah($param = '')
 	{
-		$this->load->view('karyawan/tambahkaryawan_view');
+        $this->form_validation->set_rules($this->Karyawan_model->register_rules);
+        if ($this->form_validation->run() === TRUE)
+        {
+        	$username = $this->input->post('nip');
+        	$password = $this->input->post('password');
+        	$email = $username . '@vsilicon.com';
+        	$groups = $this->input->post('admin') ? array('1') : array();
+            $result = $this->ion_auth->register($username, $password, $email, array(), $groups);
+            							
+            if ($result === FALSE)
+            {
+            	$this->data['error'] = 'Registrasi Gagal';
+            }
+            else
+            {
+            	
+            }
+        }
+        
+        // Load view
+        $this->data['title'] = 'Tambah Karyawan';
+        $this->load->view('karyawan/tambahkaryawan_view');
 	}
 
 	public function create($param = '')

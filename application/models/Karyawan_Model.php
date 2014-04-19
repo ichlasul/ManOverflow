@@ -5,28 +5,44 @@ class Karyawan_model extends MY_Model {
 	// protected $_table = 'Karyawan';
 
     public $login_rules = array(
-				        array(
-				            'field' => 'NIP', 
-				            'label' => 'NIP', 
-				            'rules' => 'required|trim'),
-				        array(
-				            'field' => 'Password', 
-				            'label' => 'Password', 
-		            		'rules' => 'required|trim'));
+					        array(
+					            'field' => 'NIP', 
+					            'label' => 'NIP', 
+					            'rules' => 'required|trim'),
+					        array(
+					            'field' => 'Password', 
+					            'label' => 'Password', 
+			            		'rules' => 'required|trim'));
 
     public $register_rules = array(
-				        array(
-				            'field' => 'NIP', 
-				            'label' => 'NIP', 
-				            'rules' => 'required|trim'),
-				        array(
-				            'field' => 'Password', 
-				            'label' => 'Password', 
-		            		'rules' => 'required|trim'),
-				        array(
-				            'field' => 'Nama', 
-				            'label' => 'Nama', 
-				            'rules' => 'required|trim'));
+						        array(
+						            'field' => 'nip', 
+						            'label' => 'NIP', 
+						            'rules' => 'required|trim'),
+						        array(
+						            'field' => 'password', 
+						            'label' => 'Password', 
+				            		'rules' => 'required|trim'),
+						        array(
+						            'field' => 'nama', 
+						            'label' => 'Nama', 
+						            'rules' => 'required|trim'),
+						        array(
+						            'field' => 'alamat', 
+						            'label' => 'Alamat', 
+						            'rules' => 'required|trim'),
+						        array(
+						            'field' => 'tempatlahir', 
+						            'label' => 'Tempat Lahir', 
+						            'rules' => 'required|trim'),
+						        array(
+						            'field' => 'tanggallahir', 
+						            'label' => 'Tanggal Lahir', 
+						            'rules' => 'required|trim'),
+						        array(
+						            'field' => 'tanggalditerima', 
+						            'label' => 'Tanggal Diterima', 
+						            'rules' => 'required|trim'));
 
 	function __construct()
 	{
