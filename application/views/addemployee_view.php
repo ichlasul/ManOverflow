@@ -18,13 +18,32 @@
             <div class="panel-body">
             <form class="form-horizontal" role="form" action="<?php echo base_url();?>karyawan/create" method="post">
               <div class="form-group">            
-                <label for="namaKaryawan3" class="col-md-3 control-label">Password</label>
+                <label for="nip" class="col-md-3 control-label">NIP</label>
+                <div class="col-md-8">
+                  <input type="password" class="form-control" id="nip" name="nip" disabled>
+                </div>
+              </div>
+              <div class="form-group">            
+                <label for="password" class="col-md-3 control-label">Password</label>
                 <div class="col-md-8">
                   <input type="password" class="form-control" id="password" name="password">
                 </div>
               </div>
               <div class="form-group">            
-                <label for="namaKaryawan3" class="col-md-3 control-label">Nama Karyawan</label>
+                <label for="admin" class="col-md-3 control-label">Admin</label>
+                <div class="col-md-8">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="yes" name="admin" id="admin">
+                      Centang jika memiliki hak admin
+                    </label>
+                  </div>
+                </div>
+              </div>
+              
+              <hr>
+              <div class="form-group">            
+                <label for="nama" class="col-md-3 control-label">Nama</label>
                 <div class="col-md-8">
                   <input type="text" class="form-control" id="nama" name="nama">
                 </div>
@@ -36,43 +55,54 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="namaKaryawan3" class="col-md-3 control-label">Tempat Lahir</label>
+                <label for="tempatlahir" class="col-md-3 control-label">Tempat Lahir</label>
                 <div class="col-md-8">
                   <input type="text" class="form-control" id="tempatlahir" name="tempatlahir">
                 </div>
               </div>
               <div class="form-group">
-                <label for="namaKaryawan3" class="col-md-3 control-label">Tanggal Lahir</label>
+                <label for="tanggallahir" class="col-md-3 control-label">Tanggal Lahir</label>
                 <div class="col-md-8">
                   <input type="date" class="form-control" id="tanggallahir" name="tanggallahir">
                 </div>
               </div>
               <div class="form-group">
-                <label for="namaKaryawan3" class="col-md-3 control-label">Divisi</label>
+                <label for="filefoto" class="col-md-3 control-label">Pilih Foto</label>
                 <div class="col-md-8">
-                  <input type="text" class="form-control" id="divisi" name="divisi">
+                  <input type="file" id="filefoto" name="filefoto">
+                </div>
+              </div>
+              <hr>
+              <div class="form-group">
+                <label for="divisi" class="col-md-3 control-label">Divisi</label>
+                <div class="col-md-8">
+                  <select class="form-control">
+                    <option>Executive</option>
+                    <option>Research and Development</option>
+                    <option>Sales and Marketing</option>
+                    <option>Finance</option>
+                    <option>Other Support</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
-                <label for="namaKaryawan3" class="col-md-3 control-label">Jabatan</label>
+                <label for="jabatan" class="col-md-3 control-label">Jabatan</label>
                 <div class="col-md-8">
-                  <input type="text" class="form-control" id="jabatan" name="jabatan">
+                  <select class="form-control">
+                    <option>Top Manager</option>
+                    <option>Middle Manager</option>
+                    <option>Staff</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
-                <label for="namaKaryawan3" class="col-md-3 control-label">Tanggal Diterima</label>
+                <label for="tanggalditerima" class="col-md-3 control-label">Tanggal Diterima</label>
                 <div class="col-md-8">
                   <input type="date" class="form-control" id="tanggalditerima" name="tanggalditerima">
                 </div>
               </div>
               <div class="form-group">
-                <label for="namaKaryawan3" class="col-md-3 control-label">File Input</label>
-                <div class="col-md-8">
-                  <input type="file" id="filefoto" name="filefoto">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-md-offset-2 col-md-8">
+              <div class="col-md-offset-3 col-md-8">
                   <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                 </div>
               </div>
