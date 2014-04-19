@@ -21,11 +21,9 @@ class Karyawan extends MY_Controller {
 
 	public function cari($param = '')
 	{
-
-		$this->$data['title'] = 'Cari Karyawan ' . $param;
-		$this->$data['result'] = $this->Karyawan_model->searchByName($param);
-
-		$this->load->view("karyawan/daftarkaryawan_view", $this->$data);
+		$this->data['title'] = 'Cari Karyawan ' . $param;
+		$this->data['result'] = $this->Karyawan_model->searchByName($param);
+		$this->load->view("karyawan/daftarkaryawan_view", $this->data);
 	}
 
 	public function search($param = '')
@@ -38,7 +36,7 @@ class Karyawan extends MY_Controller {
 		# code...
 	}
 
-	public function add($param = '')
+	public function tambah($param = '')
 	{
 		$this->load->view('addemployee_view');
 	}
