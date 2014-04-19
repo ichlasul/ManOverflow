@@ -1,7 +1,7 @@
 <?php 
 	class Karyawan_model extends MY_Model {
 
-		public $_table = 'Karyawan';
+		// protected $_table = 'Karyawan';
 
 		public $validation = array(
 	        array(

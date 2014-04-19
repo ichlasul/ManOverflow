@@ -1,5 +1,4 @@
 <?php
-
 	class Karyawan extends MY_Controller{
 
 		function __construct() {
