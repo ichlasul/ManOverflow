@@ -12,7 +12,7 @@
         <div class="panel panel-default"> 
 
           <div class="panel-heading">
-            <h3>Profil Karyawan</h3>
+            <h3><?php echo isset($title) ? $title : 'Profil Karyawan' ; ?> </h3>
           </div>
 
           <div class="panel-body">

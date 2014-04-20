@@ -112,10 +112,11 @@ class Karyawan extends MY_Controller {
 			redirect('karyawan/profil');
 		}
 
+		//tampilkan
 		$this->data['result'] = $this->Karyawan_Model->get($param);
 		if (count($this->data['result']) > 0)
 		{	
-			$this->data['title'] = 'Profil Karyawan ' . $param;
+			$this->data['title'] = 'Profil ' . $this->data['result']['Nama'];
 			$this->load->view('karyawan/detailkaryawan_view', $this->data);
 		}
 	}
