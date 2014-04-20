@@ -6,8 +6,6 @@ class Karyawan_model extends MY_Model {
 
 	protected $primary_key = 'NIP';
 
-	protected $return_type = 'array';
-
     public $login_rules = array(
 					        array(
 					            'field' => 'NIP', 
@@ -44,40 +42,22 @@ class Karyawan_model extends MY_Model {
 						            'label' => 'Tanggal Diterima', 
 						            'rules' => 'required|trim'));
 
-	function __construct()
+	public function __construct()
 	{
         // Call the Model constructor
         parent::__construct();
     }
 
-    function validate()
-    {
-    	$this -> db -> where('NIP', $this->input->post('NIP'));
-		$this -> db -> where('password', $this->input->post('Password'));
-		$query = $this -> db -> get('karyawan');
-
-		if($query -> num_rows == 1){
-			return true;
-		}
-    }
-
-	function getAll()
+	public function get_by_name($keyword = "")
 	{
-		$q = $this->db->get('karyawan');
-		return ($q -> num_rows() > 0) ? $q->result() : NULL;
-	}
-
-
-	function searchByName($keyword = "")
-	{
-		if ($keyword == "") return $this->getAll();
+		if ($keyword == "") return $this->get_all();
 
 		$this->db->like('Nama', $keyword);
 		$q = $this->db->get('karyawan');
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}		
 
-	function addKaryawanData($nip)
+	public function add_karyawan($nip)
 	{
 		$data = array();
 		$data['nama'] = $_POST['nama'];

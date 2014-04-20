@@ -75,7 +75,7 @@ class Karyawan extends MY_Controller {
             }
             else
             {
-            	$this->Karyawan_model->addKaryawanData($nip);
+            	$this->Karyawan_model->add_karyawan($nip);
             	redirect('karyawan/profil/'.$nip);
             }
         }
@@ -89,7 +89,7 @@ class Karyawan extends MY_Controller {
 	public function cari($param = '')
 	{
 		$this->data['title'] = 'Cari Karyawan ' . $param;
-		$this->data['result'] = $this->Karyawan_model->searchByName($param);
+		$this->data['result'] = $this->Karyawan_model->get_by_name($param);
 		$this->load->view("karyawan/daftarkaryawan_view", $this->data);
 	}
 
@@ -116,7 +116,7 @@ class Karyawan extends MY_Controller {
 		$this->data['result'] = $this->Karyawan_Model->get($param);
 		if (count($this->data['result']) > 0)
 		{	
-			$this->data['title'] = 'Profil ' . $this->data['result']['Nama'];
+			$this->data['title'] = 'Profil ' . $this->data['result']->Nama;
 			$this->load->view('karyawan/detailkaryawan_view', $this->data);
 		}
 	}

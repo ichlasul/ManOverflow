@@ -5,6 +5,8 @@
 
   <body>
 
+
+
     <?php $this->load->view('templates/header'); ?>
     
     <div class="container">
@@ -20,61 +22,61 @@
             <form class="form-horizontal" role="form" method="post">
               <div class="row">
                 <div class="col-md-offset-3 col-md-4">
-                  <img class="img-responsive" data-src="<?php echo $result['Foto']; ?>" alt="Foto">
+                  <img class="img-responsive" data-src="<?php echo $result->{'Foto'}; ?>" alt="Foto">
                 </div>
               </div>
               <div class="form-group">            
                 <label for="nip" class="col-md-3 control-label">NIP</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['NIP']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'NIP'}; ?></p>
                 </div>
               </div>
               <div class="form-group">            
                 <label for="nama" class="col-md-3 control-label">Nama</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['Nama']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'Nama'}; ?></p>
                 </div>
               </div>
               <div class="form-group">            
                 <label for="alamat" class="col-md-3 control-label">Alamat</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['Alamat']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'Alamat'}; ?></p>
                 </div>
               </div>
               <div class="form-group">
                 <label for="tempatlahir" class="col-md-3 control-label">Tempat Lahir</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['Tempat Lahir']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'Tempat Lahir'}; ?></p>
                 </div>
               </div>
               <div class="form-group">
                 <label for="tanggallahir" class="col-md-3 control-label">Tanggal Lahir</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['Tanggal Lahir']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'Tanggal Lahir'}; ?></p>
                 </div>
               </div>
               <hr>
               <div class="form-group">
                 <label for="divisi" class="col-md-3 control-label">Divisi</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['Divisi']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'Divisi'}; ?></p>
                 </div>
               </div>
               <div class="form-group">
                 <label for="jabatan" class="col-md-3 control-label">Jabatan</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['Jabatan']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'Jabatan'}; ?></p>
                 </div>
               </div>
               <div class="form-group">
                 <label for="tanggalditerima" class="col-md-3 control-label">Tanggal Diterima</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result['Tanggal Diterima']; ?></p>
+                  <p class="form-control-static"><?php echo $result->{'Tanggal Diterima'}; ?></p>
                 </div>
               </div>
                 <div class="col-md-8 col-md-offset-3">
                   <p>
-                    <a href="<?php echo site_url('karyawan/edit/'.$result['NIP']); ?>" class="btn btn-warning" role="button">Edit</a>
+                    <a href="<?php echo site_url('karyawan/edit/'.$result->{'NIP'}); ?>" class="btn btn-warning" role="button">Edit</a>
                     <a href="#" class="text-danger" role="button">Hapus</a>
                   </p>
                 </div>
