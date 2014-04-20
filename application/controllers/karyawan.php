@@ -100,7 +100,24 @@ class Karyawan extends MY_Controller {
 
 	public function profil($param = '')
 	{
-		$this->load->view('karyawan/detailkaryawan_view', $this->data);
+		//jika tanpa parameter berarti membuka profilnya sendiri
+		//jika memakai parameter maka hanya boleh admin
+		//selain admin redirect
+		if ($param == '')
+		{
+			$param = $this->ion_auth->user()->result()[0]->username;
+		}
+		else if ($this->ion_auth->is_admin() === FALSE)
+		{
+			redirect('karyawan/profil');
+		}
+
+		$this->data['result'] = $this->Karyawan_Model->get($param);
+		if (count($this->data['result']) > 0)
+		{	
+			$this->data['title'] = 'Profil Karyawan ' . $param;
+			$this->load->view('karyawan/detailkaryawan_view', $this->data);
+		}
 	}
 
 	public function validate_credentials($param = '')

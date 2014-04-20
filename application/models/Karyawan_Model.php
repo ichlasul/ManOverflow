@@ -3,7 +3,10 @@
 class Karyawan_model extends MY_Model {
 
 	protected $_table = 'Karyawan';
+
 	protected $primary_key = 'NIP';
+
+	protected $return_type = 'array';
 
     public $login_rules = array(
 					        array(
