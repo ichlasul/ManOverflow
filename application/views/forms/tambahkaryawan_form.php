@@ -37,7 +37,7 @@
   <div class="form-group">            
     <label for="alamat" class="col-md-3 control-label">Alamat</label>
     <div class="col-md-8">
-      <textarea class="form-control" rows="3" id="alamat" name="alamat" value="<?php echo isset($result) ? $result->Alamat : set_value('alamat'); ?>" required> </textarea>
+      <textarea class="form-control" rows="3" id="alamat" name="alamat" required><?php echo isset($result) ? $result->Alamat : set_value('alamat'); ?></textarea>
     </div>
   </div>
   <div class="form-group">

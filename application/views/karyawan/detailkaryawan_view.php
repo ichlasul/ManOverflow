@@ -5,8 +5,6 @@
 
   <body>
 
-
-
     <?php $this->load->view('templates/header'); ?>
     
     <div class="container">
