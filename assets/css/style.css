@@ -4,3 +4,9 @@
     height: 60px;
     padding-top: 0;
 }
+
+.dropdown-menu li a {
+    line-height: 40px;
+    height: 40px;
+    padding-top: 0;
+}

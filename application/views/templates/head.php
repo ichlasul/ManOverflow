@@ -4,16 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="<?php echo base_url('bootstrap/ico/favicon.ico'); ?>">
+  <link rel="shortcut icon" href="<?php echo base_url('assets/ico/favicon.ico'); ?>">
 
   <title><?php echo isset($title) ? $title : 'ManOverflow'; ?></title>
 
   <!-- Bootstrap core CSS --> 
-  <link href="<?php echo base_url('bootstrap/css/bootstrap.min.css'); ?>"  rel="stylesheet">
+  <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>"  rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?php echo base_url('bootstrap/assets/signin.css'); ?>" rel="stylesheet">
-  <link href="<?php echo base_url('bootstrap/assets/style.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/css/signin.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
