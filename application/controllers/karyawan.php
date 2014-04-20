@@ -76,7 +76,7 @@ class Karyawan extends MY_Controller {
             else
             {
             	$this->Karyawan_model->addKaryawanData($nip);
-            	redirect('karyawan/profil/'.$result);
+            	redirect('karyawan/profil/'.$nip);
             }
         }
         
@@ -120,27 +120,4 @@ class Karyawan extends MY_Controller {
 			$this->load->view('karyawan/detailkaryawan_view', $this->data);
 		}
 	}
-
-	public function validate_credentials($param = '')
-	{
-        $this->load->model('Karyawan_Model');
-        $query = $this->Karyawan_Model->validate();
-
-        if($query)
-        {
-            $data = array(
-                'NIP' => $this->input->post('NIP'),
-                'is_logged_in' => true
-            );
-
-            //$this->session->set_userdata($data);
-            $this->ion_auth->login($this->input->post('NIP'),
-                                   $this->input->post('password'),
-                                   TRUE);
-            redirect('home');
-        }
-        else{
-            redirect('login');
-        }
-    }
 }
