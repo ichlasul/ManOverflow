@@ -86,6 +86,14 @@ class Karyawan extends MY_Controller {
         $this->load->view('karyawan/tambahkaryawan_view', $this->data);
 	}
 
+	public function edit($param = '')
+	{
+		if ($param == '')
+		{
+			$param = $this->ion_auth->user()->result()[0]->username;
+		}
+	}
+
 	public function cari($param = '')
 	{
 		$this->data['title'] = 'Cari Karyawan ' . $param;
