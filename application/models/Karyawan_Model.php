@@ -18,10 +18,6 @@ class Karyawan_model extends MY_Model {
 
     public $register_rules = array(
 						        array(
-						            'field' => 'password', 
-						            'label' => 'Password', 
-				            		'rules' => 'required|trim'),
-						        array(
 						            'field' => 'nama', 
 						            'label' => 'Nama', 
 						            'rules' => 'required|trim'),
@@ -71,5 +67,10 @@ class Karyawan_model extends MY_Model {
 		
 		$this->db->query("INSERT INTO `karyawan` (`NIP`, `Nama`, `Alamat`, `Tempat Lahir`, `Tanggal Lahir`, `Divisi`, `Jabatan`, `Tanggal Diterima`, `Foto`)
 			VALUES ('$nip', '$data[nama]','$data[alamat]','$data[tempatlahir]', '$data[tanggallahir]', '$data[divisi]', '$data[jabatan]', '$data[tanggalditerima]', '$data[filefoto]');");
+	}
+
+	public function update_karyawan($nip)
+	{
+		# code...
 	}
 }

@@ -19,7 +19,7 @@ class MY_Controller extends CI_Controller {
 			redirect('karyawan/login');
 		}
 		//halaman tertentu hanya bisa diakses admin
-		else if if ($this->ion_auth->is_admin() === FALSE && in_array(uri_string(), $admin_only))
+		else if ($this->ion_auth->is_admin() === FALSE && in_array(uri_string(), $admin_only))
 		{
 			show_404();
 		}

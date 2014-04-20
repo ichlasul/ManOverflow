@@ -8,6 +8,7 @@
       <input type="text" class="form-control" id="nip" name="nip" value="<?php echo $nip; ?>" disabled  required>
     </div>
   </div>
+<?php if (!isset($edit_mode)) { ?>
   <div class="form-group">            
     <label for="password" class="col-md-3 control-label">Password</label>
     <div class="col-md-8">
@@ -25,29 +26,30 @@
       </div>
     </div>
   </div>
+<?php  }?>
   <hr>
   <div class="form-group">            
     <label for="nama" class="col-md-3 control-label">Nama</label>
     <div class="col-md-8">
-      <input type="text" class="form-control" id="nama" name="nama" value="<?php echo set_value('nama'); ?>" required>
+      <input type="text" class="form-control" id="nama" name="nama" value="<?php echo isset($result) ? $result->{'Nama'} : set_value('nama'); ?>" required>
     </div>
   </div>
   <div class="form-group">            
     <label for="alamat" class="col-md-3 control-label">Alamat</label>
     <div class="col-md-8">
-      <textarea class="form-control" rows="3" id="alamat" name="alamat" value="<?php echo set_value('alamat'); ?>" required> </textarea>
+      <textarea class="form-control" rows="3" id="alamat" name="alamat" value="<?php echo isset($result) ? $result->{'Alamat'} : set_value('alamat'); ?>" required> </textarea>
     </div>
   </div>
   <div class="form-group">
     <label for="tempatlahir" class="col-md-3 control-label">Tempat Lahir</label>
     <div class="col-md-8">
-      <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" value="<?php echo set_value('tempatlahir'); ?>" required>
+      <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" value="<?php echo isset($result) ? $result->{'Tempat Lahir'} : set_value('tempatlahir'); ?>" required>
     </div>
   </div>
   <div class="form-group">
     <label for="tanggallahir" class="col-md-3 control-label">Tanggal Lahir</label>
     <div class="col-md-8">
-      <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" value="<?php echo set_value('tanggallahir'); ?>" required>
+      <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" value="<?php echo isset($result) ? $result->{'Tanggal Lahir'} : set_value('tanggallahir'); ?>" required>
     </div>
   </div>
   <div class="form-group">
@@ -82,12 +84,12 @@
   <div class="form-group">
     <label for="tanggalditerima" class="col-md-3 control-label">Tanggal Diterima</label>
     <div class="col-md-8">
-      <input type="date" class="form-control" id="tanggalditerima" name="tanggalditerima" value="<?php echo set_value('tanggalditerima'); ?>" required>
+      <input type="date" class="form-control" id="tanggalditerima" name="tanggalditerima" value="<?php echo isset($result) ? $result->{'Tanggal Diterima'} : set_value('tanggalditerima'); ?>" required>
     </div>
   </div>
   <div class="form-group">
     <div class="col-md-offset-3 col-md-8">
-      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      <button type="submit" class="btn btn-primary btn-lg">Kirim</button>
     </div>
   </div>
 </form>

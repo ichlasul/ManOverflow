@@ -92,6 +92,24 @@ class Karyawan extends MY_Controller {
 		{
 			$param = $this->ion_auth->user()->result()[0]->username;
 		}
+
+		$nip = $param;
+
+    	//validasi form
+        $this->form_validation->set_rules($this->Karyawan_model->register_rules);
+        if ($this->form_validation->run() === TRUE)
+        {
+ 
+        	$this->Karyawan_model->update_karyawan($nip);
+        	redirect('karyawan/profil/'.$nip);
+        }
+        
+        // Load view
+        $this->data['title'] = 'Edit Karyawan';
+        $this->data['nip'] = $nip;
+        $this->data['result'] = $this->Karyawan_Model->get($param);
+        $this->data['edit_mode'] = TRUE;
+        $this->load->view('karyawan/tambahkaryawan_view', $this->data);
 	}
 
 	public function cari($param = '')

@@ -12,13 +12,13 @@
         <div class="panel panel-default"> 
 
           <div class="panel-heading">
-            <h3>Tambah Karyawan</h3>
+            <h3><?php echo isset($title) ? $title : 'Tambah Karyawan'; ?></h3>
           </div>
 
           <div class="panel-body">
 
               <?php $this->load->view('forms/tambahkaryawan_form'); ?>
-              
+
           </div>
 
         </div>
