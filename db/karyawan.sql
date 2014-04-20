@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 20 Apr 2014 pada 11.42
+-- Waktu pembuatan: 20 Apr 2014 pada 13.37
 -- Versi Server: 5.6.14
 -- Versi PHP: 5.5.6
 
@@ -45,7 +45,6 @@ CREATE TABLE IF NOT EXISTS `karyawan` (
 
 INSERT INTO `karyawan` (`NIP`, `Nama`, `Alamat`, `TempatLahir`, `TanggalLahir`, `Divisi`, `Jabatan`, `TanggalDiterima`, `Foto`) VALUES
 (13214, 'ASEP', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(13215, 'asdsa', ' ', '', '0000-00-00', '', '', '0000-00-00', ''),
 (13511009, '12', 'asdasd', 'sds', '0002-02-01', '', '', '0012-12-11', ''),
 (13511010, 'wwd', 'wdwd ', 'wdw', '0013-03-13', '', '', '0013-12-13', ''),
 (13511011, 'aji', 'sds ', 'sds', '0013-12-13', '0', '0', '0013-12-13', '0'),
