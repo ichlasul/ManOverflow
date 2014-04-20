@@ -112,6 +112,13 @@ class Karyawan extends MY_Controller {
         $this->load->view('karyawan/tambahkaryawan_view', $this->data);
 	}
 
+	public function hapus ($param = '')
+	{
+		$this->Karyawan_model->delete($param);
+		$this->data['info'] = 'Data karyawan ' . $param . ' berhasil dihapus';
+		$this->cari();
+	}
+
 	public function cari($param = '')
 	{
 		$this->data['title'] = 'Cari Karyawan ' . $param;

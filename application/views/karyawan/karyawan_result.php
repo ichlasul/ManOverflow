@@ -1,9 +1,10 @@
 <?php
 
+echo isset($info) ? '<div class="alert alert-success">' . $info . '</div>' : '';
+
 if (is_null($result))
 {
     echo '<div class="alert alert-danger">Oh tidak, karyawan tidak ditemukan!</div>';
-
 }
 else
 {
@@ -19,7 +20,7 @@ else
 			        <p>
 			        	<a href="<?php echo site_url('karyawan/profil/'. $row->NIP); ?>" class="btn btn-primary" role="button">Lihat Profil</a>
 			        	<a href="<?php echo site_url('karyawan/edit/'. $row->NIP); ?>" class="btn btn-warning" role="button">Edit</a>
-			        	<a href="#" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-<?php echo $row->NIP; ?>">Hapus</a>
+			        	<a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-<?php echo $row->NIP; ?>">Hapus</a>
 		        	</p>
 
 		        	<!-- Modal -->
@@ -35,8 +36,8 @@ else
 			       			<h5><?php echo $row->NIP; ?></h5>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-					        <button type="button" class="btn btn-danger">Hapus Karyawan</button>
+					        <a role="button" class="btn btn-default" data-dismiss="modal">Batal</a>
+					        <a href="<?php echo site_url('karyawan/hapus/'.$row->NIP); ?>" role="button" class="btn btn-danger">Hapus Karyawan</a>
 					      </div>
 					    </div>
 					  </div>
