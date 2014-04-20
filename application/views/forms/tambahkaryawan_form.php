@@ -31,25 +31,25 @@
   <div class="form-group">            
     <label for="nama" class="col-md-3 control-label">Nama</label>
     <div class="col-md-8">
-      <input type="text" class="form-control" id="nama" name="nama" value="<?php echo isset($result) ? $result->{'Nama'} : set_value('nama'); ?>" required>
+      <input type="text" class="form-control" id="nama" name="nama" value="<?php echo isset($result) ? $result->Nama : set_value('nama'); ?>" required>
     </div>
   </div>
   <div class="form-group">            
     <label for="alamat" class="col-md-3 control-label">Alamat</label>
     <div class="col-md-8">
-      <textarea class="form-control" rows="3" id="alamat" name="alamat" value="<?php echo isset($result) ? $result->{'Alamat'} : set_value('alamat'); ?>" required> </textarea>
+      <textarea class="form-control" rows="3" id="alamat" name="alamat" value="<?php echo isset($result) ? $result->Alamat : set_value('alamat'); ?>" required> </textarea>
     </div>
   </div>
   <div class="form-group">
     <label for="tempatlahir" class="col-md-3 control-label">Tempat Lahir</label>
     <div class="col-md-8">
-      <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" value="<?php echo isset($result) ? $result->{'Tempat Lahir'} : set_value('tempatlahir'); ?>" required>
+      <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" value="<?php echo isset($result) ? $result->TempatLahir : set_value('tempatlahir'); ?>" required>
     </div>
   </div>
   <div class="form-group">
     <label for="tanggallahir" class="col-md-3 control-label">Tanggal Lahir</label>
     <div class="col-md-8">
-      <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" value="<?php echo isset($result) ? $result->{'Tanggal Lahir'} : set_value('tanggallahir'); ?>" required>
+      <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" value="<?php echo isset($result) ? $result->TanggalLahir : set_value('tanggallahir'); ?>" required>
     </div>
   </div>
   <div class="form-group">
@@ -84,7 +84,7 @@
   <div class="form-group">
     <label for="tanggalditerima" class="col-md-3 control-label">Tanggal Diterima</label>
     <div class="col-md-8">
-      <input type="date" class="form-control" id="tanggalditerima" name="tanggalditerima" value="<?php echo isset($result) ? $result->{'Tanggal Diterima'} : set_value('tanggalditerima'); ?>" required>
+      <input type="date" class="form-control" id="tanggalditerima" name="tanggalditerima" value="<?php echo isset($result) ? $result->TanggalDiterima : set_value('tanggalditerima'); ?>" required>
     </div>
   </div>
   <div class="form-group">

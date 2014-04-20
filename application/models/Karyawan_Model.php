@@ -55,22 +55,33 @@ class Karyawan_model extends MY_Model {
 
 	public function add_karyawan($nip)
 	{
-		$data = array();
-		$data['nama'] = $_POST['nama'];
-		$data['alamat'] = $_POST['alamat'];
-		$data['tempatlahir'] = $_POST['tempatlahir'];
-		$data['tanggallahir'] = $_POST['tanggallahir'];
-		$data['divisi'] = $_POST['divisi'];
-		$data['jabatan'] = $_POST['jabatan'];
-		$data['tanggalditerima'] = $_POST['tanggalditerima'];
-		$data['filefoto'] = $_POST['filefoto'];
+		$data['Nama'] = $this->input->post('nama');
+		$data['Alamat'] = $this->input->post('alamat');
+		$data['TempatLahir'] = $this->input->post('tempatlahir');
+		$data['TanggalLahir'] = $this->input->post('tanggallahir');
+		$data['Divisi'] = $this->input->post('divisi');
+		$data['Jabatan'] = $this->input->post('jabatan');
+		$data['TanggalDiterima'] = $this->input->post('tanggalditerima');
+		$data['Foto'] = $this->input->post('filefoto');
+
+		$data['NIP'] = $nip;
+		$this->insert($data);
 		
-		$this->db->query("INSERT INTO `karyawan` (`NIP`, `Nama`, `Alamat`, `Tempat Lahir`, `Tanggal Lahir`, `Divisi`, `Jabatan`, `Tanggal Diterima`, `Foto`)
-			VALUES ('$nip', '$data[nama]','$data[alamat]','$data[tempatlahir]', '$data[tanggallahir]', '$data[divisi]', '$data[jabatan]', '$data[tanggalditerima]', '$data[filefoto]');");
+		//$this->db->query("INSERT INTO `karyawan` (`NIP`, `Nama`, `Alamat`, `Tempat Lahir`, `Tanggal Lahir`, `Divisi`, `Jabatan`, `Tanggal Diterima`, `Foto`)
+		//	VALUES ('$nip', '$data[nama]','$data[alamat]','$data[tempatlahir]', '$data[tanggallahir]', '$data[divisi]', '$data[jabatan]', '$data[tanggalditerima]', '$data[filefoto]');");
 	}
 
 	public function update_karyawan($nip)
 	{
-		# code...
+		$data['Nama'] = $this->input->post('nama');
+		$data['Alamat'] = $this->input->post('alamat');
+		$data['TempatLahir'] = $this->input->post('tempatlahir');
+		$data['TanggalLahir'] = $this->input->post('tanggallahir');
+		$data['Divisi'] = $this->input->post('divisi');
+		$data['Jabatan'] = $this->input->post('jabatan');
+		$data['TanggalDiterima'] = $this->input->post('tanggalditerima');
+		$data['Foto'] = $this->input->post('filefoto');
+
+		$this->update($nip, $data);
 	}
 }
