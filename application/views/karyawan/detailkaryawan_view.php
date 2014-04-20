@@ -4,63 +4,88 @@
   <?php $this->load->view('templates/head'); ?>
 
   <body>
+
     <?php $this->load->view('templates/header'); ?>
-    <h2 class="form-signin-heading text-center">Data Karyawan Berhasil Ditambahkan</h2>
+    
     <div class="container">
-      <div class="jumbotron">        
-        <form class="form-horizontal" role="form" action="<?php echo base_url();?>karyawan/create" method="post">
-          <div class="form-group">            
-            <label for="namaKaryawan3" class="col-md-2 control-label">Nama Karyawan</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default"><?php echo $data['nama']; ?></label>
-            </div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default"> 
+
+          <div class="panel-heading">
+            <h3>Profil Karyawan</h3>
           </div>
-          <div class="form-group">            
-            <label for="alamat3" class="col-md-2 control-label">Alamat</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default "><?php echo $data['alamat']; ?></label>
-            </div>
+
+          <div class="panel-body">
+
+            <form class="form-horizontal" role="form" method="post">
+              <div class="row">
+                <div class="col-md-offset-3 col-md-4">
+                  <img class="img-responsive" data-src="" alt="Foto">
+                </div>
+              </div>
+              <div class="form-group">            
+                <label for="nip" class="col-md-3 control-label">NIP</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+              <div class="form-group">            
+                <label for="nama" class="col-md-3 control-label">Nama</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+              <div class="form-group">            
+                <label for="alamat" class="col-md-3 control-label">Alamat</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tempatlahir" class="col-md-3 control-label">Tempat Lahir</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tanggallahir" class="col-md-3 control-label">Tanggal Lahir</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+              <hr>
+              <div class="form-group">
+                <label for="divisi" class="col-md-3 control-label">Divisi</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="jabatan" class="col-md-3 control-label">Jabatan</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tanggalditerima" class="col-md-3 control-label">Tanggal Diterima</label>
+                <div class="col-md-8">
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+              </div>
+                <div class="col-md-8 col-md-offset-3">
+                  <p>
+                    <a href="<?php echo site_url('karyawan/edit/'); ?>" class="btn btn-warning" role="button">Edit</a>
+                    <a href="#" class="text-danger" role="button">Hapus</a>
+                  </p>
+                </div>
+              </form>
           </div>
-          <div class="form-group">
-            <label for="namaKaryawan3" class="col-md-2 control-label">Tempat Lahir</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default"><?php echo $data['tempatlahir']; ?></label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="namaKaryawan3" class="col-md-2 control-label">Tanggal Lahir</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default"><?php echo $data['tanggallahir']; ?></label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="namaKaryawan3" class="col-md-2 control-label">Divisi</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default"><?php echo $data['divisi']; ?></label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="namaKaryawan3" class="col-md-2 control-label">Jabatan</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default"><?php echo $data['jabatan']; ?></label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="namaKaryawan3" class="col-md-2 control-label">Tanggal Diterima</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default"><?php echo $data['tanggalditerima']; ?></label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="namaKaryawan3" class="col-md-2 control-label">File Input</label>
-            <div class="col-md-9">
-              <label for="namaKaryawan3" class="label label-default"><?php echo $data['filefoto']; ?></label>
-            </div>
-          </div>          
-        </form>        
+
+        </div>
       </div>
     </div>
 
     <?php $this->load->view('templates/footer'); ?>
+
   </body>
 </html>
