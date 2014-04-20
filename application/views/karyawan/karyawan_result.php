@@ -17,8 +17,8 @@ else
 			        <h3><?php echo $row->Nama; ?></h3>
 			        <h4><?php echo $row->NIP; ?></h4>
 			        <p>
-			        	<a href="#" class="btn btn-primary" role="button">Lihat Profil</a>
-			        	<a href="#" class="btn btn-warning" role="button">Edit</a>
+			        	<a href="<?php echo site_url('karyawan/profil/'. $row->NIP); ?>" class="btn btn-primary" role="button">Lihat Profil</a>
+			        	<a href="<?php echo site_url('karyawan/edit/'. $row->NIP); ?>" class="btn btn-warning" role="button">Edit</a>
 			        	<a href="#" class="text-danger" role="button">Hapus</a>
 		        	</p>
 		      	</div>
