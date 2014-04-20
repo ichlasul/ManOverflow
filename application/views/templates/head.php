@@ -13,6 +13,7 @@
 
   <!-- Custom styles for this template -->
   <link href="<?php echo base_url('bootstrap/assets/signin.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('bootstrap/assets/style.css'); ?>" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
