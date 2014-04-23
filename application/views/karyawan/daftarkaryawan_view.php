@@ -26,7 +26,7 @@
               </div>
             <?php } else {
                       foreach($result as $row){
-                        echo $row->Nama;
+                        echo "<p>".$row->Nama . "</p>";
 
 
               }
