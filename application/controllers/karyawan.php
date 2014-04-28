@@ -8,6 +8,15 @@ class Karyawan extends MY_Controller {
         $this->load->model('Karyawan_model');
     }
 
+    public function _remap($method, $params = array())
+    {
+        if (method_exists(__CLASS__, $method)) {
+            $this->$method($params);
+        } else {
+            redirect('karyawan');
+        }
+    }
+
 	public function index($param = '')
 	{
 		if ($this->ion_auth->is_admin() === TRUE)
