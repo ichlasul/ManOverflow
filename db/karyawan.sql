@@ -16,6 +16,8 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
+DROP TABLE IF EXISTS `karyawan`;
+
 --
 -- Basis data: `manov`
 --
@@ -28,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `karyawan` (
   `NIP` int(11) NOT NULL AUTO_INCREMENT,
+  `Password` varchar(255) NOT NULL,
   `Nama` varchar(255) NOT NULL,
   `Alamat` varchar(255) NOT NULL,
   `TempatLahir` varchar(255) NOT NULL,
