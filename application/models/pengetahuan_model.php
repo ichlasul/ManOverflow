@@ -1,6 +1,6 @@
 <?php 
 
-class Karyawan_model extends MY_Model {
+class Pengetahuan_model extends MY_Model {
 
 	protected $_table = 'Pengetahuan';
 
