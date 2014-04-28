@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="11" version="2.0">
+<workbenchAdvisor/>
+<window height="738" maximized="true" width="1024" x="52" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="199" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.wireframesketcher.ui.editActionSet" itemType="typeToolBarContribution" x="200" y="22"/>
+<coolItem id="com.wireframesketcher.ui.objectActionSet" itemType="typeToolBarContribution" x="454" y="22"/>
+<coolItem id="com.wireframesketcher.ui.textActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.wireframesketcher.ui.viewActionSet" itemType="typeToolBarContribution" x="92" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="91" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.wireframesketcher.ui.editors.ScreenEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - Wireframing">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="Login.screen" partName="Login.screen" path="D:/WireframeSketcher/ManOverflow/Login/Login.screen" title="Login.screen" tooltip="ManOverflow/Login.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Login/Login.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="Facebook.screen" partName="Facebook.screen" path="D:/WireframeSketcher/ManOverflow/assets/Facebook.screen" title="Facebook.screen" tooltip="ManOverflow/assets/Facebook.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/assets/Facebook.screen"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Template.screen" partName="Template.screen" path="D:/WireframeSketcher/ManOverflow/assets/Template.screen" title="Template.screen" tooltip="ManOverflow/assets/Template.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/assets/Template.screen"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="540" selectionTopPixel="0"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="LoginGagal.screen" partName="LoginGagal.screen" path="D:/WireframeSketcher/ManOverflow/Login/LoginGagal.screen" title="LoginGagal.screen" tooltip="ManOverflow/Login/LoginGagal.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Login/LoginGagal.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahKaryawan.screen" partName="TambahKaryawan.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/TambahKaryawan.screen" title="TambahKaryawan.screen" tooltip="ManOverflow/Karyawan/TambahKaryawan.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/TambahKaryawan.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawan.screen" partName="CariKaryawan.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/CariKaryawan.screen" title="CariKaryawan.screen" tooltip="ManOverflow/Karyawan/CariKaryawan.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/CariKaryawan.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawanKetemu.screen" partName="CariKaryawanKetemu.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/CariKaryawanKetemu.screen" title="CariKaryawanKetemu.screen" tooltip="ManOverflow/Karyawan/CariKaryawanKetemu.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/CariKaryawanKetemu.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawanGagal.screen" partName="CariKaryawanGagal.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/CariKaryawanGagal.screen" title="CariKaryawanGagal.screen" tooltip="ManOverflow/Karyawan/CariKaryawanGagal.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/CariKaryawanGagal.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditKaryawan.screen" partName="EditKaryawan.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/EditKaryawan.screen" title="EditKaryawan.screen" tooltip="ManOverflow/Karyawan/EditKaryawan.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/EditKaryawan.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusKaryawan.screen" partName="HapusKaryawan.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/HapusKaryawan.screen" title="HapusKaryawan.screen" tooltip="ManOverflow/Karyawan/HapusKaryawan.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/HapusKaryawan.screen"/>
+</editor>
+<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatKaryawan.screen" partName="LihatKaryawan.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/LihatKaryawan.screen" title="LihatKaryawan.screen" tooltip="ManOverflow/Karyawan/LihatKaryawan.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/LihatKaryawan.screen"/>
+</editor>
+<editor activePart="true" focus="true" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatKarywanGagal.screen" partName="LihatKarywanGagal.screen" path="D:/WireframeSketcher/ManOverflow/Karyawan/LihatKarywanGagal.screen" title="LihatKarywanGagal.screen" tooltip="ManOverflow/Karyawan/LihatKarywanGagal.screen" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Karyawan/LihatKarywanGagal.screen"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="com.wireframesketcher.ui.linkView" partName="Links">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.wireframesketcher.ui.editors.ScreenEditor" activePerspective="com.wireframesketcher.ui.perspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.wireframesketcher.ui.PerspectiveFactory" id="com.wireframesketcher.ui.perspective" label="Wireframing"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.wireframesketcher.ui.fileActionSet"/>
+<alwaysOnActionSet id="com.wireframesketcher.ui.editActionSet"/>
+<alwaysOnActionSet id="com.wireframesketcher.ui.viewActionSet"/>
+<alwaysOnActionSet id="com.wireframesketcher.ui.objectActionSet"/>
+<alwaysOnActionSet id="com.wireframesketcher.ui.textActionSet"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.gef.ui.palette_view"/>
+<show_view_action id="com.wireframesketcher.ui.linkView"/>
+<new_wizard_action id="com.wireframesketcher.ui.wizards.NewProjectWizard"/>
+<new_wizard_action id="com.wireframesketcher.ui.wizards.ScreenNewWizard"/>
+<new_wizard_action id="com.wireframesketcher.ui.wizards.StoryNewWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.addBookmark"/>
+<hide_menu_item_id id="org.eclipse.ui.window.closePerspective"/>
+<hide_menu_item_id id="navigate"/>
+<hide_menu_item_id id="org.eclipse.ui.window.previousView"/>
+<hide_menu_item_id id="org.eclipse.ui.file.revert"/>
+<hide_menu_item_id id="org.eclipse.ui.window.activateEditor"/>
+<hide_menu_item_id id="org.eclipse.ui.help.helpSearch"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.openLocalFile"/>
+<hide_menu_item_id id="org.eclipse.ui.window.newEditor"/>
+<hide_menu_item_id id="org.eclipse.ui.window.closeAllPerspectives"/>
+<hide_menu_item_id id="org.eclipse.ui.window.previousPerspective"/>
+<hide_menu_item_id id="project"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.findReplace"/>
+<hide_menu_item_id id="org.eclipse.ui.window.nextView"/>
+<hide_menu_item_id id="org.eclipse.ui.window.quickAccess"/>
+<hide_menu_item_id id="org.eclipse.ui.window.showKeyAssist"/>
+<hide_menu_item_id id="org.eclipse.ui.window.showViewMenu"/>
+<hide_menu_item_id id="org.eclipse.ui.window.showSystemMenu"/>
+<hide_menu_item_id id="org.eclipse.ui.window.savePerspective"/>
+<hide_menu_item_id id="org.eclipse.ui.window.nextPerspective"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.addTask"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.backwardHistory"/>
+<hide_toolbar_item_id id="com.wireframesketcher.ui.fontUnderline"/>
+<hide_toolbar_item_id id="com.wireframesketcher.ui.fontItalic"/>
+<hide_toolbar_item_id id="com.wireframesketcher.ui.fontBold"/>
+<hide_toolbar_item_id id="com.wireframesketcher.ui.textAlignRight"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="com.wireframesketcher.ui.textAlignCenter"/>
+<hide_toolbar_item_id id="com.wireframesketcher.ui.textAlignLeft"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="com.wireframesketcher.ui.linkView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e0638d" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.28" ratioLeft="280" ratioRight="720" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.gef.ui.palette_view" ratio="0.8388889" ratioLeft="604" ratioRight="116" relationship="2" relative="org.eclipse.ui.editorss"/>
+<info folder="true" part="bottomLeft" ratio="0.59936404" ratioLeft="377" ratioRight="252" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="middleLeft" ratio="0.49864498" ratioLeft="184" ratioRight="185" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="com.wireframesketcher.ui.linkView" label="Links"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/TambahKaryawan.screen"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/CariKaryawan.screen"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/CariKaryawanKetemu.screen"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/CariKaryawanGagal.screen"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/EditKaryawan.screen"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/HapusKaryawan.screen"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/LihatKaryawan.screen"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/LihatKarywanGagal.screen"/>
+</editors>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="CariKaryawan.screen" index="1"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="CariKaryawanGagal.screen" index="3"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="EditKaryawan.screen" index="4"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="EditKaryawan.screen" index="4"/>
+<item historyLabel="HapusKaryawan.screen" index="5"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="HapusKaryawan.screen" index="5"/>
+<item historyLabel="LihatKaryawan.screen" index="6"/>
+<item historyLabel="EditKaryawan.screen" index="4"/>
+<item historyLabel="TambahKaryawan.screen" index="0"/>
+<item historyLabel="LihatKaryawan.screen" index="6"/>
+<item historyLabel="CariKaryawanKetemu.screen" index="2"/>
+<item historyLabel="EditKaryawan.screen" index="4"/>
+<item historyLabel="HapusKaryawan.screen" index="5"/>
+<item historyLabel="LihatKaryawan.screen" index="6"/>
+<item historyLabel="LihatKarywanGagal.screen" index="7"/>
+<item historyLabel="LihatKaryawan.screen" index="6"/>
+<item active="true" historyLabel="LihatKarywanGagal.screen" index="7"/>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatKarywanGagal.screen" tooltip="ManOverflow/Karyawan/LihatKarywanGagal.screen">
+<persistable path="/ManOverflow/Karyawan/LihatKarywanGagal.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatKaryawan.screen" tooltip="ManOverflow/Karyawan/LihatKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/LihatKaryawan.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusKaryawan.screen" tooltip="ManOverflow/Karyawan/HapusKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/HapusKaryawan.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditKaryawan.screen" tooltip="ManOverflow/Karyawan/EditKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/EditKaryawan.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawanGagal.screen" tooltip="ManOverflow/Karyawan/CariKaryawanGagal.screen">
+<persistable path="/ManOverflow/Karyawan/CariKaryawanGagal.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawanKetemu.screen" tooltip="ManOverflow/Karyawan/CariKaryawanKetemu.screen">
+<persistable path="/ManOverflow/Karyawan/CariKaryawanKetemu.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawan.screen" tooltip="ManOverflow/Karyawan/CariKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/CariKaryawan.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahKaryawan.screen" tooltip="ManOverflow/Karyawan/TambahKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/TambahKaryawan.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LoginGagal.screen" tooltip="ManOverflow/Login/LoginGagal.screen">
+<persistable path="/ManOverflow/Login/LoginGagal.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Template.screen" tooltip="ManOverflow/assets/Template.screen">
+<persistable path="/ManOverflow/assets/Template.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="Login.screen" tooltip="ManOverflow/Login.screen">
+<persistable path="/ManOverflow/Login.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="Facebook.screen" tooltip="ManOverflow/assets/Facebook.screen">
+<persistable path="/ManOverflow/assets/Facebook.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="Grid.screen" tooltip="ManOverflow/assets/Grid.screen">
+<persistable path="/ManOverflow/assets/Grid.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Home.screen" tooltip="ManOverflow/Home.screen">
+<persistable path="/ManOverflow/Home.screen"/>
+</file>
+</mruList>
+</workbench>

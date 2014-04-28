@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="sketch">
+  <widgets xsi:type="model:Master" id="5" x="120" y="108" locked="true" measuredWidth="944" measuredHeight="656" dimmed="true">
+    <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
+    <overrides>
+      <widgets ref="2" text="Log In&#xA;http://manoverflow.vsilicon.com/login"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="14" x="440" y="345" width="300" height="222" measuredWidth="300" measuredHeight="222"/>
+  <widgets xsi:type="model:Master" id="3" x="450" y="345" width="280" measuredWidth="280" measuredHeight="213">
+    <screen xsi:type="model:Screen" href="../assets/Bootstrap/Templates/Signin.screen#/"/>
+    <overrides>
+      <widgets ref="2" width="280"/>
+      <widgets ref="2/1" width="280" text="~NIP~"/>
+      <widgets ref="3" width="280"/>
+      <widgets ref="3/1" width="280"/>
+      <widgets ref="5" width="280"/>
+      <widgets ref="5/47" width="280" text="Log In"/>
+      <widgets ref="1/5" text="Silahkan Log In"/>
+      <widgets ref="4/18" text="Ingat saya"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="13" x="200" y="160" width="784" measuredWidth="784" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="25"/>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgetChanges xsi:type="o:Delete" ref="19"/>
+      <widgets ref="20" width="784"/>
+      <widgets ref="21" text="ManOverflow"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="14px"/>
+</model:Screen>
