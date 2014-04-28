@@ -3,7 +3,7 @@
 /**
  * Kelas controller Pengetahuan
  */
-class Kb extends MY_Controller {
+class Pengetahuan extends MY_Controller {
 
 	public function __construct()
 	{
