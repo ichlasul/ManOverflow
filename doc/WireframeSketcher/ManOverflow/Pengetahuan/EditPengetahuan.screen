@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="88" y="70" measuredWidth="944" measuredHeight="656" dimmed="true">
+    <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="168" y="126" measuredWidth="784" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="6">
+        <object xsi:type="model:ButtonBar" x="238" y="2" height="46" text="Karyawan{desc}, Track Record{desc}, Penjadwalan{desc}, Knowledge Base {desc}" layoutParams="anchor-left|anchor-middle" selection="3" background="#cccccc" skin="../assets/Bootstrap/_pills.svg">
+          <font size="14px"/>
+          <items text="Karyawan{desc}"/>
+          <items text="Track Record{desc}"/>
+          <items text="Penjadwalan{desc}"/>
+          <items text="Knowledge Base {desc}"/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="25"/>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgetChanges xsi:type="o:Delete" ref="19"/>
+      <widgets ref="20" width="784"/>
+      <widgets ref="21" text="ManOverflow"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="3" x="328" y="208" width="456" height="496" measuredWidth="456" measuredHeight="496"/>
+  <widgets xsi:type="model:Master" id="4" x="344" y="224" width="430" measuredWidth="430" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Text%20Input"/>
+    <overrides>
+      <widgets ref="1" width="430" text="Judul"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="5" x="344" y="320" height="328" measuredWidth="429" measuredHeight="328">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Text%20Area"/>
+    <overrides>
+      <widgets ref="16" width="429" height="328" text="A *paragraph* of text&#xA;A _second_ row of text&#xA;A third row of text ">
+        <attributes key="verticalScrollbar" value="true"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="6" x="344" y="660" measuredWidth="104" measuredHeight="34">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" width="104" text="Edit"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="7" x="462" y="667" measuredWidth="35" measuredHeight="20">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Typography.screen#Text%20Danger"/>
+    <overrides>
+      <widgets ref="34" text="Batal"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="11" x="344" y="272" width="428" height="40" measuredWidth="428" measuredHeight="40"/>
+  <widgets xsi:type="model:ColorPicker" id="12" x="496" y="280" measuredWidth="33" measuredHeight="23"/>
+  <widgets xsi:type="model:Combo" id="13" x="354" y="280" width="79" text="Font" measuredWidth="79" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" id="14" x="444" y="280" text="14" measuredWidth="37" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="15" x="536" y="280" measuredWidth="400" measuredHeight="78" dimmed="true">
+    <screen xsi:type="model:Screen" href="../assets/RichText.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="2"/>
+      <widgets ref="1" x="108" y="-78"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

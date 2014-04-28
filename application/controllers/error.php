@@ -9,6 +9,7 @@ class Error extends CI_Controller {
 
 	public function not_found($param = '')
 	{
-		$this->load->view('404_view');
+		$data['error'] = TRUE;
+		$this->load->view('404_view', $data);
 	}
 }
