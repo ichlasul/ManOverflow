@@ -8,7 +8,7 @@ class Pengetahuan extends MY_Controller {
 	public function __construct()
 	{
         parent::__construct();
-        //$this->load->model('Karyawan_model');
+        $this->load->model('Pengetahuan_model');
     }
 
     public function _remap($method, $params = array())
@@ -28,7 +28,15 @@ class Pengetahuan extends MY_Controller {
 
 	public function cari($param = '')
 	{
-		# code...
+
+		$this->data['title'] = 'Cari Pengetahuan ' . $param;
+		$this->data['result'] = $this->Pengetahuan_model->get_by_keyword($param);
+		$this->load->view("pengetahuan/daftarpengetahuan_view", $this->data);
+	}
+
+	public function search($param = '')
+	{
+		redirect('/pengetahuan/cari/'. $this->input->post('keyword'));
 	}
 
 }

@@ -34,4 +34,14 @@ class Karyawan_model extends MY_Model {
         // Call the Model constructor
         parent::__construct();
     }
+
+    // TODO
+	public function get_by_keyword($keyword = "")
+	{
+		if ($keyword == "") return $this->get_all();
+
+		$this->db->like('Judul', $keyword);
+		$q = $this->db->get($this->$_table);
+		return ($q -> num_rows() > 0) ? $q->result() : NULL;
+	}
 }
