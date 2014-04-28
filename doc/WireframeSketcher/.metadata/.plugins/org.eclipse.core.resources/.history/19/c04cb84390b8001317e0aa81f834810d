@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="2" x="200" y="114" width="944" height="656" text="Browser&#xA;http://..." measuredWidth="944" measuredHeight="656"/>
+  <widgets xsi:type="model:Master" id="1" x="200" y="168" measuredWidth="941" measuredHeight="600" dimmed="true">
+    <screen xsi:type="model:Screen" href="Grid.screen#/"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

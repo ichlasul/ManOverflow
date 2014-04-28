@@ -16,13 +16,15 @@
       <?php
       	//Periksa sedang login atau tidak
       	//Ubah navbar sesuai user
-      	if ($this->ion_auth->logged_in() === TRUE) {
-      		if ($this->ion_auth->is_admin() === TRUE) {
-      			$this->load->view('templates/navbar_admin');
-      		} else {
-      			$this->load->view('templates/navbar_member');
-      		}
-      	}
+        if (!isset($error)) {
+        	if ($this->ion_auth->logged_in() === TRUE) {
+        		if ($this->ion_auth->is_admin() === TRUE) {
+        			$this->load->view('templates/navbar_admin');
+        		} else {
+        			$this->load->view('templates/navbar_member');
+        		}
+        	}
+        }
       ?>
     </div><!-- /.navbar-collapse -->
 

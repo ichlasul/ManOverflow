@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="88" y="70" measuredWidth="944" measuredHeight="656" dimmed="true">
+    <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="168" y="126" measuredWidth="784" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="6">
+        <object xsi:type="model:ButtonBar" x="238" y="2" height="46" text="Karyawan{desc}, Track Record{desc}, Penjadwalan{desc}, Knowledge Base {desc}" layoutParams="anchor-left|anchor-middle" selection="3" background="#cccccc" skin="../assets/Bootstrap/_pills.svg">
+          <font size="14px"/>
+          <items text="Karyawan{desc}"/>
+          <items text="Track Record{desc}"/>
+          <items text="Penjadwalan{desc}"/>
+          <items text="Knowledge Base {desc}"/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="25"/>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgetChanges xsi:type="o:Delete" ref="19"/>
+      <widgets ref="20" width="784"/>
+      <widgets ref="21" text="ManOverflow"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="3" x="248" y="208" width="616" height="496" measuredWidth="616" measuredHeight="496"/>
+  <widgets xsi:type="model:Master" id="16" x="258" y="224" width="431" measuredWidth="431" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Text%20Input%20Large"/>
+    <overrides>
+      <widgets ref="3" width="431" text="Masukkan Kata Kunci Pencarian"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="17" x="712" y="227" measuredWidth="142" measuredHeight="47">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" width="142" height="47" text="Cari">
+        <font size="19px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
