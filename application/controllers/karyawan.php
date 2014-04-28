@@ -9,13 +9,14 @@ class Karyawan extends MY_Controller {
     }
 
     public function _remap($method, $params = array())
-    {
-        if (method_exists(__CLASS__, $method)) {
-            $this->$method($params);
-        } else {
-            redirect('karyawan');
-        }
-    }
+	{
+	    if (method_exists($this, $method))
+	    {
+	        return call_user_func_array(array($this, $method), $params);
+	    } else {
+	    	redirect('karyawan');
+	    }
+	}
 
 	public function index($param = '')
 	{
@@ -130,6 +131,7 @@ class Karyawan extends MY_Controller {
 
 	public function cari($param = '')
 	{
+
 		$this->data['title'] = 'Cari Karyawan ' . $param;
 		$this->data['result'] = $this->Karyawan_model->get_by_name($param);
 		$this->load->view("karyawan/daftarkaryawan_view", $this->data);
