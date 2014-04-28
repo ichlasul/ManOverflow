@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="11" version="2.0">
+<workbench progressCount="12" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="1024" x="52" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -19,8 +19,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.wireframesketcher.ui.editors.ScreenEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.wireframesketcher.ui.editors.ScreenEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -30,51 +30,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahPengetahuan.screen" partName="TambahPengetahuan.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/TambahPengetahuan.screen" title="TambahPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/TambahPengetahuan.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/TambahPengetahuan.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditPengetahuan.screen" partName="EditPengetahuan.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/EditPengetahuan.screen" title="EditPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/EditPengetahuan.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/EditPengetahuan.screen"/>
-</editor>
-<editor activePart="true" focus="true" id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusKomentar.screen" partName="HapusKomentar.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/HapusKomentar.screen" title="HapusKomentar.screen" tooltip="ManOverflow/Pengetahuan/HapusKomentar.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/HapusKomentar.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusPengetahuan.screen" partName="HapusPengetahuan.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/HapusPengetahuan.screen" title="HapusPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/HapusPengetahuan.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/HapusPengetahuan.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariPengetahuan.screen" partName="CariPengetahuan.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/CariPengetahuan.screen" title="CariPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/CariPengetahuan.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/CariPengetahuan.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariPengetahuanGagal.screen" partName="CariPengetahuanGagal.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/CariPengetahuanGagal.screen" title="CariPengetahuanGagal.screen" tooltip="ManOverflow/Pengetahuan/CariPengetahuanGagal.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/CariPengetahuanGagal.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariPengetahuanKetemu.screen" partName="CariPengetahuanKetemu.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/CariPengetahuanKetemu.screen" title="CariPengetahuanKetemu.screen" tooltip="ManOverflow/Pengetahuan/CariPengetahuanKetemu.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/CariPengetahuanKetemu.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatPengetahuan.screen" partName="LihatPengetahuan.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/LihatPengetahuan.screen" title="LihatPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/LihatPengetahuan.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/LihatPengetahuan.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahKomentar.screen" partName="TambahKomentar.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/TambahKomentar.screen" title="TambahKomentar.screen" tooltip="ManOverflow/Pengetahuan/TambahKomentar.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/TambahKomentar.screen"/>
-</editor>
-<editor id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditKomentar.screen" partName="EditKomentar.screen" path="C:/xampp/htdocs/ManOverflow/doc/WireframeSketcher/ManOverflow/Pengetahuan/EditKomentar.screen" title="EditKomentar.screen" tooltip="ManOverflow/Pengetahuan/EditKomentar.screen" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ManOverflow/Pengetahuan/EditKomentar.screen"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -90,7 +49,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.wireframesketcher.ui.editors.ScreenEditor" activePerspective="com.wireframesketcher.ui.perspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.wireframesketcher.ui.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.wireframesketcher.ui.PerspectiveFactory" id="com.wireframesketcher.ui.perspective" label="Wireframing"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -126,22 +85,22 @@
 <hide_menu_item_id id="org.eclipse.ui.window.closeAllPerspectives"/>
 <hide_menu_item_id id="org.eclipse.ui.window.previousPerspective"/>
 <hide_menu_item_id id="project"/>
-<hide_menu_item_id id="org.eclipse.ui.edit.findReplace"/>
 <hide_menu_item_id id="org.eclipse.ui.window.nextView"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.findReplace"/>
 <hide_menu_item_id id="org.eclipse.ui.window.quickAccess"/>
 <hide_menu_item_id id="org.eclipse.ui.window.showKeyAssist"/>
-<hide_menu_item_id id="org.eclipse.ui.window.showViewMenu"/>
 <hide_menu_item_id id="org.eclipse.ui.window.showSystemMenu"/>
+<hide_menu_item_id id="org.eclipse.ui.window.showViewMenu"/>
 <hide_menu_item_id id="org.eclipse.ui.window.savePerspective"/>
-<hide_menu_item_id id="org.eclipse.ui.window.nextPerspective"/>
 <hide_menu_item_id id="org.eclipse.ui.edit.addTask"/>
+<hide_menu_item_id id="org.eclipse.ui.window.nextPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.backwardHistory"/>
 <hide_toolbar_item_id id="com.wireframesketcher.ui.fontUnderline"/>
-<hide_toolbar_item_id id="com.wireframesketcher.ui.fontItalic"/>
 <hide_toolbar_item_id id="com.wireframesketcher.ui.fontBold"/>
+<hide_toolbar_item_id id="com.wireframesketcher.ui.fontItalic"/>
 <hide_toolbar_item_id id="com.wireframesketcher.ui.textAlignRight"/>
-<hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
 <hide_toolbar_item_id id="com.wireframesketcher.ui.textAlignCenter"/>
 <hide_toolbar_item_id id="com.wireframesketcher.ui.textAlignLeft"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
@@ -167,9 +126,9 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.21328413" ratioLeft="289" ratioRight="1066" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.28" ratioLeft="280" ratioRight="720" relationship="2" relative="topLeft"/>
 <info part="org.eclipse.gef.ui.palette_view" ratio="0.8388889" ratioLeft="604" ratioRight="116" relationship="2" relative="org.eclipse.ui.editorss"/>
-<info folder="true" part="bottomLeft" ratio="0.6836248" ratioLeft="430" ratioRight="199" relationship="4" relative="topLeft">
+<info folder="true" part="bottomLeft" ratio="0.59936404" ratioLeft="377" ratioRight="252" relationship="4" relative="topLeft">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -192,81 +151,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/LihatPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/TambahPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/TambahKomentar.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/CariPengetahuanKetemu.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/HapusPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Karyawan/EditKaryawan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/EditKomentar.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/EditPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/HapusKomentar.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/CariPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Login/Login.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/CariPengetahuanGagal.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/TambahPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/EditPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/HapusKomentar.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/HapusPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/CariPengetahuanKetemu.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ManOverflow/Pengetahuan/LihatPengetahuan.screen"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" path="/ManOverflow/Pengetahuan/EditKomentar.screen"/>
-</editors>
-<item historyLabel="TambahKomentar.screen" index="2"/>
-<item historyLabel="TambahPengetahuan.screen" index="1"/>
-<item historyLabel="TambahKomentar.screen" index="2"/>
-<item historyLabel="TambahPengetahuan.screen" index="1"/>
-<item historyLabel="TambahKomentar.screen" index="2"/>
-<item historyLabel="EditKomentar.screen" index="6"/>
-<item historyLabel="LihatPengetahuan.screen" index="0"/>
-<item historyLabel="EditPengetahuan.screen" index="7"/>
-<item historyLabel="EditKomentar.screen" index="6"/>
-<item historyLabel="HapusKomentar.screen" index="8"/>
-<item historyLabel="TambahPengetahuan.screen" index="1"/>
-<item historyLabel="EditPengetahuan.screen" index="7"/>
-<item historyLabel="LihatPengetahuan.screen" index="0"/>
-<item historyLabel="EditKomentar.screen" index="6"/>
-<item historyLabel="EditPengetahuan.screen" index="7"/>
-<item historyLabel="HapusKomentar.screen" index="8"/>
-<item historyLabel="HapusPengetahuan.screen" index="4"/>
-<item historyLabel="CariPengetahuan.screen" index="9"/>
-<item historyLabel="TambahPengetahuan.screen" index="1"/>
-<item historyLabel="Login.screen" index="10"/>
-<item historyLabel="TambahPengetahuan.screen" index="1"/>
-<item historyLabel="TambahKomentar.screen" index="2"/>
-<item historyLabel="LihatPengetahuan.screen" index="0"/>
-<item historyLabel="TambahKomentar.screen" index="2"/>
-<item historyLabel="LihatPengetahuan.screen" index="0"/>
-<item historyLabel="HapusPengetahuan.screen" index="4"/>
-<item historyLabel="HapusKomentar.screen" index="8"/>
-<item historyLabel="EditPengetahuan.screen" index="7"/>
-<item historyLabel="EditKomentar.screen" index="6"/>
-<item historyLabel="CariPengetahuanKetemu.screen" index="3"/>
-<item historyLabel="CariPengetahuanGagal.screen" index="11"/>
-<item historyLabel="CariPengetahuan.screen" index="9"/>
-<item historyLabel="CariPengetahuanGagal.screen" index="11"/>
-<item historyLabel="LihatPengetahuan.screen" index="0"/>
-<item historyLabel="TambahKomentar.screen" index="2"/>
-<item historyLabel="Login.screen" index="10"/>
-<item historyLabel="EditKaryawan.screen" index="5"/>
-<item historyLabel="TambahPengetahuan.screen" index="12"/>
-<item historyLabel="EditPengetahuan.screen" index="13"/>
-<item historyLabel="HapusKomentar.screen" index="14"/>
-<item historyLabel="HapusPengetahuan.screen" index="15"/>
-<item historyLabel="CariPengetahuan.screen" index="9"/>
-<item historyLabel="CariPengetahuanGagal.screen" index="11"/>
-<item historyLabel="CariPengetahuanKetemu.screen" index="16"/>
-<item historyLabel="LihatPengetahuan.screen" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="CariPengetahuanKetemu.screen" index="16"/>
-<item historyLabel="LihatPengetahuan.screen" index="0"/>
-<item historyLabel="TambahKomentar.screen" index="2"/>
-<item historyLabel="EditKomentar.screen" index="18"/>
-<item active="true" historyLabel="HapusKomentar.screen" index="14"/>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -283,50 +168,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditKomentar.screen" tooltip="ManOverflow/Pengetahuan/EditKomentar.screen">
-<persistable path="/ManOverflow/Pengetahuan/EditKomentar.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatJadwal.screen" tooltip="ManOverflow/Karyawan/LihatJadwal.screen">
+<persistable path="/ManOverflow/Karyawan/LihatJadwal.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahKomentar.screen" tooltip="ManOverflow/Pengetahuan/TambahKomentar.screen">
-<persistable path="/ManOverflow/Pengetahuan/TambahKomentar.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariJadwalKetemu.screen" tooltip="ManOverflow/Karyawan/CariJadwalKetemu.screen">
+<persistable path="/ManOverflow/Karyawan/CariJadwalKetemu.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/LihatPengetahuan.screen">
-<persistable path="/ManOverflow/Pengetahuan/LihatPengetahuan.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariJadwalGagal.screen" tooltip="ManOverflow/Karyawan/CariJadwalGagal.screen">
+<persistable path="/ManOverflow/Karyawan/CariJadwalGagal.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariPengetahuanKetemu.screen" tooltip="ManOverflow/Pengetahuan/CariPengetahuanKetemu.screen">
-<persistable path="/ManOverflow/Pengetahuan/CariPengetahuanKetemu.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariJadwal.screen" tooltip="ManOverflow/Karyawan/CariJadwal.screen">
+<persistable path="/ManOverflow/Karyawan/CariJadwal.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariPengetahuanGagal.screen" tooltip="ManOverflow/Pengetahuan/CariPengetahuanGagal.screen">
-<persistable path="/ManOverflow/Pengetahuan/CariPengetahuanGagal.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusJadwal.screen" tooltip="ManOverflow/Karyawan/HapusJadwal.screen">
+<persistable path="/ManOverflow/Karyawan/HapusJadwal.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/CariPengetahuan.screen">
-<persistable path="/ManOverflow/Pengetahuan/CariPengetahuan.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahJadwal.screen" tooltip="ManOverflow/Karyawan/TambahJadwal.screen">
+<persistable path="/ManOverflow/Karyawan/TambahJadwal.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/HapusPengetahuan.screen">
-<persistable path="/ManOverflow/Pengetahuan/HapusPengetahuan.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditJadwal.screen" tooltip="ManOverflow/Karyawan/EditJadwal.screen">
+<persistable path="/ManOverflow/Karyawan/EditJadwal.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusKomentar.screen" tooltip="ManOverflow/Pengetahuan/HapusKomentar.screen">
-<persistable path="/ManOverflow/Pengetahuan/HapusKomentar.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahKaryawan.screen" tooltip="ManOverflow/Karyawan/TambahKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/TambahKaryawan.screen"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/EditPengetahuan.screen">
-<persistable path="/ManOverflow/Pengetahuan/EditPengetahuan.screen"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="TambahPengetahuan.screen" tooltip="ManOverflow/Pengetahuan/TambahPengetahuan.screen">
-<persistable path="/ManOverflow/Pengetahuan/TambahPengetahuan.screen"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="Login.screen" tooltip="ManOverflow/Login/Login.screen">
-<persistable path="/ManOverflow/Login/Login.screen"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditKaryawan.screen" tooltip="ManOverflow/Karyawan/EditKaryawan.screen">
-<persistable path="/ManOverflow/Karyawan/EditKaryawan.screen"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusKaryawan.screen" tooltip="ManOverflow/Karyawan/HapusKaryawan.screen">
-<persistable path="/ManOverflow/Karyawan/HapusKaryawan.screen"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatKarywanGagal.screen" tooltip="ManOverflow/Karyawan/LihatKarywanGagal.screen">
+<persistable path="/ManOverflow/Karyawan/LihatKarywanGagal.screen"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="LihatKaryawan.screen" tooltip="ManOverflow/Karyawan/LihatKaryawan.screen">
 <persistable path="/ManOverflow/Karyawan/LihatKaryawan.screen"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="HapusKaryawan.screen" tooltip="ManOverflow/Karyawan/HapusKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/HapusKaryawan.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="EditKaryawan.screen" tooltip="ManOverflow/Karyawan/EditKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/EditKaryawan.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawanGagal.screen" tooltip="ManOverflow/Karyawan/CariKaryawanGagal.screen">
+<persistable path="/ManOverflow/Karyawan/CariKaryawanGagal.screen"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawanKetemu.screen" tooltip="ManOverflow/Karyawan/CariKaryawanKetemu.screen">
 <persistable path="/ManOverflow/Karyawan/CariKaryawanKetemu.screen"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.wireframesketcher.ui.editors.ScreenEditor" name="CariKaryawan.screen" tooltip="ManOverflow/Karyawan/CariKaryawan.screen">
+<persistable path="/ManOverflow/Karyawan/CariKaryawan.screen"/>
 </file>
 </mruList>
 </workbench>
