@@ -38,8 +38,8 @@
 |
 */
 
-$route['default_controller'] = "home";
-$route['404_override'] = '';
+$route['default_controller'] = 'karyawan';
+$route['404_override'] = 'error/not_found';
 
 
 /* End of file routes.php */

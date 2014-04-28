@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SaveAsImageDialogSettings">
+		<item value="false" key="saveToFile"/>
+		<item value="false" key="hideAnnotations"/>
+	</section>
+	<section name="NewProjectWizard">
+	</section>
+</section>
