@@ -6,6 +6,7 @@ class Karyawan_model extends MY_Model {
 
 	protected $primary_key = 'id';
 
+	// TODO
     public $add_rules = array(
 						        array(
 						            'field' => 'nama', 
