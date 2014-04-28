@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="110" y="32" measuredWidth="944" measuredHeight="656" dimmed="true">
+    <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
+    <overrides>
+      <widgets ref="2" text="Tambah Karyawan&#xA;http://manoverflow.vsilicon.com/karyawan/tambah"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="190" y="84" measuredWidth="784" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="6">
+        <object xsi:type="model:ButtonBar" x="238" y="2" height="46" text="Karyawan{desc}, Track Record{desc}, Penjadwalan{desc}, Knowledge Base {desc}" layoutParams="anchor-left|anchor-middle" selection="2" background="#999999" skin="../assets/Bootstrap/_pills.svg">
+          <font size="14px"/>
+          <items text="Karyawan{desc}"/>
+          <items text="Track Record{desc}"/>
+          <items text="Penjadwalan{desc}"/>
+          <items text="Knowledge Base {desc}"/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="25"/>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgetChanges xsi:type="o:Delete" ref="19"/>
+      <widgets ref="20" width="784"/>
+      <widgets ref="21" text="ManOverflow"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="3" x="352" y="144" width="456" height="542" measuredWidth="456" measuredHeight="542"/>
+  <widgets xsi:type="model:Label" id="4" x="442" y="209" text="Judul" measuredWidth="48" measuredHeight="29">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="419" y="267" text="Deskripsi" measuredWidth="76" measuredHeight="29">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="9" x="504" y="267" measuredWidth="224" measuredHeight="88">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Text%20Area"/>
+    <overrides>
+      <widgets ref="16" width="224" height="88" text="PT Electrica Mandiri Persada meminta dibuatkan sebuah IC Design dengan spesifikasi sebagai berikut ....."/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="377" y="369" text="Tanggal Mulai" measuredWidth="115" measuredHeight="29">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="11" x="504" y="372" width="176" text="Tanggal / Bulan / Tahun" measuredWidth="176" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="12" x="369" y="408" text="Tanggal Selesai" measuredWidth="124" measuredHeight="29">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="13" x="504" y="411" width="176" text="Tanggal / Bulan / Tahun" measuredWidth="176" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="15" x="375" y="541" text="Peserta Proyek" measuredWidth="119" measuredHeight="29">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="16" x="504" y="447" height="35" measuredWidth="209" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Select"/>
+    <overrides>
+      <widgets ref="24" width="209" text="Pilih Prioritas"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="428" y="453" text="Prioritas" measuredWidth="70" measuredHeight="29">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="18" x="504" y="634" measuredWidth="104" measuredHeight="34">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Buttons.screen#Button%20Primary"/>
+    <overrides>
+      <widgets ref="35" width="104" text="Tambah"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="19" x="622" y="641" measuredWidth="35" measuredHeight="20">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Typography.screen#Text%20Danger"/>
+    <overrides>
+      <widgets ref="34" text="Batal"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="22" x="504" y="209" measuredWidth="224" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Text%20Area"/>
+    <overrides>
+      <widgets ref="16" width="224" height="50" text="Proyek IC Design untuk PT Electrica Mandiri Persada"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="27" x="504" y="543" measuredWidth="224" measuredHeight="71">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Forms.screen#Text%20Area"/>
+    <overrides>
+      <widgets ref="16" width="224" height="71" text="Pegawai A&#xD;&#xA;Pegawai B&#xD;&#xA;Pegawai C"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="28" x="358" y="498" text="Pemimpin Proyek" measuredWidth="142" measuredHeight="29">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="29" x="504" y="501" text="Project Leader X" measuredWidth="119" measuredHeight="28">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="30" x="369" y="160" text="Tambah Jadwal Baru" measuredWidth="240" measuredHeight="40">
+    <font size="24px" bold="true"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
