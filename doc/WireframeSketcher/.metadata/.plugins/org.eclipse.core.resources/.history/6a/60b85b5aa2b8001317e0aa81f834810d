@@ -64,6 +64,12 @@
       <widgets ref="41" text="Edit"/>
     </overrides>
   </widgets>
+  <widgets xsi:type="model:Master" id="27" x="88" y="124" measuredWidth="940" measuredHeight="600">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Content.screen#Modal%20Background"/>
+    <overrides>
+      <widgets ref="109" width="940" height="600"/>
+    </overrides>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
