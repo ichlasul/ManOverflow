@@ -30,7 +30,6 @@ DROP TABLE IF EXISTS `karyawan`;
 
 CREATE TABLE IF NOT EXISTS `karyawan` (
   `NIP` int(11) NOT NULL AUTO_INCREMENT,
-  `Password` varchar(255) NOT NULL,
   `Nama` varchar(255) NOT NULL,
   `Alamat` varchar(255) NOT NULL,
   `TempatLahir` varchar(255) NOT NULL,
