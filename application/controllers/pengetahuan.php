@@ -12,17 +12,18 @@ class Pengetahuan extends MY_Controller {
     }
 
     public function _remap($method, $params = array())
-    {
-        if (method_exists(__CLASS__, $method)) {
-            $this->$method($params);
-        } else {
-            redirect('kb/cari');
-        }
-    }
-
-	public function index($param = '')
 	{
-		redirect('kb/cari');
+	    if (method_exists($this, $method))
+	    {
+	        return call_user_func_array(array($this, $method), $params);
+	    } else {
+	    	redirect('pengetahuan/cari');
+	    }
+	}
+
+	public function tambah($param = '')
+	{
+		# code...
 	}
 
 	public function cari($param = '')
