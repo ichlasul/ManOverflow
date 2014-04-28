@@ -15,6 +15,7 @@
             <h3>Daftar Karyawan</h3>
           </div>
 
+          <?php if($sign == 0) { ?>
           <div class="panel-body">
 
             <div class="row">
@@ -28,11 +29,19 @@
                 </div>
               </form>
             </div> <!-- row -->
+
+            <?php }?>
   
             <div class="row">
 
-              <?php $this->load->view('karyawan/karyawan_result'); ?>
-
+              <?php 
+                if($sign == 1){
+                  $this->load->view('karyawan/trackrecord_result'); 
+                }
+                else{
+                  $this->load->view('karyawan/karyawan_result'); 
+                }
+              ?>
             <div> <!-- row -->
 
           </div>

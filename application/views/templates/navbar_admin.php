@@ -14,7 +14,7 @@
     <ul class="dropdown-menu">
       <li><a href="<?php echo site_url('karyawan/cari'); ?>">Cari</a></li>
       <li class="divider"></li>
-      <li><a href="<?php echo site_url('karyawan/tambah'); ?>">Tambah</a></li>
+      <li><a href="<?php echo site_url('TrackRecord/daftarKaryawan'); ?>">Tambah</a></li>
       <li><a href="<?php echo site_url('karyawan/hapus'); ?>">Hapus</a></li>
     </ul>
   </li>

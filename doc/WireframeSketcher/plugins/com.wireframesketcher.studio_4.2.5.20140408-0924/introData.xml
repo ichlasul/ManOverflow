@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extensions>
+   <page id="overview">
+      <group path="page-content/bottom-left" default="true">
+       </group>
+      <group path="page-content/bottom-right" default="true">
+      </group>
+      <group path="page-content/top-left">
+         <extension id="com.wireframesketcher.ui" importance="new"/>
+      </group>
+      <group path="page-content/top-right">
+      </group>
+      <hidden>
+         <extension id="org.eclipse.ui.workbench"/>
+         <extension id="org.eclipse.team"/>
+       </hidden>
+   </page>
+</extensions>

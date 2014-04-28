@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="com.wireframesketcher" image="sketch_120.png" label="%featureName" plugin="com.wireframesketcher.ui" provider-name="%providerName" version="4.2.5">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="license.html"><![CDATA[WireframeSketcher License Agreement
+
+This License Agreement is a legal contract between you (either as an individual
+or a single entity) and PETRU SEVERIN ("PETRU SEVERIN") for the
+WireframeSketcher software ("Software") and related on-line or printed
+documentation.
+
+You should carefully read the following terms and conditions before using the
+Software. If you do not agree to these terms, then delete and destroy all copies
+of the Software and related documentation in your possession. Upon your
+certification to PETRU SEVERIN that you have not used the Software you do not
+accept this license agreement and have deleted and destroyed all copies of the
+software and related documentation, your money will be refunded.
+
+The Software is protected by copyright laws and international copyright
+treaties, as well as other intellectual property laws and treaties. The Software
+is licensed, not sold.
+
+Evaluation License
+
+This is NOT a free software. Subject to the terms below, you are hereby licensed
+to use the Software for evaluation purposes without charge. To use the Software
+for commercial purposes a registration is required.
+
+License Grant
+
+Single-User License
+
+If you are an individual and this Agreement is for a Single-User license, you
+may install the Software on multiple computers that those computers are solely
+for your own use.
+
+Multi-User (Volume) License
+
+If this Agreement is for a Multi-User (Volume) license, the number of named
+users which use the Software may not exceed the number of licenses purchased,
+regardless of the number of computers the Software is installed on. Licenses are
+named and transferable.
+
+Site License
+
+If this Agreement is for a Site license, the number of users which use the
+Software and the number of Software installations within the licensed entity is
+unlimited.
+
+Maintenance
+
+Any License is subject to 12 months of maintenance period which includes e-mail
+support, software updates and access to online services. As maintenance period
+expires it can be optionally renewed at a discounted price. Maintenance renewals
+commence from the expiration date of the previous maintenance period.
+
+Distribution
+
+Provided that you are distributing the evaluation version and NOT the registered
+version, you are hereby licensed to make as many copies of the evaluation
+version of the Software as you wish; give exact copies of the original
+evaluation version to anyone; and distribute the evaluation version of the
+Software in its unmodified form via electronic means. There is no charge for any
+of the above.
+
+You are specifically prohibited from charging, or requesting donations, for any
+such copies, however made; and from distributing the Software with other
+products (commercial or otherwise) without prior written permission.
+
+You may NOT redistribute any derivative works of the Software without prior
+written permission from PETRU SEVERIN.
+
+DISCLAIMER OF WARRANTY
+
+PETRU SEVERIN EXPRESSLY DISCLAIMS ANY WARRANTY FOR THE SOFTWARE. THE SOFTWARE
+AND ANY RELATED DOCUMENTATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THE
+ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF THE SOFTWARE REMAINS WITH YOU.
+
+LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL PETRU
+SEVERIN OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR
+CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR
+LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION,
+ANY OTHER PECUNIARY LOSS, ATTORNEY FEES AND COURT COSTS) ARISING OUT OF THE USE
+OF OR INABILITY TO USE THE SOFTWARE OR THE PROVISION OF OR FAILURE TO PROVIDE
+SUPPORT SERVICES, EVEN IF PETRU SEVERIN HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+General
+
+This License Agreement will be governed by the laws of Romania. This License
+Agreement may only be modified by a license addendum, which accompanies this
+License Agreement or by a written document which has been signed, by both you
+and PETRU SEVERIN. This License Agreement has been written in the English
+language only and is not to be translated or interpreted in any other language.
+Prices, costs and fees for use of WireframeSketcher are subject to change
+without notice to you. In the event of invalidity of any provision of this
+License Agreement, the invalidity shall not affect the validity of the remaining
+portions of this License Agreement.
+
+]]></license>
+
+   <url>
+      <update label="%updateSiteName" url="http://wireframesketcher.com/updates"/>
+      <discovery label="%updateSiteName" url="http://wireframesketcher.com/updates"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.gef"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.ui.forms"/>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.ltk.core.refactoring"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.draw2d"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.apache.commons.httpclient"/>
+   </requires>
+
+   <plugin download-size="6651" id="com.wireframesketcher.ui" install-size="6651" unpack="false" version="4.2.5"/>
+
+   <plugin download-size="504" id="com.wireframesketcher.model" install-size="504" unpack="false" version="4.2.5"/>
+
+   <plugin download-size="20" id="com.wireframesketcher.spy" install-size="20" unpack="false" version="4.2.5"/>
+
+</feature>

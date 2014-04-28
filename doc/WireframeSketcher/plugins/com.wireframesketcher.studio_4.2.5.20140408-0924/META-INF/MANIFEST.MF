@@ -1,0 +1,107 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.ui.ide.application,org.eclipse.core.runtim
+ e,org.eclipse.ui,org.eclipse.ui.navigator,org.eclipse.core.expression
+ s,org.eclipse.help.base
+Bundle-Vendor: %providerName
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 4.2.5.20140408-0924
+Bundle-Localization: plugin
+Bundle-Name: %pluginName
+Bundle-Activator: com.wireframesketcher.studio.StudioPlugin
+Bundle-ManifestVersion: 2
+Created-By: 1.7.0_51-b13 (Oracle Corporation)
+Bundle-SymbolicName: com.wireframesketcher.studio;singleton:=true
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+
+Name: plugin_customization.ini
+SHA1-Digest: +9wBcWPK5I8YLVTEfwVSHfgEl/Y=
+
+Name: com/wireframesketcher/studio/HelpDisplay.class
+SHA1-Digest: a/9XsxUsZXHzYI1vmvZQvyQ4iA8=
+
+Name: logo.png
+SHA1-Digest: CQZFy2QsI4C6HNutG5T+HS6lfn0=
+
+Name: sketch_32.png
+SHA1-Digest: N0EUqSEJSgWeksnMIi4+uFyltQ8=
+
+Name: plugin_customization.properties
+SHA1-Digest: YD7gZEVzYiOkYd7BfCANIgVRb/Q=
+
+Name: book.css
+SHA1-Digest: +jMjY3GD/AZ8AWyoyyzOCICTMJU=
+
+Name: sketch_32.gif
+SHA1-Digest: GhyVfZ+o3lGMTdSzsVrINi+Ikvk=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$Category
+ ContentProvider.class
+SHA1-Digest: 1niLTt+sO+tu9RJZeKaeAPLwOD4=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$2.class
+SHA1-Digest: 0iYQyNHV/n0kqeRhlNogVjYNWyc=
+
+Name: plugin.properties
+SHA1-Digest: wWkaOfJ6o3jwlAHTJqX3uwMQL/k=
+
+Name: about.properties
+SHA1-Digest: RPKpw1p6puA5sQFY+01QBtgixdQ=
+
+Name: about.ini
+SHA1-Digest: jpSxoJ7UKrogLPJQa9ZShxvvZXs=
+
+Name: sketch_16.gif
+SHA1-Digest: L2E91nEoZ6u4rJrNu5mawPamRMI=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$Internal
+ ActivityHelper.class
+SHA1-Digest: rTRgya0q4UqfmSO4qt9A+RA9GNA=
+
+Name: sketch_48.gif
+SHA1-Digest: YmrIfs78uTGJ3k9SYmzlsZS9CIY=
+
+Name: about.html
+SHA1-Digest: pNXr0MZbrZpho0kyS5QRIajNUso=
+
+Name: plugin.xml
+SHA1-Digest: yiBFc/7Yf485eNhbRxK7Th5yROo=
+
+Name: splash.bmp
+SHA1-Digest: J2WCOPrUmRwD8hJiNHx4o5i2hPE=
+
+Name: com/wireframesketcher/studio/StudioPlugin.class
+SHA1-Digest: xf3sPIAwP0wYWfOianDrgybrS+I=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$Category
+ LabelProvider.class
+SHA1-Digest: zlKVxs2jYpj2sFNodDOs7366Cmw=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$1.class
+SHA1-Digest: dRtTo42Aykm8ah/q+3OnCTv0Lh4=
+
+Name: introData.xml
+SHA1-Digest: CahblzPtBm4m1MtaDvVvfLyxDNg=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$EmptyCat
+ egoryFilter.class
+SHA1-Digest: OU8KDMdMQz30vTPJgrEntK+jY1o=
+
+Name: sketch_48.png
+SHA1-Digest: IzaOjLUYTQVnp7CcREUpOiwxx1s=
+
+Name: sketch_16.png
+SHA1-Digest: /2lKrbGP+h8aemkYiadqTh8AxM0=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$4.class
+SHA1-Digest: yXtrEzTsCrbHVoLsNC2WFlt9ioc=
+
+Name: intro-eclipse.png
+SHA1-Digest: IUrE9u5RnkRx7unbvyyosuGTAOE=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage$3.class
+SHA1-Digest: cFWIkU5yPPR6I7KE7DSD8tcnxZs=
+
+Name: com/wireframesketcher/studio/CapabilitiesPreferencePage.class
+SHA1-Digest: JG0Ctq0HbyPXzy6ZKQHXWcoaI/E=
+

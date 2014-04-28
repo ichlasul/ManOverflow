@@ -123,6 +123,7 @@ class Karyawan extends MY_Controller {
 	{
 		$this->data['title'] = 'Cari Karyawan ' . $param;
 		$this->data['result'] = $this->Karyawan_model->get_by_name($param);
+		$this->data['sign'] = 0;
 		$this->load->view("karyawan/daftarkaryawan_view", $this->data);
 	}
 

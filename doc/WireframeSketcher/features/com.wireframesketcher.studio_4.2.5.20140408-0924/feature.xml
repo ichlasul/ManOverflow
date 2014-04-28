@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="com.wireframesketcher.studio" image="sketch_120.png" label="%featureName" plugin="com.wireframesketcher.studio" provider-name="%providerName" version="4.2.5.20140408-0924">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="license.html"><![CDATA[WireframeSketcher License Agreement
+
+This License Agreement is a legal contract between you (either as an individual
+or a single entity) and PETRU SEVERIN ("PETRU SEVERIN") for the
+WireframeSketcher software ("Software") and related on-line or printed
+documentation.
+
+You should carefully read the following terms and conditions before using the
+Software. If you do not agree to these terms, then delete and destroy all copies
+of the Software and related documentation in your possession. Upon your
+certification to PETRU SEVERIN that you have not used the Software you do not
+accept this license agreement and have deleted and destroyed all copies of the
+software and related documentation, your money will be refunded.
+
+The Software is protected by copyright laws and international copyright
+treaties, as well as other intellectual property laws and treaties. The Software
+is licensed, not sold.
+
+Evaluation License
+
+This is NOT a free software. Subject to the terms below, you are hereby licensed
+to use the Software for evaluation purposes without charge. To use the Software
+for commercial purposes a registration is required.
+
+License Grant
+
+Single-User License
+
+If you are an individual and this Agreement is for a Single-User license, you
+may install the Software on multiple computers that those computers are solely
+for your own use.
+
+Multi-User (Volume) License
+
+If this Agreement is for a Multi-User (Volume) license, the number of named
+users which use the Software may not exceed the number of licenses purchased,
+regardless of the number of computers the Software is installed on. Licenses are
+named and transferable.
+
+Site License
+
+If this Agreement is for a Site license, the number of users which use the
+Software and the number of Software installations within the licensed entity is
+unlimited.
+
+Maintenance
+
+Any License is subject to 12 months of maintenance period which includes e-mail
+support, software updates and access to online services. As maintenance period
+expires it can be optionally renewed at a discounted price. Maintenance renewals
+commence from the expiration date of the previous maintenance period.
+
+Distribution
+
+Provided that you are distributing the evaluation version and NOT the registered
+version, you are hereby licensed to make as many copies of the evaluation
+version of the Software as you wish; give exact copies of the original
+evaluation version to anyone; and distribute the evaluation version of the
+Software in its unmodified form via electronic means. There is no charge for any
+of the above.
+
+You are specifically prohibited from charging, or requesting donations, for any
+such copies, however made; and from distributing the Software with other
+products (commercial or otherwise) without prior written permission.
+
+You may NOT redistribute any derivative works of the Software without prior
+written permission from PETRU SEVERIN.
+
+DISCLAIMER OF WARRANTY
+
+PETRU SEVERIN EXPRESSLY DISCLAIMS ANY WARRANTY FOR THE SOFTWARE. THE SOFTWARE
+AND ANY RELATED DOCUMENTATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THE
+ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF THE SOFTWARE REMAINS WITH YOU.
+
+LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL PETRU
+SEVERIN OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR
+CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR
+LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION,
+ANY OTHER PECUNIARY LOSS, ATTORNEY FEES AND COURT COSTS) ARISING OUT OF THE USE
+OF OR INABILITY TO USE THE SOFTWARE OR THE PROVISION OF OR FAILURE TO PROVIDE
+SUPPORT SERVICES, EVEN IF PETRU SEVERIN HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+General
+
+This License Agreement will be governed by the laws of Romania. This License
+Agreement may only be modified by a license addendum, which accompanies this
+License Agreement or by a written document which has been signed, by both you
+and PETRU SEVERIN. This License Agreement has been written in the English
+language only and is not to be translated or interpreted in any other language.
+Prices, costs and fees for use of WireframeSketcher are subject to change
+without notice to you. In the event of invalidity of any provision of this
+License Agreement, the invalidity shall not affect the validity of the remaining
+portions of this License Agreement.
+
+]]></license>
+
+   <url>
+      <update label="%featureName" url="http://wireframesketcher.com/updates/studio"/>
+      <discovery label="%featureName" url="http://wireframesketcher.com/updates/studio"/>
+   </url>
+
+   <includes id="org.eclipse.emf.common" version="2.8.0.v20130125-0546"/>
+
+   <includes id="org.eclipse.emf.ecore" version="2.8.3.v20130125-0546"/>
+
+   <includes id="org.eclipse.draw2d" version="3.8.2.201301141834"/>
+
+   <includes id="org.eclipse.gef" version="3.8.2.201301141834"/>
+
+   <includes id="org.eclipse.rcp" version="3.8.2.v20130118-180157-96BuGOZFxwOAeG8Ofmqicz0tPK"/>
+
+   <includes id="org.eclipse.help" version="1.4.1.v20120912-145617-8R7xFOXFLWUl7PpMEeZNIGkb4"/>
+
+   <includes id="org.eclipse.equinox.p2.user.ui" version="2.2.0.v20121212-204731-62DG9JXTlTj-UXcQ2y3NLn6U4Z3H"/>
+
+   <includes id="com.wireframesketcher.studio.jre.win32" os="win32" version="1.6.0.26"/>
+
+   <plugin download-size="0" id="com.wireframesketcher.studio" install-size="0" version="4.2.5.20140408-0924"/>
+
+   <plugin download-size="0" id="org.eclipse.compare.core" install-size="0" unpack="false" version="3.5.200.v20120522-1148"/>
+
+   <plugin download-size="0" id="org.eclipse.compare" install-size="0" unpack="false" version="3.5.301.v20130125-135424"/>
+
+   <plugin download-size="0" id="org.eclipse.compare.win32" install-size="0" os="win32" unpack="false" version="1.0.200.v20120914-154749"/>
+
+   <plugin download-size="0" id="org.eclipse.core.boot" install-size="0" unpack="false" version="3.1.300.v20120523-2004"/>
+
+   <plugin download-size="0" id="org.eclipse.core.filebuffers" install-size="0" unpack="false" version="3.5.200.v20120523-1310"/>
+
+   <plugin download-size="0" id="org.eclipse.core.filesystem" install-size="0" unpack="false" version="1.3.200.v20130115-145044"/>
+
+   <plugin download-size="0" id="org.eclipse.core.net" install-size="0" unpack="false" version="1.2.200.v20120914-093638"/>
+
+   <plugin arch="x86" download-size="0" fragment="true" id="org.eclipse.core.net.win32.x86" install-size="0" os="win32" unpack="false" version="1.0.100.v20120522-1148"/>
+
+   <plugin arch="x86_64" download-size="0" fragment="true" id="org.eclipse.core.net.linux.x86_64" install-size="0" os="linux" unpack="false" version="1.1.0.v20120522-1148"/>
+
+   <plugin arch="x86_64" download-size="0" fragment="true" id="org.eclipse.core.net.win32.x86_64" install-size="0" os="win32" unpack="false" version="0.0.0"/>
+
+   <plugin arch="x86" download-size="0" fragment="true" id="org.eclipse.core.net.linux.x86" install-size="0" os="linux" unpack="false" version="1.1.200.v20120522-1148"/>
+
+   <plugin download-size="0" id="org.eclipse.core.resources" install-size="0" unpack="false" version="3.8.1.v20121114-124432"/>
+
+   <plugin download-size="0" id="org.eclipse.core.runtime.compatibility" install-size="0" unpack="false" version="3.2.200.v20120521-2346"/>
+
+   <plugin download-size="0" fragment="true" id="org.eclipse.core.runtime.compatibility.registry" install-size="0" version="3.5.100.v20120521-2346"/>
+
+   <plugin download-size="0" id="org.eclipse.osgi.util" install-size="0" unpack="false" version="3.2.300.v20120913-144807"/>
+
+   <plugin download-size="0" id="org.eclipse.equinox.event" install-size="0" unpack="false" version="1.2.200.v20120522-2049"/>
+
+   <plugin download-size="0" id="org.eclipse.help.appserver" install-size="0" unpack="false" version="3.1.400.v20120912-134134"/>
+
+   <plugin download-size="0" id="org.eclipse.ltk.core.refactoring" install-size="0" unpack="false" version="3.6.0.v20120523-1543"/>
+
+   <plugin download-size="0" id="org.eclipse.ltk.ui.refactoring" install-size="0" unpack="false" version="3.7.0.v20120523-1543"/>
+
+   <plugin download-size="0" id="org.eclipse.search" install-size="0" unpack="false" version="3.8.0.v20120523-1540"/>
+
+   <plugin download-size="0" id="org.eclipse.team.core" install-size="0" unpack="false" version="3.6.100.v20120524-0627"/>
+
+   <plugin download-size="0" id="org.eclipse.team.ui" install-size="0" unpack="false" version="3.6.201.v20130125-135424"/>
+
+   <plugin download-size="0" id="org.eclipse.text" install-size="0" unpack="false" version="3.5.200.v20120523-1310"/>
+
+   <plugin download-size="0" id="org.eclipse.jface.text" install-size="0" unpack="false" version="3.8.2.v20121126-164145"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.presentations.r21" install-size="0" unpack="false" version="3.2.201.v20120523-1956"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.intro" install-size="0" unpack="false" version="3.4.200.v20120521-2344"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.intro.universal" install-size="0" version="3.2.600.v20120912-155524"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.browser" install-size="0" unpack="false" version="3.4.1.v20120912-135036"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.navigator" install-size="0" unpack="false" version="3.5.200.v20120523-1956"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.navigator.resources" install-size="0" unpack="false" version="3.4.400.v20120523-1956"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.net" install-size="0" unpack="false" version="1.2.101.v20120914-093638"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.workbench.texteditor" install-size="0" unpack="false" version="3.8.0.v20120523-1310"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.views" install-size="0" unpack="false" version="3.6.100.v20120521-2332"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.editors" install-size="0" unpack="false" version="3.8.0.v20120523-1540"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.ide" install-size="0" unpack="false" version="3.8.2.v20121106-170106"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.ide.application" install-size="0" unpack="false" version="1.0.400.v20120523-1956"/>
+
+   <plugin download-size="0" fragment="true" id="org.eclipse.ui.win32" install-size="0" unpack="false" version="3.2.301.v20121002-145744" ws="win32"/>
+
+   <plugin download-size="0" fragment="true" id="org.eclipse.ui.workbench.compatibility" install-size="0" version="3.2.101.v20120912-155656"/>
+
+   <plugin arch="ppc" download-size="0" fragment="true" id="org.eclipse.core.filesystem.aix.ppc" install-size="0" os="aix" unpack="false" version="0.0.0"/>
+
+   <plugin arch="ia64_32" download-size="0" fragment="true" id="org.eclipse.core.filesystem.hpux.ia64_32" install-size="0" os="hpux" unpack="false" version="0.0.0"/>
+
+   <plugin arch="x86" download-size="0" fragment="true" id="org.eclipse.core.filesystem.linux.x86" install-size="0" os="linux" unpack="false" version="1.4.0.v20120522-1137"/>
+
+   <plugin arch="x86_64" download-size="0" fragment="true" id="org.eclipse.core.filesystem.linux.x86_64" install-size="0" os="linux" unpack="false" version="1.2.0.v20120522-1137"/>
+
+   <plugin arch="sparc" download-size="0" fragment="true" id="org.eclipse.core.filesystem.solaris.sparc" install-size="0" os="solaris" unpack="false" version="0.0.0"/>
+
+   <plugin download-size="0" fragment="true" id="org.eclipse.core.filesystem.macosx" install-size="0" os="macosx" unpack="false" version="1.3.0.v20120522-1137"/>
+
+   <plugin arch="x86" download-size="0" fragment="true" id="org.eclipse.core.filesystem.win32.x86" install-size="0" os="win32" unpack="false" version="1.1.300.v20120522-1137"/>
+
+   <plugin arch="x86" download-size="0" fragment="true" id="org.eclipse.core.resources.win32.x86" install-size="0" os="win32" unpack="false" version="3.5.100.v20120522-1137"/>
+
+   <plugin arch="x86_64" download-size="0" fragment="true" id="org.eclipse.core.filesystem.win32.x86_64" install-size="0" os="win32" unpack="false" version="0.0.0"/>
+
+   <plugin download-size="0" id="org.eclipse.core.variables" install-size="0" unpack="false" version="3.2.600.v20120521-2012"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.forms" install-size="0" unpack="false" version="3.5.200.v20120521-2332"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.views.properties.tabbed" install-size="0" unpack="false" version="3.5.300.v20120912-135020"/>
+
+   <plugin download-size="0" id="org.eclipse.equinox.security" install-size="0" unpack="false" version="1.1.100.v20120522-1841"/>
+
+   <plugin download-size="0" id="org.eclipse.equinox.security.ui" install-size="0" unpack="false" version="1.1.100.v20120522-2049"/>
+
+   <plugin arch="x86" download-size="0" fragment="true" id="org.eclipse.equinox.security.win32.x86" install-size="0" os="win32" unpack="false" version="1.0.300.v20120522-2049"/>
+
+   <plugin arch="x86_64" download-size="0" fragment="true" id="org.eclipse.equinox.security.win32.x86_64" install-size="0" os="win32" unpack="false" version="0.0.0"/>
+
+   <plugin arch="x86" download-size="0" fragment="true" id="org.eclipse.equinox.security.macosx" install-size="0" os="macosx" unpack="false" version="1.100.200.v20120522-2049"/>
+
+   <plugin arch="x86_64" download-size="0" fragment="true" id="org.eclipse.equinox.security.macosx" install-size="0" os="macosx" unpack="false" version="1.100.200.v20120522-2049"/>
+
+   <plugin arch="ppc" download-size="0" fragment="true" id="org.eclipse.equinox.security.macosx" install-size="0" os="macosx" unpack="false" version="1.100.200.v20120522-2049"/>
+
+   <plugin download-size="0" id="org.eclipse.equinox.concurrent" install-size="0" unpack="false" version="1.0.300.v20120912-130548"/>
+
+   <plugin download-size="0" id="javax.el" install-size="0" unpack="false" version="2.2.0.v201108011116"/>
+
+   <plugin download-size="0" id="org.apache.commons.httpclient" install-size="0" unpack="false" version="3.1.0.v201012070820"/>
+
+   <plugin download-size="0" id="org.eclipse.ui.console" install-size="0" unpack="false" version="3.5.100.v20120521-2012"/>
+
+</feature>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.7.0_51-b13 (Oracle Corporation)
+
+Name: feature.properties
+SHA1-Digest: 0F8Q5yClUzyNAw4SVLYEHOn6QEs=
+
+Name: feature.xml
+SHA1-Digest: MzdNhJl83ByWSnHNWxk+hXqSZ5w=
+
+Name: license.html
+SHA1-Digest: rSl3XIHPNTO/tBAwPZ1INeBsItY=
+
+Name: p2.inf
+SHA1-Digest: 17GRZ5mcslMDzHZf+odgJicvmQ4=
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="110" y="32" measuredWidth="944" measuredHeight="656" dimmed="true">
+    <screen xsi:type="model:Screen" href="../assets/Template.screen#/"/>
+    <overrides>
+      <widgets ref="2" text="Lihat TrackRecord&#xA;http://manoverflow.vsilicon.com/TrackRecord/lihat"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="190" y="84" measuredWidth="784" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="6">
+        <object xsi:type="model:ButtonBar" x="506" y="4" height="46" text="Tambah Karyawan, Cari Karyawan" layoutParams="anchor-left|anchor-middle" selection="1" background="#cccccc" skin="../assets/Bootstrap/_pills.svg">
+          <font size="14px"/>
+          <items text="Tambah Karyawan"/>
+          <items text="Cari Karyawan"/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="25"/>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgetChanges xsi:type="o:Delete" ref="19"/>
+      <widgets ref="20" width="784"/>
+      <widgets ref="21" text="ManOverflow"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="3" x="248" y="155" width="664" height="470" measuredWidth="664" measuredHeight="470"/>
+  <widgets xsi:type="model:Panel" id="13" x="272" y="240" width="625" height="369" measuredWidth="625" measuredHeight="369"/>
+  <widgets xsi:type="model:Master" id="23" x="190" y="84" measuredWidth="785" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="6">
+        <object xsi:type="model:ButtonBar" x="134" y="3" height="46" text="Tambah Karyawan, Cari Karyawan, Track Record, Penjadwalan, Knowledge Base" layoutParams="anchor-left|anchor-middle" selection="1" background="#cccccc" skin="../assets/Bootstrap/_pills.svg">
+          <font size="14px"/>
+          <items text="Tambah Karyawan"/>
+          <items text="Cari Karyawan"/>
+          <items text="Track Record"/>
+          <items text="Penjadwalan"/>
+          <items text="Knowledge Base"/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="25"/>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgetChanges xsi:type="o:Delete" ref="19"/>
+      <widgets ref="20" width="784"/>
+      <widgets ref="21" text="ManOverflow"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="26" x="190" y="84" measuredWidth="784" measuredHeight="50">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Navigation.screen#Navbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="6">
+        <object xsi:type="model:ButtonBar" x="238" y="2" height="46" text="Karyawan{desc}, Track Record{desc}, Penjadwalan{desc}, Knowledge Base {desc}" layoutParams="anchor-left|anchor-middle" selection="1" background="#cccccc" skin="../assets/Bootstrap/_pills.svg">
+          <font size="14px"/>
+          <items text="Karyawan{desc}"/>
+          <items text="Track Record{desc}"/>
+          <items text="Penjadwalan{desc}"/>
+          <items text="Knowledge Base {desc}"/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="25"/>
+      <widgetChanges xsi:type="o:Delete" ref="24"/>
+      <widgetChanges xsi:type="o:Delete" ref="28"/>
+      <widgetChanges xsi:type="o:Delete" ref="19"/>
+      <widgets ref="20" width="784"/>
+      <widgets ref="21" text="ManOverflow"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:TextArea" id="27" x="272" y="176" width="280" height="41" text="My TrackRecord" measuredWidth="280" measuredHeight="41">
+    <font size="20px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="39" x="282" y="250" height="335" measuredWidth="599" measuredHeight="335">
+    <screen xsi:type="model:WidgetGroup" href="../assets/Bootstrap/Content.screen#Table%20Condensed"/>
+    <overrides>
+      <widgets ref="53" width="599" height="335" text="TrackRecord,Tahun, &#xA;1. Mengerjakan Proyek OSS PPL,2010,&#xA;2. Mengerjakan Proyek SI,2011,&#xA;3. Mengerjakan e-banking bank Asep,2012,&#xA;4. Mengerjakan website bank Asep,2013,&#xA;"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
