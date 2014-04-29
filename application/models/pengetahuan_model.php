@@ -6,28 +6,15 @@ class Pengetahuan_model extends MY_Model {
 
 	protected $primary_key = 'id';
 
-	// TODO
-    public $add_rules = array(
+    public $input_rules = array(
 						        array(
-						            'field' => 'nama', 
-						            'label' => 'Nama', 
-						            'rules' => 'required|trim'),
-						        array(
-						            'field' => 'alamat', 
-						            'label' => 'Alamat', 
+						            'field' => 'judul', 
+						            'label' => 'Judul', 
 						            'rules' => 'required'),
 						        array(
-						            'field' => 'tempatlahir', 
-						            'label' => 'Tempat Lahir', 
-						            'rules' => 'required|trim'),
-						        array(
-						            'field' => 'tanggallahir', 
-						            'label' => 'Tanggal Lahir', 
-						            'rules' => 'required|trim'),
-						        array(
-						            'field' => 'tanggalditerima', 
-						            'label' => 'Tanggal Diterima', 
-						            'rules' => 'required|trim'));
+						            'field' => 'konten', 
+						            'label' => 'Konten', 
+						            'rules' => 'required'));
 
 	public function __construct()
 	{

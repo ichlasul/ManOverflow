@@ -25,7 +25,20 @@ class Pengetahuan extends MY_Controller {
 
 	public function tambah($param = '')
 	{
-		# code...
+
+
+    	//validasi form
+        $this->form_validation->set_rules($this->Pengetahuan_model->input_rules);
+        if ($this->form_validation->run() === TRUE)
+        {
+        	$nip = $this->ion_auth->user()->username;
+            $result = $this->Pengetahuan_model->add($nip, $this->input->post('judul'), $this->input->post('konten'));
+        	redirect('pengetahuan/lihat/'.$nip);
+        }
+        
+        // Load view
+        $this->data['title'] = 'Tambah Pengetahuan';
+        $this->load->view('pengetahuan/tambahpengetahuan_view', $this->data);
 	}
 
 	public function cari($param = '')
