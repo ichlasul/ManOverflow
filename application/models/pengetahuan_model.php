@@ -40,6 +40,6 @@ class Pengetahuan_model extends MY_Model {
 		$data['waktu_dibuat'] = '';
 		$data['waktu_modifikasi'] = '';
 
-		$this->insert($data);
+		return $this->insert($data);
 	}
 }
