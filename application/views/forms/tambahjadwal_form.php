@@ -37,7 +37,7 @@
   <div class="form-group">
     <label for="prioritas" class="col-md-3 control-label">Prioritas</label>
     <div class="col-md-8">
-      <select class="form-control" required>
+      <select class="form-control" id="prioritas" name="prioritas" required>
         <option>Sangat Tinggi</option>
         <option>Tinggi</option>
         <option>Normal</option>

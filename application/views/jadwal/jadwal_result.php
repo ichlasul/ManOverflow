@@ -34,9 +34,9 @@ else
 					      </div>
 					      <div class="modal-body">
 					        <h3>Proyek <?php echo $row->nomor . ' : '. $row->judul; ?></h3>
-			       			<h5>Tanggal Mulai : <?php echo $row->tanggal_mulai; ?></h5>
-			       			<h5>Tanggal Selesai : <?php echo $row->tanggal_selesai; ?></h5>
-			       			<h5>Pemimpin Proyek : <?php echo $row->pemimpin_proyek; ?></h5>
+			       			<h4>Tanggal Mulai : <?php echo $row->tanggal_mulai; ?></h4>
+			       			<h4>Tanggal Selesai : <?php echo $row->tanggal_selesai; ?></h4>
+			       			<h4>Pemimpin Proyek : <?php echo $row->pemimpin_proyek; ?></h4>
 					      </div>
 					      <div class="modal-footer">
 					        <a role="button" class="btn btn-default" data-dismiss="modal">Batal</a>

@@ -38,11 +38,12 @@ class Jadwal_model extends MY_Model {
         parent::__construct();
     }
 
-	public function get_by_title($keyword = "")
+	public function get_by_title($keyword = "", $order = 0)
 	{
-		if ($keyword == "") return $this->get_all();
+		if ($keyword == "" && $order == 0) return $this->get_all();
 
 		$this->db->like('judul', $keyword);
+		$this->db->order_by('tanggal_selesai', 'desc');
 		$q = $this->db->get($this->_table);
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}		
@@ -54,7 +55,7 @@ class Jadwal_model extends MY_Model {
 		$data['deskripsi'] = $this->input->post('deskripsi');
 		$data['tanggal_mulai'] = $this->input->post('tanggalmulai');
 		$data['tanggal_selesai'] = $this->input->post('tanggalselesai');
-		$data['prioritas'] = $this->input->post('prioritas');
+		$data['prioritas'] = $this->input->post('prioritas');		
 		$data['pemimpin_proyek'] = $this->input->post('pemimpinproyek');
 		$data['peserta_proyek'] = $this->input->post('pesertaproyek');
         
