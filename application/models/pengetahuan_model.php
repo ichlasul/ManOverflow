@@ -40,8 +40,9 @@ class Pengetahuan_model extends MY_Model {
 	{
 		if ($keyword == "") return $this->get_all();
 
-		$this->db->like('Judul', $keyword);
-		$q = $this->db->get($this->$_table);
+		$this->db->like('judul', $keyword);
+		$this->db->or_like('konten', $keyword);
+		$q = $this->db->get($this->_table);
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}
 }

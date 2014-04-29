@@ -18,7 +18,7 @@
           <div class="panel-body">
 
             <div class="row">
-              <form class="form" action="<?php echo site_url('karyawan/search'); ?>" method="post" role="form">
+              <form class="form" action="<?php echo site_url('pengetahuan/search'); ?>" method="post" role="form">
                 <div class="form-group col-md-9">
                   <label class="sr-only" for="keyword">Kata Kunci Pencarian</label>
                   <input type="text" class="form-control input-lg" name="keyword" id="keyword" placeholder="Masukkan Kata Kunci Pencarian">
