@@ -11,14 +11,14 @@ else
     foreach($result as $row)
     {
 ?>
-    	<div class="col-md-6">
+    	<div class="col-md-12">
 	    	<div class="thumbnail">
-		      	<img class="img-responsive" data-src="" alt="Foto">
 		      	<div class="caption">
-			        <h3><?php echo $row->judul; ?></h3>
-			        <h4><?php echo $row->konten; ?></h4>
+			        <h4><?php echo $row->judul; ?></h4>
+			        <h6>Oleh <?php echo $row->poster_nip; ?> pada <?php echo $row->waktu_dibuat; ?></h6>
+			        <p><?php echo substr($row->konten, 0, 55 * (5 + 1)); ?>[...]</p>
 			        <p>
-			        	<a href="<?php echo site_url('pengetahuan/lihat/'. $row->id); ?>" class="btn btn-primary" role="button">Lihat Profil</a>
+			        	<a href="<?php echo site_url('pengetahuan/lihat/'. $row->id); ?>" class="btn btn-primary" role="button">Lihat Posting</a>
 			        	<a href="<?php echo site_url('pengetahuan/edit/'. $row->id); ?>" class="btn btn-warning" role="button">Edit</a>
 			        	<a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-<?php echo $row->id; ?>">Hapus</a>
 		        	</p>
