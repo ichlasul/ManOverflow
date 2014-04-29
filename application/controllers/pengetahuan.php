@@ -31,7 +31,7 @@ class Pengetahuan extends MY_Controller {
         $this->form_validation->set_rules($this->Pengetahuan_model->input_rules);
         if ($this->form_validation->run() === TRUE)
         {
-        	$nip = $this->ion_auth->user()->username;
+        	$nip = $this->ion_auth->user()->row()->username;
             $result = $this->Pengetahuan_model->add($nip, $this->input->post('judul'), $this->input->post('konten'));
         	redirect('pengetahuan/lihat/'.$nip);
         }

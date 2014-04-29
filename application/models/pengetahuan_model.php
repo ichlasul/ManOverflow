@@ -31,4 +31,15 @@ class Pengetahuan_model extends MY_Model {
 		$q = $this->db->get($this->_table);
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}
+
+	public function add($nip, $judul, $konten)
+	{
+		$data['judul'] = $judul;
+		$data['konten'] = $konten;
+		$data['poster_nip'] = $nip;
+		$data['waktu_dibuat'] = '';
+		$data['waktu_modifikasi'] = '';
+
+		$this->insert($data);
+	}
 }
