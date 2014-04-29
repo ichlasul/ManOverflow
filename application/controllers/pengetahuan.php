@@ -39,6 +39,13 @@ class Pengetahuan extends MY_Controller {
         $this->load->view('pengetahuan/tambahpengetahuan_view', $this->data);
 	}
 
+	public function hapus ($param = '')
+	{
+		$this->Pengetahuan_model->delete($param);
+		$this->data['info'] = 'Pengetahuan berhasil dihapus';
+		$this->cari();
+	}
+
 	public function cari($param = '')
 	{
 
