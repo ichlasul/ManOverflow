@@ -41,4 +41,16 @@ class Pengetahuan extends MY_Controller {
 		redirect('/pengetahuan/cari/'. $this->input->post('keyword'));
 	}
 
+	public function lihat($param = '')
+	{
+		$this->data['result'] = $this->Pengetahuan_model->get($param);
+		if (count($this->data['result']) > 0)
+		{	
+			$this->data['title'] = $this->data['result']->judul;
+			$this->load->view('pengetahuan/detailpengetahuan_view', $this->data);
+		} else {
+			redirect('pengetahuan/cari');
+		}
+	}
+
 }
