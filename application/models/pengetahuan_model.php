@@ -35,7 +35,6 @@ class Pengetahuan_model extends MY_Model {
         parent::__construct();
     }
 
-    // TODO
 	public function get_by_keyword($keyword = "")
 	{
 		if ($keyword == "") return $this->get_all();

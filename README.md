@@ -7,11 +7,14 @@ Tugas Proyek Perangkat Lunak
 * Asep Saepduin
 
 
-## Library/Framework
+## Framework/Library
 * CodeIgniter (https://github.com/EllisLab/CodeIgniter)
+	* CI IonAuth (https://github.com/benedmunds/CodeIgniter-Ion-Auth)
+	* CI Base Model (https://github.com/jamierumbelow/codeigniter-base-model)
 * Bootstrap (https://github.com/twbs/bootstrap)
-* CI IonAuth (https://github.com/benedmunds/CodeIgniter-Ion-Auth)
-* CI Base Model (https://github.com/jamierumbelow/codeigniter-base-model)
+	* Bootstrap WYSIWYG (https://github.com/mindmup/bootstrap-wysiwyg/)
+* jQuery (https://github.com/jquery/jquery)
+	* jQuery Hotkeys (https://github.com/jeresig/jquery.hotkeys)
 
 ## StyleGuide
 http://ellislab.com/codeigniter/user-guide/general/styleguide.html
