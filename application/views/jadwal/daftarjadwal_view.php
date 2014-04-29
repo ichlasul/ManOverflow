@@ -12,13 +12,13 @@
         <div class="panel panel-default">
           
           <div class="panel-heading">
-            <h3><?php echo isset($title) ? $title : 'Daftar Karyawan'; ?></h3>
+            <h3><?php echo isset($title) ? $title : 'Daftar Jadwal'; ?></h3>
           </div>
 
           <div class="panel-body">
 
             <div class="row">
-              <form class="form" action="<?php echo site_url('karyawan/search'); ?>" method="post" role="form">
+              <form class="form" action="<?php echo site_url('jadwal/search'); ?>" method="post" role="form">
                 <div class="form-group col-md-9">
                   <label class="sr-only" for="keyword">Kata Kunci Pencarian</label>
                   <input type="text" class="form-control input-lg" name="keyword" id="keyword" placeholder="Masukkan Kata Kunci Pencarian">
@@ -31,7 +31,7 @@
   
             <div class="row">
 
-              <?php $this->load->view('karyawan/karyawan_result'); ?>
+              <?php $this->load->view('jadwal/jadwal_result'); ?>
 
             <div> <!-- row -->
 

@@ -6,28 +6,15 @@ class Pengetahuan_model extends MY_Model {
 
 	protected $primary_key = 'id';
 
-	// TODO
-    public $add_rules = array(
+    public $input_rules = array(
 						        array(
-						            'field' => 'nama', 
-						            'label' => 'Nama', 
-						            'rules' => 'required|trim'),
-						        array(
-						            'field' => 'alamat', 
-						            'label' => 'Alamat', 
+						            'field' => 'judul', 
+						            'label' => 'Judul', 
 						            'rules' => 'required'),
 						        array(
-						            'field' => 'tempatlahir', 
-						            'label' => 'Tempat Lahir', 
-						            'rules' => 'required|trim'),
-						        array(
-						            'field' => 'tanggallahir', 
-						            'label' => 'Tanggal Lahir', 
-						            'rules' => 'required|trim'),
-						        array(
-						            'field' => 'tanggalditerima', 
-						            'label' => 'Tanggal Diterima', 
-						            'rules' => 'required|trim'));
+						            'field' => 'konten', 
+						            'label' => 'Konten', 
+						            'rules' => 'required'));
 
 	public function __construct()
 	{
@@ -43,5 +30,16 @@ class Pengetahuan_model extends MY_Model {
 		$this->db->or_like('konten', $keyword);
 		$q = $this->db->get($this->_table);
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
+	}
+
+	public function add($nip, $judul, $konten)
+	{
+		$data['judul'] = $judul;
+		$data['konten'] = $konten;
+		$data['poster_nip'] = $nip;
+		$data['waktu_dibuat'] = '';
+		$data['waktu_modifikasi'] = '';
+
+		return $this->insert($data);
 	}
 }
