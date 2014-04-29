@@ -9,6 +9,8 @@ class Pengetahuan extends MY_Controller {
 	{
         parent::__construct();
         $this->load->model('Pengetahuan_model');
+
+        $this->data['controller'] = 'pengetahuan';
     }
 
     public function _remap($method, $params = array())

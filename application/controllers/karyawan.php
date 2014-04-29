@@ -6,6 +6,8 @@ class Karyawan extends MY_Controller {
 	{
         parent::__construct();
         $this->load->model('Karyawan_model');
+
+        $this->data['controller'] = 'karyawan';
     }
 
     public function _remap($method, $params = array())
