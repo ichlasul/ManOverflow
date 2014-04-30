@@ -1,7 +1,7 @@
 <?php echo validation_errors() ? '<div class="alert alert-danger">' . validation_errors() . '</div>' : ''; ?>
 <?php echo !empty($error) ? '<div class="alert alert-danger">' . $error . '</div>' : ''; ?>
-
 <form class="form-horizontal" role="form" method="post">
+
   <div class="form-group">            
     <label for="nomor" class="col-md-3 control-label">Kode Proyek</label>
     <div class="col-md-8">
@@ -49,13 +49,13 @@
   <div class="form-group">            
     <label for="pemimpinproyek" class="col-md-3 control-label">Pemimpin Proyek</label>
     <div class="col-md-8">
-      <input type="text" class="form-control" id="pemimpinproyek" name="pemimpinproyek" value="<?php echo isset($result) ? $result->pemimpin_proyek : set_value('pemimpinproyek'); ?>" required>
+      <input type="text" class="form-control tm-input1 typeahead input-medium tm-input-info" id="pemimpinproyek" name="pemimpinproyek" value="<?php echo isset($result) ? $result->pemimpin_proyek : set_value('pemimpinproyek'); ?>" required>
     </div>
   </div>
   <div class="form-group">            
-    <label for="pesertaproyek" class="col-md-3 control-label">Peserta Proyek</label>
+    <label for="pemimpinproyek" class="col-md-3 control-label">Peserta Proyek</label>
     <div class="col-md-8">
-      <textarea class="form-control" rows="3" id="pesertaproyek" name="pesertaproyek" required><?php echo isset($result) ? $result->peserta_proyek : set_value('pesertaproyek'); ?></textarea>
+      <input type="text" class="form-control tm-input typeahead input-medium tm-input-info" id="pesertaproyek" name="pesertaproyek" value="<?php echo isset($result) ? $result->peserta_proyek : set_value('pesertaproyek'); ?>" required>
     </div>
   </div>
   <div class="form-group">

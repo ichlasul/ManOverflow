@@ -45,6 +45,16 @@ class Jadwal extends MY_Controller {
         		redirect('jadwal/detail/'.$nomor);
         	}        	
     		$this->data['nomor'] = $nomor;
+    		$this->data['resultkaryawan'] = $this->Karyawan_model->get_by_name('');
+    		if (count($this->data['resultkaryawan']) > 0)
+    		{    			
+    			$this->data['listkaryawan'] = '[';
+    			foreach ($this->data['resultkaryawan'] as $row) {
+    				$this->data['listkaryawan'] .= '\''.$row->NIP . ' ' . $row->Nama . '\',';
+    				//$this->data['listkaryawan'] .= '\''.$row->Nama . '\',';
+    			}    	    			
+    			$this->data['listkaryawan'] .= ']';
+    		}    		    		
 	        $this->load->view('jadwal/tambahjadwal_view', $this->data);
         }
         else
@@ -63,7 +73,7 @@ class Jadwal extends MY_Controller {
 		$this->data['result'] = $this->Jadwal_model->get($param);
 		if (count($this->data['result']) > 0)
 		{	
-			$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;		
+			$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;				
 			$this->data['title'] = 'Informasi Jadwal Proyek ' . $this->data['result']->judul;
 			$this->load->view('jadwal/detailjadwal_view', $this->data);
 		}
@@ -108,7 +118,7 @@ class Jadwal extends MY_Controller {
 		redirect('jadwal/cari/'. $this->input->post('keyword'));
 	}
 
-	public function hapus ($param = '')
+	public function hapus($param = '')
 	{
 		if ($this->ion_auth->is_admin() === TRUE)
 		{
