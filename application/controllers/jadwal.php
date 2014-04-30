@@ -25,10 +25,10 @@ class Jadwal extends MY_Controller {
 	{
 		if ($this->ion_auth->is_admin() === TRUE)
 		{
-			redirect('karyawan/tambah');
+			redirect('jadwal/tambah');
 		} else
 		{
-			redirect('karyawan/tambah');
+			redirect('jadwal/cari');
 		}
 	}
 
@@ -63,6 +63,7 @@ class Jadwal extends MY_Controller {
 		$this->data['result'] = $this->Jadwal_model->get($param);
 		if (count($this->data['result']) > 0)
 		{	
+			$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;		
 			$this->data['title'] = 'Informasi Jadwal Proyek ' . $this->data['result']->judul;
 			$this->load->view('jadwal/detailjadwal_view', $this->data);
 		}
@@ -97,7 +98,8 @@ class Jadwal extends MY_Controller {
 			$this->data['title'] = 'Cari Jadwal ' . $param;
 		else
 			$this->data['title'] = 'Daftar jadwal dengan judul "' . $param . '"';
-		$this->data['result'] = $this->Jadwal_model->get_by_title($param);
+		$this->data['result'] = $this->Jadwal_model->get_by_title($param);		
+		$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;		
 		$this->load->view("jadwal/daftarjadwal_view", $this->data);
 	}
 
@@ -108,16 +110,22 @@ class Jadwal extends MY_Controller {
 
 	public function hapus ($param = '')
 	{
-		if ($this->form_validation->run() === TRUE)
+		if ($this->ion_auth->is_admin() === TRUE)
 		{
-			$this->data['result'] = $this->Jadwal_model->get($param);
-			$this->Jadwal_model->delete($param);
-			$this->data['info'] = 'Data jadwal proyek ' . $this->data['result']->judul . ' berhasil dihapus';
-			redirect('jadwal/cari');
+			$this->data['results'] = $this->Jadwal_model->get($param);
+			if (count($this->data['results']) > 0)
+			{
+				$this->Jadwal_model->delete($param);
+				$this->data['info'] = 'Data jadwal proyek ' . $this->data['results']->judul . ' berhasil dihapus';
+			}			
+			$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;
+			$this->data['title'] = 'Daftar Jadwal';			
+			$this->data['result'] = $this->Jadwal_model->get_by_title();
+			$this->load->view("jadwal/daftarjadwal_view", $this->data);			
 		}
 		else
 		{
 			redirect('jadwal/cari');
-		}
+		}		
 	}
 }

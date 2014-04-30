@@ -70,8 +70,10 @@
               </div>                  
                 <div class="col-md-8 col-md-offset-3">
                   <p>
-                    <a href="<?php echo site_url('jadwal/edit/'.$result->nomor); ?>" class="btn btn-warning" role="button">Edit</a>
-                    <a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-<?php echo $result->nomor; ?>">Hapus</a>
+                    <?php                
+                  if ($mode == 1)
+                  echo '<a href="' .  site_url('jadwal/edit/'. $result->nomor) . '" class="btn btn-warning" role="button">Edit</a><a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-' . $result->nomor. '"> Hapus</a>';
+                ?>
                   </p>
                   <div class="modal fade" id="modal-delete-<?php echo $result->nomor; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-label-<?php echo $result->nomor; ?>" aria-hidden="true">
                     <div class="modal-dialog modal-sm">
@@ -87,7 +89,7 @@
                           <h5>Pemimpin Proyek : <?php echo $result->pemimpin_proyek; ?></h5>
                         </div>
                         <div class="modal-footer">
-                          <a role="button" class="btn btn-default" data-dismiss="modal">Batal</a>
+                          <a role="button" class="btn btn-default" data-dismiss="modal">Batal</a>                          
                           <a href="<?php echo site_url('jadwal/hapus/'.$result->nomor); ?>" role="button" class="btn btn-danger">Hapus Jadwal</a>
                         </div>
                       </div>

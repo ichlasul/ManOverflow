@@ -1,29 +1,63 @@
 <?php
-
+echo '<div class="col-md-12">';
 echo isset($info) ? '<div class="alert alert-success">' . $info . '</div>' : '';
 
-if (is_null($result))
+if (count($result) <= 0)
 {
     echo '<div class="alert alert-danger">Tidak ada proyek yang ditemukan.</div>';
 }
+
 else
-{
-    foreach($result as $row)
+{	
+	echo '<table cellspacing="1" cellpadding="3" class="tablehead" style="background:#CCC;">';
+	echo '<thead>              
+            <tr class="colhead" height=40>
+              <th title="Kode Proyek" align="center">Kode Proyek</th>
+              <th title="Judul Proyel" align="center">Judul Proyek</th>
+              <th title="Tanggal Mulai" align="center">Tanggal Mulai</th>
+              <th title="Tanggal Selesai" align="center">Tanggal Selesai</th>
+              <th title="Prioritas" align="center">Prioritas</th>
+              <th title="Pemimpin Proyek" align="center">Pemimpin Proyek</th>
+              <th class="{sorter: false}" title="Completions" align="center">Aksi</th>              
+            </tr>
+          </thead>
+          <tbody>';
+
+    $counter = 1;
+    foreach($result as $row)    	
     {
-?>
-    	<div class="col-md-6">
-	    	<div class="thumbnail">
-		      	<!-- <img class="img-responsive" data-src="" alt="Foto"> -->
-		      	<div class="caption">
-		      		<h3><?php echo $row->judul; ?></h3>			        
+    	if ($counter % 2 == 1)
+    	{
+    	   echo '<tr class="oddrow" height=35>';
+    	}
+    	else
+    	{
+    		echo '<tr class="evenrow" height=35>';              
+    	}
+    	echo '<td align="center">' . $row->nomor . '</td>
+              <td align="center">' . $row->judul . '</td>              
+	          <td align="center">' . $row->tanggal_mulai . '</td>
+	          <td align="center">' . $row->tanggal_selesai . '</td>
+	          <td align="center">' . $row->prioritas . '</td>
+	          <td align="center">' . $row->pemimpin_proyek . '</td>
+	          <td align="center"><a href="' . site_url('jadwal/detail/'. $row->nomor) . '" class="" role="button"><img src="' . base_url('assets/img/lihat.png') . '" title="Lihat Jadwal" height="25" width="25"></a>';	
+			  if ($mode == 1)
+			  	echo '<a href="' .  site_url('jadwal/edit/'. $row->nomor) . '" class="" role="button"><img src="' . base_url('assets/img/edit.png') . '" title="Edit Jadwal" height="25" width="25"></a><a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-' . $row->nomor . '"><img src="' . base_url('assets/img/hapus.png') . '" title="Hapus Jadwal" height="25" width="25"></a></td></tr>';
+    	$counter++;
+?>    	
+	    	<!-- <div class="thumbnail">
+		      	<img class="img-responsive" data-src="" alt="Foto">
+		      	<div class="caption"> -->
+		      		<!-- <h3><?php echo $row->judul; ?></h3>			        
 			        <h5><b><?php echo $row->tanggal_mulai; ?> </b>s.d. <b><?php echo $row->tanggal_selesai; ?></b></h5>
 			        <h6>Pemimpin Proyek : <?php echo $row->pemimpin_proyek; ?></h6>
 			        <p>
 			        	<a href="<?php echo site_url('jadwal/detail/'. $row->nomor); ?>" class="btn btn-primary" role="button">Lihat Jadwal</a>
-			        	<a href="<?php echo site_url('jadwal/edit/'. $row->nomor); ?>" class="btn btn-warning" role="button">Edit</a>
-			        	<a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-<?php echo $row->nomor; ?>">Hapus</a>
-		        	</p>
-
+			        	<?php
+			        	if ($mode == 1)
+			        		echo '<a href="' .  site_url('jadwal/edit/'. $row->nomor) . '" class="btn btn-warning" role="button">Edit</a><a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-' . $row->nomor. '"> Hapus</a>';
+			        	?>
+		        	</p>	 -->	        	
 		        	<!-- Modal -->
 					<div class="modal fade" id="modal-delete-<?php echo $row->nomor; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-label-<?php echo $row->nomor; ?>" aria-hidden="true">
 					  <div class="modal-dialog modal-sm">
@@ -44,9 +78,9 @@ else
 					      </div>
 					    </div>
 					  </div>
-					</div>
-		      	</div>
-    		</div>
+					<!-- </div>
+		      	</div> -->		      	
+    		</div>    		
     	</div>
 <?php
 	}
