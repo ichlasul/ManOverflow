@@ -18,6 +18,7 @@
   <link href="<?php echo base_url('assets/css/bootstrap-responsive.css'); ?>" rel="stylesheet">
   <link href="<?php echo base_url('assets/css/tablecloth.css'); ?>" rel="stylesheet">
   <link href="<?php echo base_url('assets/css/prettify.css'); ?>" rel="stylesheet"> 
+  <link href="<?php echo base_url('assets/css/bootstrap-tags.css'); ?>" rel="stylesheet"> 
   <link href="<?php echo base_url('assets/css/tagmanager.css'); ?>" rel="stylesheet"> 
   <link href="<?php echo base_url('assets/css/typeahead-dropdown.css'); ?>" rel="stylesheet"> 
   

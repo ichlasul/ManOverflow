@@ -63,4 +63,5 @@
       <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </div>
   </div>
+  <input type="text" class="tm-input typeahead input-medium tm-input-info" id="pesertaproyek" name="pesertaproyek" value="<?php echo isset($result) ? $result->peserta_proyek : set_value('pesertaproyek'); ?>" required>
 </form>
