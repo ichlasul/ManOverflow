@@ -55,13 +55,12 @@
   <div class="form-group">            
     <label for="pemimpinproyek" class="col-md-3 control-label">Peserta Proyek</label>
     <div class="col-md-8">
-      <input type="text" class="form-control tm-input typeahead input-medium tm-input-info" id="pesertaproyek" name="pesertaproyek" value="<?php echo isset($result) ? $result->peserta_proyek : set_value('pesertaproyek'); ?>" required>
+      <input type="text" class="form-control tm-input typeahead input-medium tm-input-info" id="pesertaproyek" placeholder="Tambah peserta proyek" name="pesertaproyek" value="<?php echo isset($result) ? $result->peserta_proyek : set_value('pesertaproyek'); ?>" required>
     </div>
   </div>
   <div class="form-group">
     <div class="col-md-offset-3 col-md-8">
       <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </div>
-  </div>
-  <input type="text" class="tm-input typeahead input-medium tm-input-info" id="pesertaproyek" name="pesertaproyek" value="<?php echo isset($result) ? $result->peserta_proyek : set_value('pesertaproyek'); ?>" required>
+  </div>  
 </form>

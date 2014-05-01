@@ -94,10 +94,17 @@ $(".tm-input").tagsManager({
       tagsContainer: null,
       tagCloseIcon: 'x',
       tagClass: '',
-      validator: null,
+      validator: isvalid,
       typeahead: true,
       onlyTagList: true
     });
+
+var states = <?php echo $listkaryawan; ?>;
+
+function isvalid (substring) {
+  return (states.indexOf(substring) > -1);
+}
+
 </script>
 
 <script>
@@ -120,8 +127,15 @@ $(".tm-input1").tagsManager({
       tagsContainer: null,
       tagCloseIcon: 'x',
       tagClass: '',
-      validator: null,
+      validator: isvalid,
       typeahead: true,
       onlyTagList: true
     });
+
+var states = <?php echo $listkaryawan; ?>;
+
+function isvalid (substring) {
+  return (states.indexOf(substring) > -1);
+}
+
 </script>
