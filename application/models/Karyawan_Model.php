@@ -48,7 +48,7 @@ class Karyawan_model extends MY_Model {
 	{
 		if ($keyword == "") return $this->get_all();
 
-		$this->db->like('Nama', $keyword);
+		$this->db->like('judul', $keyword);
 		$q = $this->db->get($this->_table);
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}		

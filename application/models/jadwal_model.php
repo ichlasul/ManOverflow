@@ -43,7 +43,7 @@ class Jadwal_model extends MY_Model {
 		if ($keyword == "" && $order == 0) return $this->get_all();
 
 		$this->db->like('judul', $keyword);
-		$this->db->order_by('tanggal_selesai', 'desc');
+		// $this->db->order_by('tanggal_selesai', 'desc');
 		$q = $this->db->get($this->_table);
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}		

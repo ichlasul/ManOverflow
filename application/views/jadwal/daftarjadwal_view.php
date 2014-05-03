@@ -21,7 +21,7 @@
               <form class="form" action="<?php echo site_url('jadwal/search'); ?>" method="post" role="form">
                 <div class="form-group col-md-9">
                   <label class="sr-only" for="keyword">Kata Kunci Pencarian</label>
-                  <input type="text" class="form-control input-lg" name="keyword" id="keyword" placeholder="Masukkan Kata Kunci Pencarian">
+                  <input type="text" class="form-control typeahead input-lg" name="keyword" id="keyword" placeholder="Masukkan Kata Kunci Pencarian">
                 </div>
                 <div class="col-md-3">
                   <button type="submit" class="btn btn-primary btn-lg col-md-12">Cari</button>

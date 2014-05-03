@@ -46,14 +46,14 @@ class Jadwal extends MY_Controller {
         	}        	
     		$this->data['nomor'] = $nomor;
     		$this->data['resultkaryawan'] = $this->Karyawan_model->get_by_name('');
-    		if (count($this->data['resultkaryawan']) > 0)
-    		{    			
-    			$this->data['listkaryawan'] = '[';
-    			foreach ($this->data['resultkaryawan'] as $row) {
-    				$this->data['listkaryawan'] .= '\''.$row->NIP . ' ' . $row->Nama . '\',';
-    			}    	    			
-    			$this->data['listkaryawan'] .= ']';
-    		}    		    		
+    		// if (count($this->data['resultkaryawan']) > 0)
+    		// {    			
+    		// 	$this->data['listkaryawan'] = '[';
+    		// 	foreach ($this->data['resultkaryawan'] as $row) {
+    		// 		$this->data['listkaryawan'] .= '\''.$row->NIP . ' ' . $row->Nama . '\',';
+    		// 	}    	    			
+    		// 	$this->data['listkaryawan'] .= ']';
+    		// }    		    		
 	        $this->load->view('jadwal/tambahjadwal_view', $this->data);
         }
         else
@@ -103,12 +103,22 @@ class Jadwal extends MY_Controller {
 
 	public function cari($param = '')
 	{
+		$param = rawurldecode($param);
 		if ($param == '')		
 			$this->data['title'] = 'Cari Jadwal ' . $param;
 		else
 			$this->data['title'] = 'Daftar jadwal dengan judul "' . $param . '"';
 		$this->data['result'] = $this->Jadwal_model->get_by_title($param);		
 		$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;		
+		$this->data['listofjadwal'] = $this->Jadwal_model->get_by_title('');
+		if (count($this->data['listofjadwal']) > 0)
+    		{    			
+    			$this->data['listjadwal'] = '[';
+    			foreach ($this->data['listofjadwal'] as $row) {
+    				$this->data['listjadwal'] .= '\'' . $row->judul . '\',';
+    			}    	    			
+    			$this->data['listjadwal'] .= ']';
+    		}
 		$this->load->view("jadwal/daftarjadwal_view", $this->data);
 	}
 

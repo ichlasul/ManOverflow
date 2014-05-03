@@ -60,7 +60,7 @@
   };
 };
  
-var states = <?php echo $listkaryawan; ?>;
+var states = <?php echo $listjadwal; ?>;
 
 $('.typeahead').typeahead({
   hint: true,
@@ -74,70 +74,70 @@ $('.typeahead').typeahead({
 });
 </script>
 
-<script>
-$(".tm-input").tagsManager({
-      prefilled: null,
-      CapitalizeFirstLetter: false,
-      preventSubmitOnEnter: true, // deprecated
-      isClearInputOnEsc: true, // deprecated
-      AjaxPush: null,
-      AjaxPushAllTags: null,
-      AjaxPushParameters: null,
-      delimiters: [9, 13, 44], // tab, enter, comma
-      backspace: [8],
-      maxTags: 0,
-      hiddenTagListName: null, // deprecated
-      hiddenTagListId: null, // deprecated
-      replace: true,
-      output: null,
-      deleteTagsOnBackspace: true, // deprecated
-      tagsContainer: null,
-      tagCloseIcon: 'x',
-      tagClass: '',
-      validator: isvalid,
-      typeahead: true,
-      onlyTagList: true
-    });
+ <script>
+// $(".tm-input").tagsManager({
+//       prefilled: null,
+//       CapitalizeFirstLetter: false,
+//       preventSubmitOnEnter: true, // deprecated
+//       isClearInputOnEsc: true, // deprecated
+//       AjaxPush: null,
+//       AjaxPushAllTags: null,
+//       AjaxPushParameters: null,
+//       delimiters: [9, 13, 44], // tab, enter, comma
+//       backspace: [8],
+//       maxTags: 0,
+//       hiddenTagListName: null, // deprecated
+//       hiddenTagListId: null, // deprecated
+//       replace: true,
+//       output: null,
+//       deleteTagsOnBackspace: true, // deprecated
+//       tagsContainer: null,
+//       tagCloseIcon: 'x',
+//       tagClass: '',
+//       validator: isvalid,
+//       typeahead: true,
+//       onlyTagList: true
+//     });
 
-var states = <?php echo $listkaryawan; ?>;
+// var states = <?php echo $listkaryawan; ?>;
 
-function isvalid (substring) {
-  return (states.indexOf(substring) > -1);
-}
+// function isvalid (substring) {
+//   return (states.indexOf(substring) > -1);
+// }
 
-</script>
+ </script>
 
-<script>
-$(".tm-input1").tagsManager({
-      prefilled: null,
-      CapitalizeFirstLetter: false,
-      preventSubmitOnEnter: true, // deprecated
-      isClearInputOnEsc: true, // deprecated
-      AjaxPush: null,
-      AjaxPushAllTags: null,
-      AjaxPushParameters: null,
-      delimiters: [9, 13, 44], // tab, enter, comma
-      backspace: [8],
-      maxTags: 1,
-      hiddenTagListName: null, // deprecated
-      hiddenTagListId: null, // deprecated
-      replace: true,
-      output: null,
-      deleteTagsOnBackspace: true, // deprecated
-      tagsContainer: null,
-      tagCloseIcon: 'x',
-      tagClass: '',
-      validator: isvalid,
-      typeahead: true,
-      onlyTagList: true
-    });
-var states = <?php echo $listkaryawan; ?>;
+ <script>
+// $(".tm-input1").tagsManager({
+//       prefilled: null,
+//       CapitalizeFirstLetter: false,
+//       preventSubmitOnEnter: true, // deprecated
+//       isClearInputOnEsc: true, // deprecated
+//       AjaxPush: null,
+//       AjaxPushAllTags: null,
+//       AjaxPushParameters: null,
+//       delimiters: [9, 13, 44], // tab, enter, comma
+//       backspace: [8],
+//       maxTags: 1,
+//       hiddenTagListName: null, // deprecated
+//       hiddenTagListId: null, // deprecated
+//       replace: true,
+//       output: null,
+//       deleteTagsOnBackspace: true, // deprecated
+//       tagsContainer: null,
+//       tagCloseIcon: 'x',
+//       tagClass: '',
+//       validator: isvalid,
+//       typeahead: true,
+//       onlyTagList: true
+//     });
+// var states = <?php echo $listkaryawan; ?>;
 
-function isvalid (substring) {
-  return (states.indexOf(substring) > -1);
-}
+// function isvalid (substring) {
+//   return (states.indexOf(substring) > -1);
+// }
 
-</script>
+ </script>
 
 <script type="text/javascript">
         $(window).on('load', function () {
