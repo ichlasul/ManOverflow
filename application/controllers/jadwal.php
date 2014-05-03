@@ -51,7 +51,6 @@ class Jadwal extends MY_Controller {
     			$this->data['listkaryawan'] = '[';
     			foreach ($this->data['resultkaryawan'] as $row) {
     				$this->data['listkaryawan'] .= '\''.$row->NIP . ' ' . $row->Nama . '\',';
-    				//$this->data['listkaryawan'] .= '\''.$row->Nama . '\',';
     			}    	    			
     			$this->data['listkaryawan'] .= ']';
     		}    		    		
@@ -94,7 +93,7 @@ class Jadwal extends MY_Controller {
         	$this->Jadwal_model->update_jadwal($nomor);
         	redirect('jadwal/detail/'.$nomor);
         }
-                
+        $this->data['resultkaryawan'] = $this->Karyawan_model->get_by_name('');        
         $this->data['title'] = 'Edit Jadwal';
         $this->data['nomor'] = $nomor;
         $this->data['result'] = $this->Jadwal_model->get($param);

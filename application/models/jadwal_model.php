@@ -74,5 +74,5 @@ class Jadwal_model extends MY_Model {
 		$data['peserta_proyek'] = $this->input->post('pesertaproyek');
 
 		$this->update($nomor, $data);
-	}
+	}	
 }

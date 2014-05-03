@@ -53,6 +53,15 @@ class Karyawan_model extends MY_Model {
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}		
 
+	public function get_by_nip($keyword = "")
+	{
+		if ($keyword == "") return $this->get_all();
+
+		$this->db->like('NIP', $keyword);
+		$q = $this->db->get($this->_table);
+		return ($q -> num_rows() > 0) ? $q->result() : NULL;
+	}
+
 	public function add_karyawan($nip)
 	{
 		$data['Nama'] = $this->input->post('nama');

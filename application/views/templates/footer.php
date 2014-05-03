@@ -15,6 +15,7 @@
 <script src="<?php echo base_url('assets/js/typeahead.bundle.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap-tags.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/tagmanager.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap-select.min.js'); ?>"></script>
  <script>
 //         $(document).on("click", ".alert", function(e) {
 //             bootbox.alert("Hello world!", function() {
@@ -33,7 +34,6 @@
         });
       });    
 </script>
-
 
 <script>
    var substringMatcher = function(strs) {
@@ -131,11 +131,21 @@ $(".tm-input1").tagsManager({
       typeahead: true,
       onlyTagList: true
     });
-
 var states = <?php echo $listkaryawan; ?>;
 
 function isvalid (substring) {
   return (states.indexOf(substring) > -1);
 }
 
+</script>
+
+<script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
 </script>

@@ -21,6 +21,7 @@
   <link href="<?php echo base_url('assets/css/bootstrap-tags.css'); ?>" rel="stylesheet"> 
   <link href="<?php echo base_url('assets/css/tagmanager.css'); ?>" rel="stylesheet"> 
   <link href="<?php echo base_url('assets/css/typeahead-dropdown.css'); ?>" rel="stylesheet"> 
+  <link href="<?php echo base_url('assets/css/bootstrap-select.min.css'); ?>" rel="stylesheet"> 
   
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
