@@ -17,9 +17,10 @@ else
               <th title="Tanggal Mulai" align="center">Tanggal Mulai</th>
               <th title="Tanggal Selesai" align="center">Tanggal Selesai</th>
               <th title="Prioritas" align="center">Prioritas</th>
-              <th title="Pemimpin Proyek" align="center">Pemimpin Proyek</th>
-              <th class="{sorter: false}" title="Completions" align="center">Aksi</th>              
-            </tr>
+              <th title="Pemimpin Proyek" align="center">Pemimpin Proyek</th>';
+              if ($mode == 1)
+              	echo '<th class="{sorter: false}" title="Aksi" align="center">Aksi</th>';
+           echo '</tr>
           </thead>
           <tbody>';
 
@@ -35,14 +36,17 @@ else
     		echo '<tr class="evenrow" height=35>';              
     	}
     	echo '<td align="center">' . $row->nomor . '</td>
-              <td align="center">' . $row->judul . '</td>              
+              <td align="center"><a href="' . site_url('jadwal/detail/'. $row->nomor) . '" class="" role="button">' . $row->judul . '</a></td>              
 	          <td align="center">' . $row->tanggal_mulai . '</td>
 	          <td align="center">' . $row->tanggal_selesai . '</td>
 	          <td align="center">' . $row->prioritas . '</td>
-	          <td align="center">' . $row->pemimpin_proyek . '</td>
-	          <td align="center"><a href="' . site_url('jadwal/detail/'. $row->nomor) . '" class="" role="button"><img class="btn-jadwal" src="' . base_url('assets/img/lihat.png') . '" title="Lihat Jadwal"></a>';	
+	          <td align="center">' . $row->pemimpin_proyek . '</td>';	
 			  if ($mode == 1)
-			  	echo '<a href="' .  site_url('jadwal/edit/'. $row->nomor) . '" class="" role="button"><img class="btn-jadwal" src="' . base_url('assets/img/edit.png') . '" title="Edit Jadwal" ></a><a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-' . $row->nomor . '"><img class="btn-jadwal" src="' . base_url('assets/img/hapus.png') . '" title="Hapus Jadwal" ></a></td></tr>';
+			  	echo '<td align="center">
+			  		<a href="' .  site_url('jadwal/edit/'. $row->nomor) . '" class="" role="button">
+			  		<img class="btn-jadwal" src="' . base_url('assets/img/edit.png') . '" title="Edit Jadwal" ></a>
+			  		<a href="" class="text-danger" role="button" data-toggle="modal" data-target="#modal-delete-' . $row->nomor . '">
+			  		<img class="btn-jadwal" src="' . base_url('assets/img/hapus.png') . '" title="Hapus Jadwal" ></a></td></tr>';
     	$counter++;
 ?>    	
 	    	<!-- <div class="thumbnail">
