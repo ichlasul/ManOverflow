@@ -26,11 +26,11 @@ class Jadwal_model extends MY_Model {
 						        array(
 						            'field' => 'pemimpinproyek', 
 						            'label' => 'Pemimpin Proyek', 
-						            'rules' => 'required|trim'),
+						            'rules' => 'required'),
 						        array(
 						            'field' => 'pesertaproyek', 
 						            'label' => 'Peserta Proyek', 
-						            'rules' => 'required|trim'));
+						            'rules' => 'required'));
 
 	public function __construct()
 	{
@@ -56,8 +56,18 @@ class Jadwal_model extends MY_Model {
 		$data['tanggal_mulai'] = $this->input->post('tanggalmulai');
 		$data['tanggal_selesai'] = $this->input->post('tanggalselesai');
 		$data['prioritas'] = $this->input->post('prioritas');		
+
+		// $spltdPemimpinProyek = split(" ", $this->input->post('pemimpinproyek'));
+		// $data['pemimpin_proyek'] = $spltdPemimpinProyek[0] . '';
 		$data['pemimpin_proyek'] = $this->input->post('pemimpinproyek');
-		$data['peserta_proyek'] = $this->input->post('pesertaproyek');
+
+		$pesertaProyek = "";
+		foreach ($this->input->post('pesertaproyek') as $listPesertaProyek) {
+			// $spltdPesertaProyek = split(" ", $listPesertaProyek);
+			$pesertaProyek .= $listPesertaProyek . ", ";
+		}
+
+		$data['peserta_proyek'] = $pesertaProyek;
         
 		$this->insert($data);
 	}
@@ -70,8 +80,18 @@ class Jadwal_model extends MY_Model {
 		$data['tanggal_mulai'] = $this->input->post('tanggalmulai');
 		$data['tanggal_selesai'] = $this->input->post('tanggalselesai');
 		$data['prioritas'] = $this->input->post('prioritas');
+
+		// $spltdPemimpinProyek = split(" ", $this->input->post('pemimpinproyek'));
+		// $data['pemimpin_proyek'] = $spltdPemimpinProyek[0] . '';
 		$data['pemimpin_proyek'] = $this->input->post('pemimpinproyek');
-		$data['peserta_proyek'] = $this->input->post('pesertaproyek');
+
+		$pesertaProyek = "";
+		foreach ($this->input->post('pesertaproyek') as $listPesertaProyek) {
+			// $spltdPesertaProyek = split(" ", $listPesertaProyek);
+			$pesertaProyek .= $listPesertaProyek . ", ";
+		}
+
+		$data['peserta_proyek'] = $pesertaProyek;
 
 		$this->update($nomor, $data);
 	}	

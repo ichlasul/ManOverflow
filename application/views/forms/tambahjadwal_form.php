@@ -59,7 +59,7 @@
       <select class="form-control selectpicker bla bla bli" id="pemimpinproyek" name="pemimpinproyek" data-live-search="true" required>
         <?php 
           foreach ($resultkaryawan as $karyawan) {
-            echo '<option>' . $karyawan->NIP . ' - ' . $karyawan->Nama . '</option>';
+            echo '<option>' . $karyawan->NIP . ' ' . $karyawan->Nama . '</option>';
           }
         ?>
         <select>
@@ -74,10 +74,10 @@
   <div class="form-group">            
     <label for="pesertaproyek" class="col-md-3 control-label">Peserta Proyek</label>
     <div class="col-md-8">
-      <select class="form-control selectpicker bla bla bli" id="pesertaproyek" name="pesertaproyek" multiple data-live-search="true" required>
+      <select class="form-control selectpicker bla bla bli" id="pesertaproyek" name="pesertaproyek[]" multiple="multiple" data-live-search="true" >
         <?php 
           foreach ($resultkaryawan as $karyawan) {
-            echo '<option>' . $karyawan->NIP . ' - ' . $karyawan->Nama . '</option>';
+            echo '<option>' . $karyawan->NIP . ' ' . $karyawan->Nama . '</option>';
           }
         ?>
         <select>
