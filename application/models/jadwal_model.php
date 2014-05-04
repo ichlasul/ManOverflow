@@ -125,7 +125,7 @@ class Jadwal_model extends MY_Model {
 		$listJadwal = $this->get_by_title('');
 		$listKaryawan = $this->Karyawan_model->get_by_nip('');
 
-		foreach ($listKaryawan as $karyawan) {			
+		foreach ($listKaryawan as $karyawan) {		
 			$q = $this->Karyawan_model->get_by_nip($karyawan->NIP);
 			$this->Karyawan_model->db->where('NIP', $karyawan->NIP);
 			$newdata['CurrentProyek'] = 0;
@@ -133,22 +133,49 @@ class Jadwal_model extends MY_Model {
 		}
 
 		foreach ($listJadwal as $jadwal) {
-			$spltdPemimpinProyek = explode(" ", $jadwal->pemimpin_proyek);		
-			$q = $this->Karyawan_model->get_by_nip($spltdPemimpinProyek[0]);
-			$this->Karyawan_model->db->where('NIP', $spltdPemimpinProyek[0]);
-			$newdata['CurrentProyek'] = $q[0]->CurrentProyek + 1;
-			$this->Karyawan_model->db->update('Karyawan', $newdata);				
+			if ($this->dateCompare($jadwal->tanggal_selesai)) {
+				$spltdPemimpinProyek = explode(" ", $jadwal->pemimpin_proyek);		
+				$q = $this->Karyawan_model->get_by_nip($spltdPemimpinProyek[0]);
+				$this->Karyawan_model->db->where('NIP', $spltdPemimpinProyek[0]);
+				$newdata['CurrentProyek'] = $q[0]->CurrentProyek + 1;
+				$this->Karyawan_model->db->update('Karyawan', $newdata);				
+			} else {
+				continue;
+			}
 		}
 
 		foreach ($listJadwal as $jadwal) {
-			$listPesertaRaw = explode(", ", $jadwal->peserta_proyek);
-			foreach ($listPesertaRaw as $listPeserta) {
-				$spltdPesertaProyek = explode(" ", $listPeserta);
-				$q = $this->Karyawan_model->get_by_nip($spltdPesertaProyek[0]);
-				$this->Karyawan_model->db->where('NIP', $spltdPesertaProyek[0]);								
-				$newdata['CurrentProyek'] = $q[0]->CurrentProyek + 1;
-				$this->Karyawan_model->db->update('Karyawan', $newdata);
-			}		
+			if ($this->dateCompare($jadwal->tanggal_selesai)) {
+				$listPesertaRaw = explode(", ", $jadwal->peserta_proyek);
+				foreach ($listPesertaRaw as $listPeserta) {
+					$spltdPesertaProyek = explode(" ", $listPeserta);
+					$q = $this->Karyawan_model->get_by_nip($spltdPesertaProyek[0]);
+					$this->Karyawan_model->db->where('NIP', $spltdPesertaProyek[0]);								
+					$newdata['CurrentProyek'] = $q[0]->CurrentProyek + 1;
+					$this->Karyawan_model->db->update('Karyawan', $newdata);
+				}
+			} else {
+				continue;
+			}
 		}
+	}
+
+	public function dateCompare($param1)
+	{
+		$date1 = explode("-", $param1);
+		$getDate = date("Y/m/d");
+		$date2 = explode("-", $getDate);
+		if ($date1[0] > $date2[0])
+			return true;
+		if ($date1[0] < $date2[0])
+			return false;
+		if ($date1[0] == $date2[0] && $date1[1] > $date2[1])
+			return true;
+		if ($date1[0] == $date2[0] && $date1[1] < $date2[1])
+			return false;
+		if ($date1[0] == $date2[0] && $date1[1] == $date2[1] && $date1[2] >= $date2[2])
+			return true;
+		if ($date1[0] == $date2[0] && $date1[1] == $date2[1] && $date1[2] < $date2[2])
+			return false;
 	}
 }
