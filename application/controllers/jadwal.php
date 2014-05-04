@@ -153,20 +153,22 @@ class Jadwal extends MY_Controller {
 
 	public function lists($param = '')
 	{
-		$this->data['title'] = 'List Jadwal ' . $param;
+		if ($param == '')
+		{
+			$param = $this->ion_auth->user()->result()[0]->username;
+		}
+		else if ($this->ion_auth->is_admin() === FALSE)
+		{
+			redirect('jadwal/cari');
+		}
+		$this->Jadwal_model->update_current_proyek();
 		$q = $this->Karyawan_model->get_by_nip($param);
+		if (count($q) == 0) {
+			redirect('jadwal/cari');;
+		}
+		$this->data['title'] = 'List Jadwal ' . $param . ' ' . $q[0]->Nama;		
 		$this->data['list'] = $q[0]->ListCurrentProyek;
-		$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;		
-		// $this->data['listofjadwal'] = $this->Jadwal_model->get_by_title('');
-		// if (count($this->data['listofjadwal']) > 0)
-    		// {    			
-    		// 	$this->data['listjadwal'] = '[';
-    		// 	foreach ($this->data['listofjadwal'] as $row) {
-    		// 		$this->data['listjadwal'] .= '\'' . $row->judul . '\',';
-    		// 	}    	    			
-    		// 	$this->data['listjadwal'] .= ']';
-    		// }
-    	$this->Jadwal_model->update_current_proyek();
+		$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;				
 		$this->load->view("jadwal/listjadwal_view", $this->data);
 	}
 }

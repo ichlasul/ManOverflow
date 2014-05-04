@@ -32,6 +32,8 @@ else
     $lists = explode(", ", $list);
     foreach($lists as $jadwalkode)
     {
+    	if ($jadwalkode == "") continue;
+
     	$row = $this->Jadwal_model->get_by_nomor($jadwalkode);
     	if ($counter % 2 == 1)
     	{
