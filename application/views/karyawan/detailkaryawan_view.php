@@ -40,7 +40,7 @@
                 <div class="col-md-8">
                   <p class="form-control-static">
                     <?php
-                      echo $result->CurrentProyek . ' - <a href="' . site_url('jadwal/lists') . '"> Lihat Detail</a>';;
+                      echo $result->CurrentProyek . ' - <a href="' . site_url('jadwal/lists/'.$result->NIP) . '"> Lihat Detail</a>';;
                     ?>
                   </p>
                 </div>
