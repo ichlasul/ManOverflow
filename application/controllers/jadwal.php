@@ -89,7 +89,7 @@ class Jadwal extends MY_Controller {
     	
         $this->form_validation->set_rules($this->Jadwal_model->tambahjadwal_rules);
         if ($this->form_validation->run() === TRUE)
-        { 			
+        {
         	$this->Jadwal_model->update_jadwal($nomor);
         	redirect('jadwal/detail/'.$nomor);
         }
@@ -119,6 +119,7 @@ class Jadwal extends MY_Controller {
     			}    	    			
     			$this->data['listjadwal'] .= ']';
     		}
+    	$this->Jadwal_model->update_current_proyek();
 		$this->load->view("jadwal/daftarjadwal_view", $this->data);
 	}
 
@@ -140,7 +141,9 @@ class Jadwal extends MY_Controller {
 			$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;
 			$this->data['title'] = 'Daftar Jadwal';			
 			$this->data['result'] = $this->Jadwal_model->get_by_title();
+			$this->Jadwal_model->update_current_proyek();
 			$this->load->view("jadwal/daftarjadwal_view", $this->data);			
+
 		}
 		else
 		{
