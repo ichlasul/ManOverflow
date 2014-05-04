@@ -20,6 +20,8 @@ class Pengetahuan_model extends MY_Model {
 	{
         // Call the Model constructor
         parent::__construct();
+        $this->load->model('Jadwal_model');
+        $this->load->model('Karyawan_model');
     }
 
 	public function get_by_keyword($keyword = "")
