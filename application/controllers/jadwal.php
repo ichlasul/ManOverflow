@@ -166,7 +166,7 @@ class Jadwal extends MY_Controller {
 		{
 			$param = $this->ion_auth->user()->result()[0]->username;
 		}
-		else if ($this->ion_auth->is_admin() === FALSE)
+		else if ($this->ion_auth->is_admin() === FALSE && $param != $this->ion_auth->user()->result()[0]->username)
 		{
 			redirect('jadwal/cari');
 		}
