@@ -1,6 +1,11 @@
 <ul class="nav navbar-nav navbar-right">
   <li class="<?php echo $controller == 'karyawan' ? 'active' : ''; ?>">
-    <a href="<?php echo site_url('karyawan/profil'); ?>">Profil</a>
+    <?php
+      $param = $this->ion_auth->user()->result()[0]->username;
+      $q = $this->Karyawan_model->get_by_nip($param);
+      $nomor = $q[0]->CurrentProyek;
+    ?>
+    <a href="<?php echo site_url('karyawan/profil'); ?>">Profil <?php if ($nomor != 0) echo '  -  [' . $nomor . ']'?></a>
   </li>
   <li><a href="#">Track Record</a></li>
   <li class="dropdown">

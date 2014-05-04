@@ -36,9 +36,13 @@
                 </div>
               </div>
               <div class="form-group">            
-                <label for="nama" class="col-md-3 control-label">Proyek yang Sedang Dipegang</label>
+                <label for="nama" class="col-md-3 control-label">Proyek yang Sedang Dikerjakan</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result->CurrentProyek; ?></p>
+                  <p class="form-control-static">
+                    <?php
+                      echo $result->CurrentProyek . ' - <a href="' . site_url('jadwal/lists') . '"> Lihat Detail</a>';;
+                    ?>
+                  </p>
                 </div>
               </div>
               <hr>
