@@ -3,9 +3,11 @@
     <a href="<?php echo site_url('karyawan/profil'); ?>">Profil</a>
   </li>
   <li><a href="#">Track Record</a></li>
-  <li class="dropdown <?php echo $controller == 'jadwal' ? 'active' : ''; ?>">
-    <a href="<?php echo site_url('jadwal/cari'); ?>">Penjadwalan</a>
-    <ul class="dropdown-menu">      
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Penjadwalan <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="<?php echo site_url('jadwal/cari'); ?>">Cari</a></li>      
+      <li><a href="<?php echo site_url('jadwal/lists'); ?>">Jadwal Saya</a></li>      
     </ul>
   </li>
   <li class="dropdown <?php echo $controller == 'pengetahuan' ? 'active' : ''; ?>">

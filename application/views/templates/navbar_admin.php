@@ -27,6 +27,7 @@
       <li><a href="<?php echo site_url('jadwal/hapus'); ?>">Hapus</a></li>
       <li class="divider"></li>      
       <li><a href="<?php echo site_url('jadwal/cari'); ?>">Cari</a></li>      
+      <li><a href="<?php echo site_url('jadwal/lists'); ?>">Jadwal Saya</a></li>      
     </ul>
   </li>
   <li class="dropdown <?php echo $controller == 'pengetahuan' ? 'active' : ''; ?>">

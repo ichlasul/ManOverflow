@@ -133,13 +133,22 @@ class Jadwal extends MY_Controller {
 		if ($this->ion_auth->is_admin() === TRUE)
 		{
 			$this->data['results'] = $this->Jadwal_model->get($param);
+			$this->data['listofjadwal'] = $this->Jadwal_model->get_by_title('');
+		if (count($this->data['listofjadwal']) > 0)
+    		{    			
+    			$this->data['listjadwal'] = '[';
+    			foreach ($this->data['listofjadwal'] as $row) {
+    				$this->data['listjadwal'] .= '\'' . $row->judul . '\',';
+    			}    	    			
+    			$this->data['listjadwal'] .= ']';
+    		}
 			if (count($this->data['results']) > 0)
 			{
 				$this->Jadwal_model->delete($param);
 				$this->data['info'] = 'Data jadwal proyek ' . $this->data['results']->judul . ' berhasil dihapus';
 			}			
 			$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;
-			$this->data['title'] = 'Daftar Jadwal';			
+			$this->data['title'] = 'Cari Jadwal';			
 			$this->data['result'] = $this->Jadwal_model->get_by_title();
 			$this->Jadwal_model->update_current_proyek();
 			$this->load->view("jadwal/daftarjadwal_view", $this->data);			
