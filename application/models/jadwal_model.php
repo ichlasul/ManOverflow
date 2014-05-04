@@ -48,6 +48,16 @@ class Jadwal_model extends MY_Model {
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
 	}		
 
+	public function get_by_nomor($keyword = "", $order = 0)
+	{
+		if ($keyword == "" && $order == 0) return $this->get_all();
+
+		$this->db->like('nomor', $keyword);
+		// $this->db->order_by('tanggal_selesai', 'desc');
+		$q = $this->db->get($this->_table);
+		return ($q -> num_rows() > 0) ? $q->result() : NULL;
+	}	
+
 	public function add_jadwal($nomor)
 	{
 		$data['nomor'] = $nomor;
@@ -94,23 +104,9 @@ class Jadwal_model extends MY_Model {
 		$data['prioritas'] = $this->input->post('prioritas');
 		$data['pemimpin_proyek'] = $this->input->post('pemimpinproyek');
 
-		// $spltdPemimpinProyek = explode(" ", $this->input->post('pemimpinproyek'));		
-		// $q = $this->Karyawan_model->get_by_nip($spltdPemimpinProyek[0]);
-
-		// $this->Karyawan_model->db->where('NIP', $spltdPemimpinProyek[0]);
-		// $newdata['CurrentProyek'] = $q->CurrentProyek + 1;
-		// $this->Karyawan_model->db->update('Karyawan', $newdata);
-
 		$pesertaProyek = "";
 		foreach ($this->input->post('pesertaproyek') as $listPesertaProyek) {			
 			$pesertaProyek .= $listPesertaProyek . ", ";
-
-			// $spltdPesertaProyek = explode(" ", $listPesertaProyek);
-			// $q = $this->Karyawan_model->get_by_nip($spltdPesertaProyek[0]);
-
-			// $this->Karyawan_model->db->where('NIP', $spltdPesertaProyek[0]);
-			// $newdata['CurrentProyek'] = $q->CurrentProyek + 1;
-			// $this->Karyawan_model->db->update('Karyawan', $newdata);
 		}
 
 		$data['peserta_proyek'] = $pesertaProyek;
@@ -129,6 +125,7 @@ class Jadwal_model extends MY_Model {
 			$q = $this->Karyawan_model->get_by_nip($karyawan->NIP);
 			$this->Karyawan_model->db->where('NIP', $karyawan->NIP);
 			$newdata['CurrentProyek'] = 0;
+			$newdata['ListCurrentProyek'] = '';
 			$this->Karyawan_model->db->update('Karyawan', $newdata);
 		}
 
@@ -138,6 +135,7 @@ class Jadwal_model extends MY_Model {
 				$q = $this->Karyawan_model->get_by_nip($spltdPemimpinProyek[0]);
 				$this->Karyawan_model->db->where('NIP', $spltdPemimpinProyek[0]);
 				$newdata['CurrentProyek'] = $q[0]->CurrentProyek + 1;
+				$newdata['ListCurrentProyek'] = $q[0]->ListCurrentProyek . $jadwal->nomor . ', ';
 				$this->Karyawan_model->db->update('Karyawan', $newdata);				
 			} else {
 				continue;
@@ -152,6 +150,7 @@ class Jadwal_model extends MY_Model {
 					$q = $this->Karyawan_model->get_by_nip($spltdPesertaProyek[0]);
 					$this->Karyawan_model->db->where('NIP', $spltdPesertaProyek[0]);								
 					$newdata['CurrentProyek'] = $q[0]->CurrentProyek + 1;
+					$newdata['ListCurrentProyek'] = $q[0]->ListCurrentProyek . $jadwal->nomor . ', ';
 					$this->Karyawan_model->db->update('Karyawan', $newdata);
 				}
 			} else {

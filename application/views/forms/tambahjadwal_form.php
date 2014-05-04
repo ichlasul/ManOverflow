@@ -48,11 +48,19 @@
     <label for="prioritas" class="col-md-3 control-label">Prioritas</label>
     <div class="col-md-8">
       <select class="form-control selectpicker bla bla bli" id="prioritas" name="prioritas" required>
+        <?php if ($result->prioritas != null) { ?>
         <option <?php echo $result->prioritas == "Sangat Tinggi"? 'selected' : ''?>>Sangat Tinggi</option>
         <option <?php echo $result->prioritas == "Tinggi"? 'selected' : ''?>>Tinggi</option>
         <option <?php echo $result->prioritas == "Normal"? 'selected' : ''?>>Normal</option>
         <option <?php echo $result->prioritas == "Rendah"? 'selected' : ''?>>Rendah</option>
         <option <?php echo $result->prioritas == "Sangat Rendah"? 'selected' : ''?>>Sangat Rendah</option>
+        <?php } else { ?>
+        <option>Sangat Tinggi</option>
+        <option>Tinggi</option>
+        <option>Normal</option>
+        <option>Rendah</option>
+        <option>Sangat Rendah</option>
+        <?php } ?>
       </select>
     </div>
   </div>
@@ -69,9 +77,13 @@
         <?php 
           foreach ($resultkaryawan as $karyawan) {
             $option = $karyawan->NIP . ' ' . $karyawan->Nama;
-            echo '<option ';
-            echo $option == $result->pemimpin_proyek ? 'selected' : '';
-            echo '>' . $option . '</option>';
+            if ($result->pemimpin_proyek != null) {
+              echo '<option ';
+              echo $option == $result->pemimpin_proyek ? 'selected' : '';
+              echo '>' . $option . '</option>';
+            } else {
+              echo '<option>' . $option . '</option>';
+            }
           }
         ?>
         <select>
@@ -90,9 +102,13 @@
         <?php 
           foreach ($resultkaryawan as $karyawan) {
             $option = $karyawan->NIP . ' ' . $karyawan->Nama;
-            echo '<option ';
-            echo isContain($option, $result->peserta_proyek) ? 'selected' : '';
-            echo '>' . $option . '</option>';
+            if ($result->peserta_proyek != null) {
+              echo '<option ';
+              echo isContain($option, $result->peserta_proyek) ? 'selected' : '';
+              echo '>' . $option . '</option>';
+            } else {
+              echo '<option>' . $option . '</option>';
+            }
           }
         ?>
         <select>
