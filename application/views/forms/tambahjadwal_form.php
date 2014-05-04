@@ -1,6 +1,15 @@
 <?php echo validation_errors() ? '<div class="alert alert-danger">' . validation_errors() . '</div>' : ''; ?>
 <?php echo !empty($error) ? '<div class="alert alert-danger">' . $error . '</div>' : ''; ?>
-
+<?php
+  function isContain($karyawanInput, $pesertaProyek) {
+    $listkaryawan = explode(", ", $pesertaProyek);
+    foreach ($listkaryawan as $karyawan) {
+      if ($karyawanInput == $karyawan)
+        return true;
+    }
+    return false;
+  }
+?>
 <form class="form-horizontal" role="form" method="post">
 
   <div class="form-group">            
@@ -39,11 +48,11 @@
     <label for="prioritas" class="col-md-3 control-label">Prioritas</label>
     <div class="col-md-8">
       <select class="form-control selectpicker bla bla bli" id="prioritas" name="prioritas" required>
-        <option>Sangat Tinggi</option>
-        <option>Tinggi</option>
-        <option>Normal</option>
-        <option>Rendah</option>
-        <option>Sangat Rendah</option>
+        <option <?php echo $result->prioritas == "Sangat Tinggi"? 'selected' : ''?>>Sangat Tinggi</option>
+        <option <?php echo $result->prioritas == "Tinggi"? 'selected' : ''?>>Tinggi</option>
+        <option <?php echo $result->prioritas == "Normal"? 'selected' : ''?>>Normal</option>
+        <option <?php echo $result->prioritas == "Rendah"? 'selected' : ''?>>Rendah</option>
+        <option <?php echo $result->prioritas == "Sangat Rendah"? 'selected' : ''?>>Sangat Rendah</option>
       </select>
     </div>
   </div>
@@ -59,7 +68,10 @@
       <select class="form-control selectpicker bla bla bli" id="pemimpinproyek" name="pemimpinproyek" data-live-search="true" required>
         <?php 
           foreach ($resultkaryawan as $karyawan) {
-            echo '<option>' . $karyawan->NIP . ' ' . $karyawan->Nama . '</option>';
+            $option = $karyawan->NIP . ' ' . $karyawan->Nama;
+            echo '<option ';
+            echo $option == $result->pemimpin_proyek ? 'selected' : '';
+            echo '>' . $option . '</option>';
           }
         ?>
         <select>
@@ -77,7 +89,10 @@
       <select class="form-control selectpicker bla bla bli" id="pesertaproyek" name="pesertaproyek[]" multiple="multiple" data-live-search="true" >
         <?php 
           foreach ($resultkaryawan as $karyawan) {
-            echo '<option>' . $karyawan->NIP . ' ' . $karyawan->Nama . '</option>';
+            $option = $karyawan->NIP . ' ' . $karyawan->Nama;
+            echo '<option ';
+            echo isContain($option, $result->peserta_proyek) ? 'selected' : '';
+            echo '>' . $option . '</option>';
           }
         ?>
         <select>

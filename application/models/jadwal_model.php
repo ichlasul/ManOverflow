@@ -134,7 +134,6 @@ class Jadwal_model extends MY_Model {
 
 		foreach ($listJadwal as $jadwal) {
 			$spltdPemimpinProyek = explode(" ", $jadwal->pemimpin_proyek);		
-			echo '[2]' . $jadwal->pemimpin_proyek . '<br>';
 			$q = $this->Karyawan_model->get_by_nip($spltdPemimpinProyek[0]);
 			$this->Karyawan_model->db->where('NIP', $spltdPemimpinProyek[0]);
 			$newdata['CurrentProyek'] = $q[0]->CurrentProyek + 1;
@@ -143,7 +142,6 @@ class Jadwal_model extends MY_Model {
 
 		foreach ($listJadwal as $jadwal) {
 			$listPesertaRaw = explode(", ", $jadwal->peserta_proyek);
-			echo '[4]' . $jadwal->peserta_proyek . '<br>';
 			foreach ($listPesertaRaw as $listPeserta) {
 				$spltdPesertaProyek = explode(" ", $listPeserta);
 				$q = $this->Karyawan_model->get_by_nip($spltdPesertaProyek[0]);
