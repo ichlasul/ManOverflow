@@ -65,15 +65,7 @@
               <div class="form-group">            
                 <label for="pesertaproyek" class="col-md-3 control-label">Peserta Proyek</label>
                 <div class="col-md-8">
-                  <p class="form-control-static">
-                    <?php 
-                    $listPP = explode(",", $result->peserta_proyek);
-                    $listP = "";
-                      foreach ($listPP as $PP) {
-                        $listP .= $PP . "<br>";
-                      }
-                    echo $listP; ?>
-                  </p>
+                  <p class="form-control-static"><?php echo $result->peserta_proyek; ?></p>
                 </div>
               </div>                  
                 <div class="col-md-8 col-md-offset-3">
