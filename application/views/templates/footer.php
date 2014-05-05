@@ -14,7 +14,7 @@
 <script src="<?php echo base_url('assets/js/jquery.tablecloth.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/typeahead.bundle.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap-tags.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/tagmanager.js'); ?>"></script>
+<!-- <script src="<?php echo base_url('assets/js/tagmanager.js'); ?>"></script> -->
 <script src="<?php echo base_url('assets/js/bootstrap-select.min.js'); ?>"></script>
  <script>
 //         $(document).on("click", ".alert", function(e) {

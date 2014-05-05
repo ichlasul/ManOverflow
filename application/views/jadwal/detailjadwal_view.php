@@ -59,7 +59,16 @@
               <div class="form-group">            
                 <label for="pemimpinproyek" class="col-md-3 control-label">Pemimpin Proyek</label>
                 <div class="col-md-8">
-                  <p class="form-control-static"><?php echo $result->pemimpin_proyek; ?></p>
+                  <p class="form-control-static">
+                    <?php
+                    if ($this->ion_auth->is_admin() === FALSE)
+                      echo $result->pemimpin_proyek;
+                    else {
+                      $nip = explode(" ", $result->pemimpin_proyek);
+                      echo '<a href="'. site_url('karyawan/profil/'.$nip[0]) . '">' . $result->pemimpin_proyek . '</a>';
+                    }
+                    ?>
+                  </p>
                 </div>
               </div>
               <div class="form-group">            
@@ -67,10 +76,16 @@
                 <div class="col-md-8">
                   <p class="form-control-static">
                     <?php 
-                    $listPP = explode(",", $result->peserta_proyek);
+                    $listPP = explode(", ", $result->peserta_proyek);
                     $listP = "";
                       foreach ($listPP as $PP) {
-                        $listP .= $PP . "<br>";
+                        if ($this->ion_auth->is_admin() === FALSE)
+                          $listP .= $PP . "<br>";
+                        else
+                        {
+                          $nip = explode(" ", $PP);
+                          echo '<a href="'. site_url('karyawan/profil/'.$nip[0]) . '">' . $PP . '</a><br>';
+                        }
                       }
                     echo $listP; ?>
                   </p>
