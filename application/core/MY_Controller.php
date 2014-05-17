@@ -10,6 +10,8 @@ class MY_Controller extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 
+		$this->data['controller'] = 'MY';
+
 		$no_redirect = array('karyawan/login');
 		$admin_only = array('karyawan/tambah', 'karyawan/edit', 'karyawan/hapus', 'karyawan/cari');
 

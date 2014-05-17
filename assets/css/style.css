@@ -10,3 +10,10 @@
     height: 40px;
     padding-top: 0;
 }
+
+.btn-jadwal {
+	height: 23px;
+	width: 23px;
+	padding: 1px;
+	margin-left: 2px;
+}

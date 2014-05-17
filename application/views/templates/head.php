@@ -8,13 +8,21 @@
 
   <title><?php echo isset($title) ? $title : 'ManOverflow'; ?></title>
 
-  <!-- Bootstrap core CSS --> 
-  <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>"  rel="stylesheet">
+  <!-- Bootstrap theme CSS --> 
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+  <link href="<?php echo base_url('assets/css/bootstrap-elegant.min.css'); ?>"  rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="<?php echo base_url('assets/css/signin.css'); ?>" rel="stylesheet">
   <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
-
+  <link href="<?php echo base_url('assets/css/bootstrap-responsive.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/css/tablecloth.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/css/prettify.css'); ?>" rel="stylesheet"> 
+  <link href="<?php echo base_url('assets/css/bootstrap-tags.css'); ?>" rel="stylesheet"> 
+  <link href="<?php echo base_url('assets/css/tagmanager.css'); ?>" rel="stylesheet"> 
+  <link href="<?php echo base_url('assets/css/typeahead-dropdown.css'); ?>" rel="stylesheet"> 
+  <link href="<?php echo base_url('assets/css/bootstrap-select.min.css'); ?>" rel="stylesheet"> 
+  
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
