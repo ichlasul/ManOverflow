@@ -163,7 +163,7 @@ class Jadwal_model extends MY_Model {
 	{
 		$date1 = explode("-", $param1);
 		$getDate = date("Y/m/d");
-		$date2 = explode("-", $getDate);
+		$date2 = explode("/", $getDate);
 		if ($date1[0] > $date2[0])
 			return true;
 		if ($date1[0] < $date2[0])

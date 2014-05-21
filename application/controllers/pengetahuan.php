@@ -97,12 +97,6 @@ class Pengetahuan extends MY_Controller {
         $this->load->view('pengetahuan/tambahpengetahuan_view', $this->data);
 	}
 
-	public function update_pengetahuan($id)
-	{
-		$data['id']=$id;
-		$data['judul'] = $this->input->post('judul');
-		$data['konten'] = $this->input->post('konten');
-		$this->update($id, $data);
-	}
+	
 
 }
