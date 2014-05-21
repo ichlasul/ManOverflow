@@ -29,7 +29,17 @@ class TrackRecord_model extends MY_Model {
 		$this->db->like('nama', $keyword);
 		$q = $this->db->get($this->_table);
 		return ($q -> num_rows() > 0) ? $q->result() : NULL;
-	}		
+	}	
+
+	public function get_by_id($keyword = "", $order = 0)
+	{
+		if ($keyword == "" && $order == 0) return $this->get_all();
+
+		$this->db->like('id', $keyword);
+		// $this->db->order_by('tanggal_selesai', 'desc');
+		$q = $this->db->get($this->_table);
+		return ($q -> num_rows() > 0) ? $q->result() : NULL;
+	}	
 
 	public function add_trackrecord($id)
 	{

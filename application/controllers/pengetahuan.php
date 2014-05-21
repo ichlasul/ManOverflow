@@ -73,11 +73,6 @@ class Pengetahuan extends MY_Controller {
 
 	public function edit($param = '')
 	{
-		if (($param == '') || ($this->ion_auth->is_admin() === FALSE))
-		{
-			redirect('edit/cari');
-		}
-
 		$id = $param;
 
     	//validasi form

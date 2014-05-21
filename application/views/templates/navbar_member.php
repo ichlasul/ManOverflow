@@ -7,7 +7,7 @@
     ?>
     <a href="<?php echo site_url('karyawan/profil'); ?>">Profil <?php if ($nomor != 0) echo '  -  [' . $nomor . ']'; ?></a>
   </li>
-  <li><a href="#">Track Record</a></li>
+  <li><a href="<?php echo site_url('trackrecord/lists'); ?>">My TrackRecord</a></li>
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Penjadwalan <b class="caret"></b></a>
     <ul class="dropdown-menu">

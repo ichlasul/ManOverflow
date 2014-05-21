@@ -161,4 +161,25 @@ class TrackRecord extends MY_Controller {
 		redirect('/trackrecord/cari/'. $this->input->post('keyword'));
 	}
 
+	public function lists($param = '')
+	{
+		if ($param == '')
+		{
+			$param = $this->ion_auth->user()->result()[0]->username;
+		}
+		else if ($this->ion_auth->is_admin() === FALSE && $param != $this->ion_auth->user()->result()[0]->username)
+		{
+			redirect('karyawan/profil');
+		}
+		$this->TrackRecord_model->update_list_trackrecord();
+		$q = $this->Karyawan_model->get_by_nip($param);
+		if (count($q) == 0) {
+			redirect('karyawan/profil');;
+		}
+		$this->data['title'] = 'My Track Record';		
+		$this->data['list'] = $q[0]->jumlahtrackrecord;
+		$this->data['mode'] = $this->ion_auth->is_admin() ? 1 : 2;				
+		$this->load->view("trackrecord/listtrackrecord_view", $this->data);
+	}
+
 }
