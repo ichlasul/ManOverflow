@@ -16,12 +16,7 @@
       <li><a href="<?php echo site_url('trackrecord/edit'); ?>">Edit</a></li>
       <li><a href="<?php echo site_url('trackrecord/hapus'); ?>">Hapus</a></li>
       <li class="divider"></li>
-<<<<<<< HEAD
-      <li><a href="<?php echo site_url('TrackRecord/daftarKaryawan'); ?>">Tambah</a></li>
-      <li><a href="<?php echo site_url('karyawan/hapus'); ?>">Hapus</a></li>
-=======
       <li><a href="<?php echo site_url('trackrecord/cari'); ?>">Cari</a></li>      
->>>>>>> f4042ea82dff115436be7c2891ecbf4fb155aadc
     </ul>
   </li>
   <li class="dropdown">
