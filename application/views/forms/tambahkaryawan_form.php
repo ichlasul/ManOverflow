@@ -52,12 +52,12 @@
       <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" value="<?php echo isset($result) ? $result->TanggalLahir : set_value('tanggallahir'); ?>" required>
     </div>
   </div>
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label for="filefoto" class="col-md-3 control-label">Pilih Foto</label>
     <div class="col-md-8">
       <input type="file" id="filefoto" name="filefoto">
     </div>
-  </div>
+  </div> -->
   <hr>
   <div class="form-group">
     <label for="divisi" class="col-md-3 control-label">Divisi</label>

@@ -20,7 +20,7 @@
             <form class="form-horizontal" role="form" method="post">
               <div class="row">
                 <div class="col-md-offset-3 col-md-4">
-                  <img class="img-responsive" data-src="<?php echo $result->Foto; ?>" alt="Foto">
+                  <!-- <img class="img-responsive" data-src="<?php echo $result->Foto; ?>" alt="Foto"> -->
                 </div>
               </div>
               <div class="form-group">            

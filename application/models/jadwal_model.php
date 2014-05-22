@@ -163,18 +163,18 @@ class Jadwal_model extends MY_Model {
 	{
 		$date1 = explode("-", $param1);
 		$getDate = date("Y/m/d");
-		$date2 = explode("-", $getDate);
+		$date2 = explode("/", $getDate);
 		if ($date1[0] > $date2[0])
 			return true;
 		if ($date1[0] < $date2[0])
 			return false;
-		if ($date1[0] == $date2[0] && $date1[1] > $date2[1])
+		if ($date1[0] == $date2[0] && $date1[1] > $date2[1]) 
 			return true;
-		if ($date1[0] == $date2[0] && $date1[1] < $date2[1])
+		if ($date1[0] == $date2[0] && $date1[1] < $date2[1]) 
 			return false;
-		if ($date1[0] == $date2[0] && $date1[1] == $date2[1] && $date1[2] >= $date2[2])
+		if ($date1[0] == $date2[0] && $date1[1] == $date2[1] && $date1[2] >= $date2[2]) 
 			return true;
-		if ($date1[0] == $date2[0] && $date1[1] == $date2[1] && $date1[2] < $date2[2])
-			return false;
+		if ($date1[0] == $date2[0] && $date1[1] == $date2[1] && $date1[2] < $date2[2]) 
+			return false;		
 	}
 }

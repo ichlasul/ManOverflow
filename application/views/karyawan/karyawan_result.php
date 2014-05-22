@@ -13,7 +13,7 @@ else
 ?>
     	<div class="col-md-6">
 	    	<div class="thumbnail">
-		      	<img class="img-responsive" data-src="" alt="Foto">
+		      	<!-- <img class="img-responsive" data-src="" alt="Foto"> -->
 		      	<div class="caption">
 			        <h3><?php echo $row->Nama; ?></h3>
 			        <h4><?php echo $row->NIP; ?></h4>
