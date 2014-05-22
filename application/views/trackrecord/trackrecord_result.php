@@ -32,7 +32,7 @@ else
     		echo '<tr class="evenrow" height=35>';              
     	}
     	echo '<td align="center">' . $row->id . '</td>
-              <td align="center"><a href="' . site_url('jadwal/detail/'. $row->id) . '" class="" role="button">' . $row->nama . '</a></td>';             	
+              <td align="center"><a href="' . site_url('trackrecord/detail/'. $row->id) . '" class="" role="button">' . $row->nama . '</a></td>';             	
 			  if ($mode == 1)
 			  	echo '<td align="center">
 			  		<a href="' .  site_url('trackrecord/edit/'. $row->id) . '" class="" role="button">
