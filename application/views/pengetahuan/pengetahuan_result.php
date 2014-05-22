@@ -37,7 +37,7 @@ else
 					      </div>
 					      <div class="modal-footer">
 					        <a role="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-					        <a href="<?php echo site_url('pengetahuan/hapus/'.$row->id); ?>" role="button" class="btn btn-danger">Hapus Karyawan</a>
+					        <a href="<?php echo site_url('pengetahuan/hapus/'.$row->id); ?>" role="button" class="btn btn-danger">Hapus Pengetahuan</a>
 					      </div>
 					    </div>
 					  </div>

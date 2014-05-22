@@ -44,4 +44,12 @@ class Pengetahuan_model extends MY_Model {
 
 		return $this->insert($data);
 	}
+
+	public function update_pengetahuan($id)
+	{
+		$data['id']=$id;
+		$data['judul'] = $this->input->post('judul');
+		$data['konten'] = $this->input->post('konten');
+		$this->update($id, $data);
+	}
 }

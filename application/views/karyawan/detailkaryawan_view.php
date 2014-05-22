@@ -45,6 +45,12 @@
                   </p>
                 </div>
               </div>
+              <div class="form-group">            
+                <label for="nama" class="col-md-3 control-label">Jumlah TrackRecord</label>
+                <div class="col-md-8">
+                  <p class="form-control-static"><?php echo $result->jumlahtrackrecord; ?></p>
+                </div>
+              </div>
               <hr>
               <div class="form-group">            
                 <label for="alamat" class="col-md-3 control-label">Alamat</label>

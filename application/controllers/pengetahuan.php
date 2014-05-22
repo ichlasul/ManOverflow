@@ -71,4 +71,27 @@ class Pengetahuan extends MY_Controller {
 		}
 	}
 
+	public function edit($param = '')
+	{
+		$id = $param;
+
+    	//validasi form
+        $this->form_validation->set_rules($this->Pengetahuan_model->input_rules);
+        if ($this->form_validation->run() === TRUE)
+        {         	
+        	$this->Pengetahuan_model->update_pengetahuan($id);
+        	redirect('pengetahuan/lihat/'.$id);
+        }        
+        
+        // Load view
+        $this->data['resultkaryawan'] = $this->Karyawan_model->get_by_name('');  
+        $this->data['title'] = 'Edit Pengetahuan';
+        $this->data['id'] = $id;
+        $this->data['result'] = $this->Pengetahuan_model->get($param);
+        $this->data['edit_mode'] = TRUE;
+        $this->load->view('pengetahuan/tambahpengetahuan_view', $this->data);
+	}
+
+	
+
 }
